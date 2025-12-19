@@ -8,7 +8,7 @@ const CompanyDirectory = () => {
   const { t } = useLanguage();
 
   const headquarters = {
-    name: 'Shell Electric Holdings Limited',
+    name: '1/F, Shell Industrial Building, 12 Lee Chung Street,\nChai Wan Industrial District, Hong Kong.',
     address: 'Shell Industrial Building, Hong Kong',
     phone: '+852 2345 6789',
     email: 'info@smc.com.hk',
