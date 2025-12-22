@@ -62,8 +62,9 @@ const CompanyDirectory = () => {
                     <Building2 className="h-8 w-8 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-foreground">{headquarters.name}</h3>
+                    <h3 className="text-xl font-bold text-foreground">Shell Electric Holdings Limited</h3>
                     <p className="text-muted-foreground">Corporate Headquarters</p>
+                    <p className="text-muted-foreground whitespace-pre-line">{headquarters.name}</p>
                   </div>
                 </div>
                 
