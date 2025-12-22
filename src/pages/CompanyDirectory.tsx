@@ -62,28 +62,27 @@ const CompanyDirectory = () => {
                     <Building2 className="h-8 w-8 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-foreground">Shell Electric Holdings Limited</h3>
-                    <p className="text-muted-foreground">Corporate Headquarters</p>
-                    <p className="text-muted-foreground whitespace-pre-line">{headquarters.name}</p>
+                    <h3 className="text-lg font-semibold text-foreground">Shell Electric Holdings Limited</h3>
+                    <p className="text-sm text-muted-foreground">Corporate Headquarters</p>
                   </div>
                 </div>
                 
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <MapPin className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-muted-foreground">{headquarters.address}</span>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <MapPin className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-muted-foreground whitespace-pre-line">{headquarters.name}</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-muted-foreground">{headquarters.phone}</span>
+                    <Phone className="h-4 w-4 text-primary flex-shrink-0" />
+                    <span className="text-sm text-muted-foreground">{headquarters.phone}</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Mail className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-muted-foreground">{headquarters.email}</span>
+                    <Mail className="h-4 w-4 text-primary flex-shrink-0" />
+                    <span className="text-sm text-muted-foreground">{headquarters.email}</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Globe className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-muted-foreground">{headquarters.website}</span>
+                    <Globe className="h-4 w-4 text-primary flex-shrink-0" />
+                    <span className="text-sm text-muted-foreground">{headquarters.website}</span>
                   </div>
                 </div>
               </div>
@@ -100,8 +99,8 @@ const CompanyDirectory = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {subsidiaries.map((company, index) => (
                 <div key={index} className="card-corporate p-6">
-                  <h3 className="text-lg font-bold text-foreground mb-2">{company.name}</h3>
-                  <p className="text-primary font-medium mb-4">{company.business}</p>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">{company.name}</h3>
+                  <p className="text-sm text-primary font-medium mb-4">{company.business}</p>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
                     <MapPin className="h-4 w-4" />
                     {company.location}
