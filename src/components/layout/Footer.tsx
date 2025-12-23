@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import smcLogo from '@/assets/smc-logo.png';
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -13,36 +14,11 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="mb-6">
-              <svg viewBox="0 0 180 50" className="h-10 w-auto">
-                <defs>
-                  <linearGradient id="logoGradientFooter" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="hsl(210, 80%, 55%)" />
-                    <stop offset="100%" stopColor="hsl(210, 70%, 65%)" />
-                  </linearGradient>
-                </defs>
-                <path
-                  d="M10 40 Q25 5 40 40 Q25 35 10 40 Z"
-                  fill="url(#logoGradientFooter)"
-                />
-                <path
-                  d="M15 38 Q25 15 35 38"
-                  fill="none"
-                  stroke="hsl(0, 0%, 100%)"
-                  strokeWidth="1.5"
-                />
-                <path
-                  d="M18 36 Q25 20 32 36"
-                  fill="none"
-                  stroke="hsl(0, 0%, 100%)"
-                  strokeWidth="1"
-                />
-                <text x="50" y="35" fill="hsl(210, 80%, 65%)" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: '24px' }}>
-                  SMC
-                </text>
-                <text x="50" y="47" fill="hsl(210, 15%, 65%)" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '8px', letterSpacing: '1px' }}>
-                  SHELL ELECTRIC
-                </text>
-              </svg>
+              <img 
+                src={smcLogo} 
+                alt="SMC - Since 1952" 
+                className="h-14 w-auto"
+              />
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               A leading manufacturer in consumer electrical appliances since 1950s.
