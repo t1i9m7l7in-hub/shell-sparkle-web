@@ -8,7 +8,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-corporate-blue-light text-corporate-navy">
+    <footer className="bg-slate-50 text-slate-800">
       <div className="container-corporate py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
@@ -20,37 +20,37 @@ const Footer = () => {
                 className="h-14 w-auto"
               />
             </div>
-            <p className="text-sm text-muted-foreground leading-relaxed">
+            <p className="text-sm text-slate-600 leading-relaxed">
               A leading manufacturer in consumer electrical appliances since 1950s.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">{t('nav.corporate')}</h4>
+            <h4 className="text-lg font-semibold mb-6 text-slate-900">{t('nav.corporate')}</h4>
             <ul className="space-y-3">
               <li>
-                <Link to="/corporate/overview" className="text-muted-foreground hover:text-primary-foreground transition-colors">
+                <Link to="/corporate/overview" className="text-slate-600 hover:text-corporate-blue transition-colors">
                   {t('nav.overview')}
                 </Link>
               </li>
               <li>
-                <Link to="/corporate/vision" className="text-muted-foreground hover:text-primary-foreground transition-colors">
+                <Link to="/corporate/vision" className="text-slate-600 hover:text-corporate-blue transition-colors">
                   {t('nav.vision')}
                 </Link>
               </li>
               <li>
-                <Link to="/corporate/manufacturing" className="text-muted-foreground hover:text-primary-foreground transition-colors">
+                <Link to="/corporate/manufacturing" className="text-slate-600 hover:text-corporate-blue transition-colors">
                   {t('nav.manufacturing')}
                 </Link>
               </li>
               <li>
-                <Link to="/corporate/technology" className="text-muted-foreground hover:text-primary-foreground transition-colors">
+                <Link to="/corporate/technology" className="text-slate-600 hover:text-corporate-blue transition-colors">
                   {t('nav.technology')}
                 </Link>
               </li>
               <li>
-                <Link to="/corporate/investments" className="text-muted-foreground hover:text-primary-foreground transition-colors">
+                <Link to="/corporate/investments" className="text-slate-600 hover:text-corporate-blue transition-colors">
                   {t('nav.investments')}
                 </Link>
               </li>
@@ -59,20 +59,20 @@ const Footer = () => {
 
           {/* More Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-6 text-slate-900">Quick Links</h4>
             <ul className="space-y-3">
               <li>
-                <Link to="/financial" className="text-muted-foreground hover:text-primary-foreground transition-colors">
+                <Link to="/financial" className="text-slate-600 hover:text-corporate-blue transition-colors">
                   {t('nav.financial')}
                 </Link>
               </li>
               <li>
-                <Link to="/news" className="text-muted-foreground hover:text-primary-foreground transition-colors">
+                <Link to="/news" className="text-slate-600 hover:text-corporate-blue transition-colors">
                   {t('nav.news')}
                 </Link>
               </li>
               <li>
-                <Link to="/directory" className="text-muted-foreground hover:text-primary-foreground transition-colors">
+                <Link to="/directory" className="text-slate-600 hover:text-corporate-blue transition-colors">
                   {t('nav.directory')}
                 </Link>
               </li>
@@ -81,22 +81,22 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">{t('footer.contact')}</h4>
+            <h4 className="text-lg font-semibold mb-6 text-slate-900">{t('footer.contact')}</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-corporate-blue-light flex-shrink-0 mt-0.5" />
-                <span className="text-sm text-muted-foreground">
+                <MapPin className="h-5 w-5 text-slate-700 flex-shrink-0 mt-0.5" />
+                <span className="text-sm text-slate-600">
                   1/F, Shell Industrial Building, 12 Lee Chung Street,<br />
                   Chai Wan Industrial District, Hong Kong.
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-corporate-blue-light flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">+852 2558 0181</span>
+                <Phone className="h-5 w-5 text-slate-700 flex-shrink-0" />
+                <span className="text-sm text-slate-600">+852 2558 0181</span>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-corporate-blue-light flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">info@smc.com.hk</span>
+                <Mail className="h-5 w-5 text-slate-700 flex-shrink-0" />
+                <span className="text-sm text-slate-600">info@smc.com.hk</span>
               </li>
             </ul>
           </div>
@@ -104,17 +104,17 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-muted/20">
+      <div className="border-t border-slate-200">
         <div className="container-corporate py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-slate-600">
               © {currentYear} Shell Electric Holdings Limited. {t('footer.rights')}.
             </p>
             <div className="flex items-center gap-6">
-              <Link to="#" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
+              <Link to="#" className="text-sm text-slate-600 hover:text-corporate-blue transition-colors">
                 {t('footer.privacy')}
               </Link>
-              <Link to="#" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
+              <Link to="#" className="text-sm text-slate-600 hover:text-corporate-blue transition-colors">
                 {t('footer.terms')}
               </Link>
             </div>
