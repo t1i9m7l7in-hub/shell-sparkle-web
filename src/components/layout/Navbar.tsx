@@ -9,6 +9,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import smcLogo from '@/assets/smc-logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,43 +48,12 @@ const Navbar = () => {
       <div className="container-corporate">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
-            <div className="flex items-center">
-              <svg viewBox="0 0 180 50" className="h-10 w-auto">
-                {/* Stylized SMC Logo */}
-                <defs>
-                  <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="hsl(210, 100%, 35%)" />
-                    <stop offset="100%" stopColor="hsl(210, 80%, 45%)" />
-                  </linearGradient>
-                </defs>
-                {/* Shell Icon */}
-                <path
-                  d="M10 40 Q25 5 40 40 Q25 35 10 40 Z"
-                  fill="url(#logoGradient)"
-                />
-                <path
-                  d="M15 38 Q25 15 35 38"
-                  fill="none"
-                  stroke="hsl(0, 0%, 100%)"
-                  strokeWidth="1.5"
-                />
-                <path
-                  d="M18 36 Q25 20 32 36"
-                  fill="none"
-                  stroke="hsl(0, 0%, 100%)"
-                  strokeWidth="1"
-                />
-                {/* SMC Text */}
-                <text x="50" y="35" className="fill-primary font-bold text-2xl" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700 }}>
-                  SMC
-                </text>
-                {/* Tagline */}
-                <text x="50" y="47" className="fill-muted-foreground text-xs" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: '8px', letterSpacing: '1px' }}>
-                  SHELL ELECTRIC
-                </text>
-              </svg>
-            </div>
+          <Link to="/" className="flex items-center">
+            <img 
+              src={smcLogo} 
+              alt="SMC - Since 1952" 
+              className="h-14 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
