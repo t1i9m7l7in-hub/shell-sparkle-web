@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import HeroSection from '@/components/ui/HeroSection';
 import SectionTitle from '@/components/ui/SectionTitle';
+import GroupCompanies from '@/components/ui/GroupCompanies';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Factory, Cpu, Building2, TrendingUp } from 'lucide-react';
 import heroManufacturing from '@/assets/hero-manufacturing.jpg';
@@ -177,6 +178,9 @@ const Index = () => {
           </Link>
         </div>
       </section>
+
+      {/* Group Companies Section */}
+      <GroupCompanies />
     </div>
   );
 };
