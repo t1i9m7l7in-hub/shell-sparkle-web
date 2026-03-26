@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import HeroSection from '@/components/ui/HeroSection';
-import { FileText, ChevronDown, Play } from 'lucide-react';
+import { FileText, ChevronDown, Play, AlertCircle } from 'lucide-react';
 
 interface NewsItem {
   date: string;
@@ -18,6 +18,7 @@ interface NewsSection {
 const News = () => {
   const { t } = useLanguage();
   const [selectedYear, setSelectedYear] = useState('2025');
+  const [downloadError, setDownloadError] = useState<string | null>(null);
 
   const sections: NewsSection[] = [
     {
@@ -71,13 +72,29 @@ const News = () => {
       title: 'III.  Request Form',
       items: [
         {
-          date: '17-7-2024',
+          date: '17-07-2024',
           name: 'Request Form',
           pdfUrl: '/pdf/2025/request-form.pdf',
         },
       ],
     },
   ];
+
+  const handlePdfClick = async (e: React.MouseEvent<HTMLAnchorElement>, url: string, name: string) => {
+    setDownloadError(null);
+    try {
+      const response = await fetch(url, { method: 'HEAD' });
+      if (!response.ok) {
+        e.preventDefault();
+        setDownloadError(`PDF not available: ${name}`);
+        console.error(`Failed to download PDF: ${url} — Status: ${response.status}`);
+      }
+    } catch (err) {
+      e.preventDefault();
+      setDownloadError(`PDF not available: ${name}`);
+      console.error(`Failed to fetch PDF: ${url}`, err);
+    }
+  };
 
   return (
     <div>
@@ -89,6 +106,12 @@ const News = () => {
 
       <section className="py-16 bg-background">
         <div className="container-corporate max-w-4xl">
+          {/* Page heading — matches Financial Information style */}
+          <h2 className="text-2xl font-bold text-foreground mb-8 flex items-center gap-3">
+            <FileText className="h-6 w-6 text-primary" />
+            News &amp; Announcements
+          </h2>
+
           {/* Year selector */}
           <div className="mb-8">
             <div className="relative inline-block">
@@ -103,39 +126,48 @@ const News = () => {
             </div>
           </div>
 
+          {/* Error banner */}
+          {downloadError && (
+            <div className="mb-6 flex items-center gap-2 border border-destructive/30 bg-destructive/10 text-destructive rounded-sm px-4 py-3 text-sm">
+              <AlertCircle className="h-4 w-4 flex-shrink-0" />
+              {downloadError}
+            </div>
+          )}
+
           {/* Sections */}
           <div className="space-y-10">
             {sections.map((section) => (
               <div key={section.id}>
-                {/* Section Title */}
-                <h2 className="text-base font-semibold text-corporate-gold mb-3 border-b border-corporate-gold/30 pb-1">
+                {/* Section Title — matches Financial Information year header style */}
+                <div className="bg-corporate-gold text-white font-bold text-lg px-4 py-2 mb-4">
                   {section.title}
-                </h2>
+                </div>
 
                 {section.items.length > 0 ? (
-                  <div className="border border-border rounded-sm overflow-hidden">
+                  <div className="border border-border rounded-sm overflow-hidden bg-card">
                     {/* Table Header */}
-                    <div className="grid grid-cols-[110px_1fr_60px] bg-corporate-gold/10 border-b border-corporate-gold/30 px-4 py-2">
-                      <span className="text-xs font-bold text-foreground uppercase">Date</span>
-                      <span className="text-xs font-bold text-foreground uppercase">Name</span>
-                      <span className="text-xs font-bold text-foreground uppercase text-right">Kind</span>
+                    <div className="grid grid-cols-[100px_1fr_70px] bg-muted/50 border-b border-border px-4 py-2.5">
+                      <span className="text-xs font-semibold text-foreground uppercase tracking-wide">Date</span>
+                      <span className="text-xs font-semibold text-foreground uppercase tracking-wide">Name</span>
+                      <span className="text-xs font-semibold text-foreground uppercase tracking-wide text-right">Download</span>
                     </div>
 
                     {/* Table Rows */}
                     {section.items.map((item, idx) => (
                       <div
                         key={idx}
-                        className="grid grid-cols-[110px_1fr_60px] items-start px-4 py-2.5 border-b border-border last:border-b-0 hover:bg-muted/50 transition-colors"
+                        className="grid grid-cols-[100px_1fr_70px] items-start px-4 py-3 border-b border-border last:border-b-0 hover:bg-muted/30 transition-colors"
                       >
-                        <div className="flex items-center gap-1.5 text-sm text-foreground">
-                          <Play className="h-3 w-3 fill-foreground text-foreground flex-shrink-0" />
+                        <div className="flex items-center gap-1.5 text-sm text-foreground font-medium">
+                          <Play className="h-3 w-3 fill-primary text-primary flex-shrink-0" />
                           <span className="whitespace-nowrap">{item.date}</span>
                         </div>
                         <a
                           href={item.pdfUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-sm text-primary hover:text-primary/80 hover:underline transition-colors leading-snug"
+                          onClick={(e) => handlePdfClick(e, item.pdfUrl, item.name)}
+                          className="text-sm text-primary hover:text-primary/80 hover:underline transition-colors leading-relaxed"
                         >
                           {item.name}
                         </a>
@@ -143,21 +175,22 @@ const News = () => {
                           href={item.pdfUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center justify-end gap-1 text-destructive hover:opacity-80 transition-opacity"
-                          title="Download PDF"
+                          onClick={(e) => handlePdfClick(e, item.pdfUrl, item.name)}
+                          className="flex items-center justify-end gap-1.5 px-2 py-1 text-primary hover:bg-primary/10 rounded-sm transition-all hover:scale-105"
+                          title={`Download ${item.name} PDF`}
                         >
                           <FileText className="h-4 w-4" />
-                          <span className="text-xs font-medium">PDF</span>
+                          <span className="text-xs font-semibold">PDF</span>
                         </a>
                       </div>
                     ))}
                   </div>
                 ) : (
-                  <div className="border border-border rounded-sm overflow-hidden">
-                    <div className="grid grid-cols-[110px_1fr_60px] bg-corporate-gold/10 border-b border-corporate-gold/30 px-4 py-2">
-                      <span className="text-xs font-bold text-foreground uppercase">Date</span>
-                      <span className="text-xs font-bold text-foreground uppercase">Name</span>
-                      <span className="text-xs font-bold text-foreground uppercase text-right">Kind</span>
+                  <div className="border border-border rounded-sm overflow-hidden bg-card">
+                    <div className="grid grid-cols-[100px_1fr_70px] bg-muted/50 border-b border-border px-4 py-2.5">
+                      <span className="text-xs font-semibold text-foreground uppercase tracking-wide">Date</span>
+                      <span className="text-xs font-semibold text-foreground uppercase tracking-wide">Name</span>
+                      <span className="text-xs font-semibold text-foreground uppercase tracking-wide text-right">Download</span>
                     </div>
                     <div className="px-4 py-6 text-center text-sm text-muted-foreground">
                       No items available.
