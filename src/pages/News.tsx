@@ -1,62 +1,83 @@
+import { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import HeroSection from '@/components/ui/HeroSection';
-import SectionTitle from '@/components/ui/SectionTitle';
-import { Calendar, ArrowRight, Newspaper } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { FileText, ChevronDown, Play } from 'lucide-react';
+
+interface NewsItem {
+  date: string;
+  name: string;
+  pdfUrl: string;
+}
+
+interface NewsSection {
+  id: string;
+  title: string;
+  items: NewsItem[];
+}
 
 const News = () => {
   const { t } = useLanguage();
+  const [selectedYear, setSelectedYear] = useState('2025');
 
-  const newsItems = [
+  const sections: NewsSection[] = [
     {
-      title: 'SMC Announces Strong Q3 Results',
-      excerpt: 'Shell Electric Holdings Limited reports continued growth in manufacturing and technology segments with improved margins.',
-      date: 'December 15, 2024',
-      category: 'Financial',
+      id: 'investors',
+      title: 'I.  Investors Information',
+      items: [
+        {
+          date: '21-08-2025',
+          name: 'CHANGE OF HONG KONG TRANSFER AGENT',
+          pdfUrl: '/pdf/2025/transfer-agent-20250821.pdf',
+        },
+        {
+          date: '21-08-2025',
+          name: 'RESULTS OF THE ANNUAL GENERAL MEETING HELD ON 21 AUGUST 2025',
+          pdfUrl: '/pdf/2025/agm-results-20250821.pdf',
+        },
+        {
+          date: '18-07-2025',
+          name: 'NOTIFICATION LETTER',
+          pdfUrl: '/pdf/2025/notification-letter-20250718.pdf',
+        },
+        {
+          date: '18-07-2025',
+          name: 'FORM OF PROXY FOR USE AT THE ANNUAL GENERAL MEETING (OR AT ANY ADJOURNMENT THEREOF) TO BE HELD AT 10:00 A.M. ON THURSDAY, 21 AUGUST 2025',
+          pdfUrl: '/pdf/2025/proxy-form-20250718.pdf',
+        },
+        {
+          date: '18-07-2025',
+          name: 'NOTICE OF ANNUAL GENERAL MEETING',
+          pdfUrl: '/pdf/2025/agm-notice-20250718.pdf',
+        },
+        {
+          date: '18-07-2025',
+          name: 'CLOSURE OF REGISTER OF MEMBERS FOR THE ANNUAL GENERAL MEETING',
+          pdfUrl: '/pdf/2025/register-closure-20250718.pdf',
+        },
+        {
+          date: '18-07-2025',
+          name: 'ANNUAL REPORT 2024',
+          pdfUrl: '/pdf/2025/annual-report-2024.pdf',
+        },
+      ],
     },
     {
-      title: 'PFC Device Expands Product Portfolio',
-      excerpt: 'New MOSFET product models launched, strengthening the semiconductor business offerings for automotive applications.',
-      date: 'November 28, 2024',
-      category: 'Technology',
+      id: 'other',
+      title: 'II.  Other',
+      items: [],
     },
     {
-      title: 'Environmental Initiative for Taxi Fleet',
-      excerpt: 'Guangzhou SMC Car Rental announces complete transition to eco-friendly engines across entire fleet.',
-      date: 'October 15, 2024',
-      category: 'Sustainability',
-    },
-    {
-      title: 'Strategic Partnership Announcement',
-      excerpt: 'SMC enters new strategic collaboration with leading global home appliance manufacturer.',
-      date: 'September 20, 2024',
-      category: 'Corporate',
-    },
-    {
-      title: 'Annual General Meeting Highlights',
-      excerpt: 'Key resolutions passed at AGM including dividend declaration and board appointments.',
-      date: 'August 10, 2024',
-      category: 'Governance',
-    },
-    {
-      title: 'Manufacturing Excellence Award',
-      excerpt: 'SMC receives industry recognition for quality and innovation in consumer electronics manufacturing.',
-      date: 'July 5, 2024',
-      category: 'Awards',
+      id: 'request',
+      title: 'III.  Request Form',
+      items: [
+        {
+          date: '17-7-2024',
+          name: 'Request Form',
+          pdfUrl: '/pdf/2025/request-form.pdf',
+        },
+      ],
     },
   ];
-
-  const getCategoryColor = (category: string) => {
-    const colors: Record<string, string> = {
-      Financial: 'bg-primary/10 text-primary',
-      Technology: 'bg-accent/10 text-accent',
-      Sustainability: 'bg-green-100 text-green-700',
-      Corporate: 'bg-secondary text-secondary-foreground',
-      Governance: 'bg-corporate-gold/10 text-corporate-gold',
-      Awards: 'bg-amber-100 text-amber-700',
-    };
-    return colors[category] || 'bg-secondary text-secondary-foreground';
-  };
 
   return (
     <div>
@@ -66,47 +87,85 @@ const News = () => {
         size="sm"
       />
 
-      <section className="py-24 bg-background">
-        <div className="container-corporate">
-          <SectionTitle 
-            title={t('news.latest')}
-            subtitle="Stay informed about SMC's latest developments"
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {newsItems.map((item, index) => (
-              <article key={index} className="card-corporate overflow-hidden group">
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className={`px-3 py-1 rounded-full text-xs font-medium ${getCategoryColor(item.category)}`}>
-                      {item.category}
-                    </span>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <Calendar className="h-4 w-4" />
-                      {item.date}
-                    </div>
-                  </div>
-                  <h3 className="text-lg font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
-                    {item.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                    {item.excerpt}
-                  </p>
-                  <button className="flex items-center gap-2 text-primary font-medium text-sm group-hover:gap-3 transition-all">
-                    Read More
-                    <ArrowRight className="h-4 w-4" />
-                  </button>
-                </div>
-              </article>
-            ))}
+      <section className="py-16 bg-background">
+        <div className="container-corporate max-w-4xl">
+          {/* Year selector */}
+          <div className="mb-8">
+            <div className="relative inline-block">
+              <select
+                value={selectedYear}
+                onChange={(e) => setSelectedYear(e.target.value)}
+                className="appearance-none border border-border bg-card text-foreground px-4 py-2 pr-8 rounded-sm text-sm font-medium cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary"
+              >
+                <option value="2025">2025</option>
+              </select>
+              <ChevronDown className="absolute right-2 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground pointer-events-none" />
+            </div>
           </div>
 
-          {/* Load More */}
-          <div className="text-center mt-12">
-            <Button variant="outline" size="lg">
-              <Newspaper className="h-5 w-5 mr-2" />
-              {t('news.archive')}
-            </Button>
+          {/* Sections */}
+          <div className="space-y-10">
+            {sections.map((section) => (
+              <div key={section.id}>
+                {/* Section Title */}
+                <h2 className="text-base font-semibold text-corporate-gold mb-3 border-b border-corporate-gold/30 pb-1">
+                  {section.title}
+                </h2>
+
+                {section.items.length > 0 ? (
+                  <div className="border border-border rounded-sm overflow-hidden">
+                    {/* Table Header */}
+                    <div className="grid grid-cols-[110px_1fr_60px] bg-corporate-gold/10 border-b border-corporate-gold/30 px-4 py-2">
+                      <span className="text-xs font-bold text-foreground uppercase">Date</span>
+                      <span className="text-xs font-bold text-foreground uppercase">Name</span>
+                      <span className="text-xs font-bold text-foreground uppercase text-right">Kind</span>
+                    </div>
+
+                    {/* Table Rows */}
+                    {section.items.map((item, idx) => (
+                      <div
+                        key={idx}
+                        className="grid grid-cols-[110px_1fr_60px] items-start px-4 py-2.5 border-b border-border last:border-b-0 hover:bg-muted/50 transition-colors"
+                      >
+                        <div className="flex items-center gap-1.5 text-sm text-foreground">
+                          <Play className="h-3 w-3 fill-foreground text-foreground flex-shrink-0" />
+                          <span className="whitespace-nowrap">{item.date}</span>
+                        </div>
+                        <a
+                          href={item.pdfUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm text-primary hover:text-primary/80 hover:underline transition-colors leading-snug"
+                        >
+                          {item.name}
+                        </a>
+                        <a
+                          href={item.pdfUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center justify-end gap-1 text-destructive hover:opacity-80 transition-opacity"
+                          title="Download PDF"
+                        >
+                          <FileText className="h-4 w-4" />
+                          <span className="text-xs font-medium">PDF</span>
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="border border-border rounded-sm overflow-hidden">
+                    <div className="grid grid-cols-[110px_1fr_60px] bg-corporate-gold/10 border-b border-corporate-gold/30 px-4 py-2">
+                      <span className="text-xs font-bold text-foreground uppercase">Date</span>
+                      <span className="text-xs font-bold text-foreground uppercase">Name</span>
+                      <span className="text-xs font-bold text-foreground uppercase text-right">Kind</span>
+                    </div>
+                    <div className="px-4 py-6 text-center text-sm text-muted-foreground">
+                      No items available.
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </section>
