@@ -168,7 +168,7 @@
   }
 
   .nav-link-corporate {
-    @apply relative text-sm font-medium uppercase tracking-wider transition-colors duration-300;
+    @apply relative text-base font-medium uppercase tracking-wider transition-colors duration-300;
   }
 
   .nav-link-corporate::after {
