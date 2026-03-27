@@ -105,8 +105,8 @@ const CompanyDirectory = () => {
                     <Building2 className="h-8 w-8 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-foreground">{headquarters.name}</h3>
-                    <p className="text-sm text-muted-foreground">Corporate Headquarters</p>
+                    <h3 className="text-xl font-semibold text-foreground">{headquarters.name}</h3>
+                    <p className="text-base text-muted-foreground">Corporate Headquarters</p>
                   </div>
                 </div>
                 
