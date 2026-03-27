@@ -50,7 +50,7 @@ const FinancialInformation = () => {
                 </div>
 
                 {/* Report Card */}
-                <div className="border border-border bg-card p-5 flex items-center gap-6 hover:shadow-corporate-md transition-shadow">
+                <div className="border border-border bg-card p-5 flex items-center gap-6 hover:bg-secondary/40 hover:shadow-corporate-md transition-all">
                   {report.status ? (
                     <div className="flex-1">
                       <p className="font-semibold text-foreground">ANNUAL REPORT {report.year}</p>

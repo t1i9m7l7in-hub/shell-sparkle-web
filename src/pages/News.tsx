@@ -187,10 +187,10 @@ const News = () => {
                   </div>
                 ) : (
                   <div className="border border-border rounded-sm overflow-hidden bg-card">
-                    <div className="grid grid-cols-[100px_1fr_70px] bg-muted/50 border-b border-border px-4 py-2.5">
-                      <span className="text-xs font-semibold text-foreground uppercase tracking-wide">Date</span>
-                      <span className="text-xs font-semibold text-foreground uppercase tracking-wide">Name</span>
-                      <span className="text-xs font-semibold text-foreground uppercase tracking-wide text-right">Download</span>
+                    <div className="grid grid-cols-[100px_1fr_70px] bg-primary/10 border-b border-border px-4 py-2.5">
+                      <span className="text-xs font-semibold text-primary uppercase tracking-wide">Date</span>
+                      <span className="text-xs font-semibold text-primary uppercase tracking-wide">Name</span>
+                      <span className="text-xs font-semibold text-primary uppercase tracking-wide text-right">Download</span>
                     </div>
                     <div className="px-4 py-6 text-center text-sm text-muted-foreground">
                       No items available.
