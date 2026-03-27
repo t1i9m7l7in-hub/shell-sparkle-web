@@ -130,18 +130,18 @@ const CompanyDirectory = () => {
                     <Mail className="h-4 w-4 text-primary flex-shrink-0" />
                     <a 
                       href={`mailto:${headquarters.email}`}
-                      className="text-sm text-primary hover:underline"
+                      className="text-base text-primary hover:underline"
                     >
                       {headquarters.email}
                     </a>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Globe className="h-4 w-4 text-primary flex-shrink-0" />
+                    <Globe className="h-5 w-5 text-primary flex-shrink-0" />
                     <a 
                       href={`https://${headquarters.website}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-primary hover:underline"
+                      className="text-base text-primary hover:underline"
                     >
                       {headquarters.website}
                     </a>
