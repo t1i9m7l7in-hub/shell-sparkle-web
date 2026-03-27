@@ -32,7 +32,7 @@ const FinancialInformation = () => {
         size="sm"
       />
 
-      <section className="py-16 bg-background">
+      <section className="py-16 bg-gradient-to-b from-secondary/30 via-background to-secondary/20">
         <div className="container-corporate max-w-4xl">
           {/* Annual Reports Header */}
           <h2 className="text-2xl font-bold text-foreground mb-8 flex items-center gap-3">
@@ -45,12 +45,12 @@ const FinancialInformation = () => {
             {annualReports.map((report) => (
               <div key={report.year}>
                 {/* Year Header */}
-                <div className="bg-corporate-gold text-white font-bold text-lg px-4 py-2 mb-4">
+                <div className="bg-gradient-to-r from-primary to-accent text-primary-foreground font-bold text-lg px-4 py-2 mb-4">
                   {report.year}
                 </div>
 
                 {/* Report Card */}
-                <div className="border border-border bg-card p-5 flex items-center gap-6 hover:shadow-corporate-md transition-shadow">
+                <div className="border border-border bg-card p-5 flex items-center gap-6 hover:bg-secondary/40 hover:shadow-corporate-md transition-all">
                   {report.status ? (
                     <div className="flex-1">
                       <p className="font-semibold text-foreground">ANNUAL REPORT {report.year}</p>

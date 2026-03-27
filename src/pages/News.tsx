@@ -104,7 +104,7 @@ const News = () => {
         size="sm"
       />
 
-      <section className="py-16 bg-background">
+      <section className="py-16 bg-gradient-to-b from-secondary/30 via-background to-secondary/20">
         <div className="container-corporate max-w-4xl">
           {/* Page heading — matches Financial Information style */}
           <h2 className="text-2xl font-bold text-foreground mb-8 flex items-center gap-3">
@@ -139,24 +139,24 @@ const News = () => {
             {sections.map((section) => (
               <div key={section.id}>
                 {/* Section Title — matches Financial Information year header style */}
-                <div className="bg-corporate-gold text-white font-bold text-lg px-4 py-2 mb-4">
+                <div className="bg-gradient-to-r from-primary to-accent text-primary-foreground font-bold text-lg px-4 py-2 mb-4">
                   {section.title}
                 </div>
 
                 {section.items.length > 0 ? (
                   <div className="border border-border rounded-sm overflow-hidden bg-card">
                     {/* Table Header */}
-                    <div className="grid grid-cols-[100px_1fr_70px] bg-muted/50 border-b border-border px-4 py-2.5">
-                      <span className="text-xs font-semibold text-foreground uppercase tracking-wide">Date</span>
-                      <span className="text-xs font-semibold text-foreground uppercase tracking-wide">Name</span>
-                      <span className="text-xs font-semibold text-foreground uppercase tracking-wide text-right">Download</span>
+                    <div className="grid grid-cols-[100px_1fr_70px] bg-primary/10 border-b border-border px-4 py-2.5">
+                      <span className="text-xs font-semibold text-primary uppercase tracking-wide">Date</span>
+                      <span className="text-xs font-semibold text-primary uppercase tracking-wide">Name</span>
+                      <span className="text-xs font-semibold text-primary uppercase tracking-wide text-right">Download</span>
                     </div>
 
                     {/* Table Rows */}
                     {section.items.map((item, idx) => (
                       <div
                         key={idx}
-                        className="grid grid-cols-[100px_1fr_70px] items-start px-4 py-3 border-b border-border last:border-b-0 hover:bg-muted/30 transition-colors"
+                        className={`grid grid-cols-[100px_1fr_70px] items-start px-4 py-3 border-b border-border last:border-b-0 hover:bg-primary/5 transition-colors ${idx % 2 === 1 ? 'bg-secondary/20' : ''}`}
                       >
                         <div className="flex items-center gap-1.5 text-sm text-foreground font-medium">
                           <Play className="h-3 w-3 fill-primary text-primary flex-shrink-0" />
@@ -187,10 +187,10 @@ const News = () => {
                   </div>
                 ) : (
                   <div className="border border-border rounded-sm overflow-hidden bg-card">
-                    <div className="grid grid-cols-[100px_1fr_70px] bg-muted/50 border-b border-border px-4 py-2.5">
-                      <span className="text-xs font-semibold text-foreground uppercase tracking-wide">Date</span>
-                      <span className="text-xs font-semibold text-foreground uppercase tracking-wide">Name</span>
-                      <span className="text-xs font-semibold text-foreground uppercase tracking-wide text-right">Download</span>
+                    <div className="grid grid-cols-[100px_1fr_70px] bg-primary/10 border-b border-border px-4 py-2.5">
+                      <span className="text-xs font-semibold text-primary uppercase tracking-wide">Date</span>
+                      <span className="text-xs font-semibold text-primary uppercase tracking-wide">Name</span>
+                      <span className="text-xs font-semibold text-primary uppercase tracking-wide text-right">Download</span>
                     </div>
                     <div className="px-4 py-6 text-center text-sm text-muted-foreground">
                       No items available.
