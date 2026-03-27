@@ -10,7 +10,7 @@ interface SectionTitleProps {
 const SectionTitle = ({ title, subtitle, align = 'center', className }: SectionTitleProps) => {
   return (
     <div className={cn('mb-12', align === 'center' ? 'text-center' : 'text-left', className)}>
-      <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+      <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
         {title}
       </h2>
       <div className={cn('w-16 h-1 bg-primary mb-6', align === 'center' ? 'mx-auto' : '')} />

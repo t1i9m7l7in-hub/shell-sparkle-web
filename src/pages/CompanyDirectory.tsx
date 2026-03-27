@@ -105,8 +105,8 @@ const CompanyDirectory = () => {
                     <Building2 className="h-8 w-8 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-foreground">{headquarters.name}</h3>
-                    <p className="text-sm text-muted-foreground">Corporate Headquarters</p>
+                    <h3 className="text-xl font-semibold text-foreground">{headquarters.name}</h3>
+                    <p className="text-base text-muted-foreground">Corporate Headquarters</p>
                   </div>
                 </div>
                 
@@ -116,32 +116,32 @@ const CompanyDirectory = () => {
                     onClick={() => openGoogleMaps(headquarters.mapQuery)}
                   >
                     <MapPin className="h-4 w-4 text-primary flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
-                    <span className="text-sm text-muted-foreground group-hover:text-primary">{headquarters.address}</span>
+                    <span className="text-base text-muted-foreground group-hover:text-primary">{headquarters.address}</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Phone className="h-4 w-4 text-primary flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground">Tel: {headquarters.tel}</span>
+                    <Phone className="h-5 w-5 text-primary flex-shrink-0" />
+                    <span className="text-base text-muted-foreground">Tel: {headquarters.tel}</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Printer className="h-4 w-4 text-primary flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground">Fax: {headquarters.fax}</span>
+                    <Printer className="h-5 w-5 text-primary flex-shrink-0" />
+                    <span className="text-base text-muted-foreground">Fax: {headquarters.fax}</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Mail className="h-4 w-4 text-primary flex-shrink-0" />
                     <a 
                       href={`mailto:${headquarters.email}`}
-                      className="text-sm text-primary hover:underline"
+                      className="text-base text-primary hover:underline"
                     >
                       {headquarters.email}
                     </a>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Globe className="h-4 w-4 text-primary flex-shrink-0" />
+                    <Globe className="h-5 w-5 text-primary flex-shrink-0" />
                     <a 
                       href={`https://${headquarters.website}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-primary hover:underline"
+                      className="text-base text-primary hover:underline"
                     >
                       {headquarters.website}
                     </a>
@@ -161,9 +161,9 @@ const CompanyDirectory = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {subsidiaries.map((company, index) => (
                 <div key={index} className="card-corporate p-6">
-                  <h3 className="text-base font-semibold text-foreground mb-4">{company.name}</h3>
+                  <h3 className="text-lg font-semibold text-foreground mb-4">{company.name}</h3>
                   
-                  <div className="space-y-2 text-sm">
+                  <div className="space-y-2 text-base">
                     <div 
                       className="flex items-start gap-2 cursor-pointer hover:text-primary transition-colors group"
                       onClick={() => openGoogleMaps(company.mapQuery)}

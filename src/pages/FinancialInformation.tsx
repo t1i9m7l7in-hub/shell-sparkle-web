@@ -35,7 +35,7 @@ const FinancialInformation = () => {
       <section className="py-16 bg-gradient-to-b from-secondary/30 via-background to-secondary/20">
         <div className="container-corporate max-w-4xl">
           {/* Annual Reports Header */}
-          <h2 className="text-2xl font-bold text-foreground mb-8 flex items-center gap-3">
+          <h2 className="text-3xl font-bold text-foreground mb-8 flex items-center gap-3">
             <FileText className="h-6 w-6 text-primary" />
             {t('financial.reports')}
           </h2>
@@ -91,11 +91,11 @@ const FinancialInformation = () => {
 
           {/* Corporate Governance */}
           <div className="mt-20">
-            <h2 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
               <Shield className="h-6 w-6 text-primary" />
               {t('financial.governance')}
             </h2>
-            <p className="text-muted-foreground leading-relaxed text-base">
+            <p className="text-muted-foreground leading-relaxed text-lg">
               Shell Electric Holdings Limited, with over 60 years of history since its founding, remains committed to maintaining high standards of corporate governance. The Company believes that good corporate governance practices are essential for creating long-term shareholder value and maintaining the confidence of shareholders and other stakeholders.
             </p>
           </div>
