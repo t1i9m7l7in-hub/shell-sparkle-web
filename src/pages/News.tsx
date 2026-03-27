@@ -139,7 +139,7 @@ const News = () => {
             {sections.map((section) => (
               <div key={section.id}>
                 {/* Section Title — matches Financial Information year header style */}
-                <div className="bg-corporate-gold text-white font-bold text-lg px-4 py-2 mb-4">
+                <div className="bg-gradient-to-r from-primary to-accent text-primary-foreground font-bold text-lg px-4 py-2 mb-4">
                   {section.title}
                 </div>
 
