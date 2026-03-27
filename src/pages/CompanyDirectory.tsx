@@ -116,15 +116,15 @@ const CompanyDirectory = () => {
                     onClick={() => openGoogleMaps(headquarters.mapQuery)}
                   >
                     <MapPin className="h-4 w-4 text-primary flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
-                    <span className="text-sm text-muted-foreground group-hover:text-primary">{headquarters.address}</span>
+                    <span className="text-base text-muted-foreground group-hover:text-primary">{headquarters.address}</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Phone className="h-4 w-4 text-primary flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground">Tel: {headquarters.tel}</span>
+                    <Phone className="h-5 w-5 text-primary flex-shrink-0" />
+                    <span className="text-base text-muted-foreground">Tel: {headquarters.tel}</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Printer className="h-4 w-4 text-primary flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground">Fax: {headquarters.fax}</span>
+                    <Printer className="h-5 w-5 text-primary flex-shrink-0" />
+                    <span className="text-base text-muted-foreground">Fax: {headquarters.fax}</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Mail className="h-4 w-4 text-primary flex-shrink-0" />
