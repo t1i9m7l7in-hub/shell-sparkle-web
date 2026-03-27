@@ -110,7 +110,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground font-sans antialiased text-base md:text-lg;
     font-family: 'Montserrat', 'Noto Sans SC', 'Noto Sans TC', sans-serif;
   }
 

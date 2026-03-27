@@ -161,9 +161,9 @@ const CompanyDirectory = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {subsidiaries.map((company, index) => (
                 <div key={index} className="card-corporate p-6">
-                  <h3 className="text-base font-semibold text-foreground mb-4">{company.name}</h3>
+                  <h3 className="text-lg font-semibold text-foreground mb-4">{company.name}</h3>
                   
-                  <div className="space-y-2 text-sm">
+                  <div className="space-y-2 text-base">
                     <div 
                       className="flex items-start gap-2 cursor-pointer hover:text-primary transition-colors group"
                       onClick={() => openGoogleMaps(company.mapQuery)}

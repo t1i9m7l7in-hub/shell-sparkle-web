@@ -95,7 +95,7 @@ const FinancialInformation = () => {
               <Shield className="h-6 w-6 text-primary" />
               {t('financial.governance')}
             </h2>
-            <p className="text-muted-foreground leading-relaxed text-base">
+            <p className="text-muted-foreground leading-relaxed text-lg">
               Shell Electric Holdings Limited, with over 60 years of history since its founding, remains committed to maintaining high standards of corporate governance. The Company believes that good corporate governance practices are essential for creating long-term shareholder value and maintaining the confidence of shareholders and other stakeholders.
             </p>
           </div>
