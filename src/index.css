@@ -138,11 +138,11 @@
   }
 
   .section-title {
-    @apply text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight;
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight;
   }
 
   .section-subtitle {
-    @apply text-lg md:text-xl text-muted-foreground mt-4;
+    @apply text-xl md:text-2xl text-muted-foreground mt-4;
   }
 
   .card-corporate {
