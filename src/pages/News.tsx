@@ -104,7 +104,7 @@ const News = () => {
         size="sm"
       />
 
-      <section className="py-16 bg-background">
+      <section className="py-16 bg-gradient-to-b from-secondary/30 via-background to-secondary/20">
         <div className="container-corporate max-w-4xl">
           {/* Page heading — matches Financial Information style */}
           <h2 className="text-2xl font-bold text-foreground mb-8 flex items-center gap-3">
