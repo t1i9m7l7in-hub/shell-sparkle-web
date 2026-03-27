@@ -91,7 +91,7 @@ const FinancialInformation = () => {
 
           {/* Corporate Governance */}
           <div className="mt-20">
-            <h2 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
               <Shield className="h-6 w-6 text-primary" />
               {t('financial.governance')}
             </h2>
