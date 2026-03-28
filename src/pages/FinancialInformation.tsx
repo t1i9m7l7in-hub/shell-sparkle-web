@@ -40,6 +40,7 @@ const FinancialInformation = () => {
       <HeroSection
         title={t('financial.title')}
         subtitle="Investor Relations & Financial Reports"
+        backgroundImage="/images/hero-corporate-bg.jpg"
         size="sm"
       />
 
