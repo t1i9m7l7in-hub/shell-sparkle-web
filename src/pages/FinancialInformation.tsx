@@ -119,6 +119,7 @@ const FinancialInformation = () => {
                           href={`/annual-reports/annual-report-${report.year}.pdf`}
                           target="_blank"
                           rel="noopener noreferrer"
+                          download={`Annual_Report_${report.year}.pdf`}
                           className="font-semibold text-primary hover:underline flex items-center gap-2 text-lg"
                         >
                           <span className="text-primary">▶</span> ANNUAL REPORT {report.year}
