@@ -80,20 +80,8 @@ const News = () => {
     },
   ];
 
-  const handlePdfClick = async (e: React.MouseEvent<HTMLAnchorElement>, url: string, name: string) => {
+  const handlePdfClick = (e: React.MouseEvent<HTMLAnchorElement>, url: string, name: string) => {
     setDownloadError(null);
-    try {
-      const response = await fetch(url, { method: 'HEAD' });
-      if (!response.ok) {
-        e.preventDefault();
-        setDownloadError(`PDF not available: ${name}`);
-        console.error(`Failed to download PDF: ${url} — Status: ${response.status}`);
-      }
-    } catch (err) {
-      e.preventDefault();
-      setDownloadError(`PDF not available: ${name}`);
-      console.error(`Failed to fetch PDF: ${url}`, err);
-    }
   };
 
   return (
