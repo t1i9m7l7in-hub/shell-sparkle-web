@@ -154,6 +154,7 @@ const News = () => {
                           href={item.pdfUrl}
                           target="_blank"
                           rel="noopener noreferrer"
+                          download={item.name.replace(/\s+/g, '_') + '.pdf'}
                           onClick={(e) => handlePdfClick(e, item.pdfUrl, item.name)}
                           className="text-sm text-primary hover:text-primary/80 hover:underline transition-colors leading-relaxed"
                         >
