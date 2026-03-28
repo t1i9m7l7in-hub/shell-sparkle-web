@@ -135,10 +135,10 @@ const News = () => {
                 {section.items.length > 0 ? (
                   <div className="border border-border rounded-sm overflow-hidden bg-card">
                     {/* Table Header */}
-                    <div className="grid grid-cols-[100px_1fr_70px] bg-primary/10 border-b border-border px-4 py-2.5">
-                      <span className="text-xs font-semibold text-primary uppercase tracking-wide">Date</span>
-                      <span className="text-xs font-semibold text-primary uppercase tracking-wide">Name</span>
-                      <span className="text-xs font-semibold text-primary uppercase tracking-wide text-right">Download</span>
+                    <div className="grid grid-cols-[100px_1fr_70px] bg-gradient-to-r from-primary to-accent border-b border-border px-4 py-2.5">
+                      <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide">Date</span>
+                      <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide">Name</span>
+                      <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide text-right">Download</span>
                     </div>
 
                     {/* Table Rows */}
