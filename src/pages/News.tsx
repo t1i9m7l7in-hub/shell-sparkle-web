@@ -162,9 +162,7 @@ const News = () => {
                         </a>
                         <a
                           href={item.pdfUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          onClick={(e) => handlePdfClick(e, item.pdfUrl, item.name)}
+                          download={item.name.replace(/\s+/g, '_') + '.pdf'}
                           className="flex items-center justify-end gap-1.5 px-2 py-1 text-primary hover:bg-primary/10 rounded-sm transition-all hover:scale-105"
                           title={`Download ${item.name} PDF`}
                         >
