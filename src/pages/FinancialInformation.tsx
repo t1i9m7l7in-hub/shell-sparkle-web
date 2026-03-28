@@ -132,7 +132,7 @@ const FinancialInformation = () => {
                       </div>
                       <a
                         href={`/annual-reports/annual-report-${report.year}.pdf`}
-                        download={`annual-report-${report.year}.pdf`}
+                        download={`Annual_Report_${report.year}.pdf`}
                         className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-sm hover:bg-primary/90 hover:scale-105 transition-all text-sm font-medium self-start"
                         aria-label={`Download Annual Report ${report.year} PDF`}
                       >
