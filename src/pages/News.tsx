@@ -89,6 +89,7 @@ const News = () => {
       <HeroSection
         title={t('news.title')}
         subtitle="Latest Updates & Announcements"
+        backgroundImage="/images/hero-corporate-bg.jpg"
         size="sm"
       />
 

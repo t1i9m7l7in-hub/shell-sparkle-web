@@ -40,6 +40,7 @@ const FinancialInformation = () => {
       <HeroSection
         title={t('financial.title')}
         subtitle="Investor Relations & Financial Reports"
+        backgroundImage="/images/hero-corporate-bg.jpg"
         size="sm"
       />
 
@@ -89,7 +90,7 @@ const FinancialInformation = () => {
             {currentReports.map((report) => (
               <div key={report.year}>
                 {/* Year Header - brown/gold like reference image */}
-                <div className="bg-gradient-to-r from-[hsl(30,50%,40%)] to-[hsl(35,55%,50%)] text-primary-foreground font-bold text-lg px-4 py-2 mb-0">
+                <div className="bg-gradient-to-r from-primary to-accent text-primary-foreground font-bold text-lg px-4 py-2 mb-0">
                   {report.year}
                 </div>
 
