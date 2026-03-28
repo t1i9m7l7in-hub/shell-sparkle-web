@@ -80,20 +80,8 @@ const News = () => {
     },
   ];
 
-  const handlePdfClick = async (e: React.MouseEvent<HTMLAnchorElement>, url: string, name: string) => {
+  const handlePdfClick = (e: React.MouseEvent<HTMLAnchorElement>, url: string, name: string) => {
     setDownloadError(null);
-    try {
-      const response = await fetch(url, { method: 'HEAD' });
-      if (!response.ok) {
-        e.preventDefault();
-        setDownloadError(`PDF not available: ${name}`);
-        console.error(`Failed to download PDF: ${url} — Status: ${response.status}`);
-      }
-    } catch (err) {
-      e.preventDefault();
-      setDownloadError(`PDF not available: ${name}`);
-      console.error(`Failed to fetch PDF: ${url}`, err);
-    }
   };
 
   return (
@@ -166,6 +154,7 @@ const News = () => {
                           href={item.pdfUrl}
                           target="_blank"
                           rel="noopener noreferrer"
+                          download={item.name.replace(/\s+/g, '_') + '.pdf'}
                           onClick={(e) => handlePdfClick(e, item.pdfUrl, item.name)}
                           className="text-sm text-primary hover:text-primary/80 hover:underline transition-colors leading-relaxed"
                         >
@@ -173,9 +162,7 @@ const News = () => {
                         </a>
                         <a
                           href={item.pdfUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          onClick={(e) => handlePdfClick(e, item.pdfUrl, item.name)}
+                          download={item.name.replace(/\s+/g, '_') + '.pdf'}
                           className="flex items-center justify-end gap-1.5 px-2 py-1 text-primary hover:bg-primary/10 rounded-sm transition-all hover:scale-105"
                           title={`Download ${item.name} PDF`}
                         >
