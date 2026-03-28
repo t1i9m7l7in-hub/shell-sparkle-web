@@ -96,7 +96,7 @@ const News = () => {
       <section className="py-16 bg-gradient-to-b from-secondary/30 via-background to-secondary/20">
         <div className="container-corporate max-w-4xl">
           {/* Page heading — matches Financial Information style */}
-          <h2 className="text-2xl font-bold text-foreground mb-8 flex items-center gap-3">
+          <h2 className="text-3xl font-bold text-foreground mb-8 flex items-center gap-3">
             <FileText className="h-6 w-6 text-primary" />
             News &amp; Announcements
           </h2>
@@ -135,10 +135,10 @@ const News = () => {
                 {section.items.length > 0 ? (
                   <div className="border border-border rounded-sm overflow-hidden bg-card">
                     {/* Table Header */}
-                    <div className="grid grid-cols-[100px_1fr_70px] bg-primary/10 border-b border-border px-4 py-2.5">
-                      <span className="text-xs font-semibold text-primary uppercase tracking-wide">Date</span>
-                      <span className="text-xs font-semibold text-primary uppercase tracking-wide">Name</span>
-                      <span className="text-xs font-semibold text-primary uppercase tracking-wide text-right">Download</span>
+                    <div className="grid grid-cols-[100px_1fr_70px] bg-gradient-to-r from-primary to-accent border-b border-border px-4 py-2.5">
+                      <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide">Date</span>
+                      <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide">Name</span>
+                      <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide text-right">Download</span>
                     </div>
 
                     {/* Table Rows */}
@@ -175,10 +175,10 @@ const News = () => {
                   </div>
                 ) : (
                   <div className="border border-border rounded-sm overflow-hidden bg-card">
-                    <div className="grid grid-cols-[100px_1fr_70px] bg-primary/10 border-b border-border px-4 py-2.5">
-                      <span className="text-xs font-semibold text-primary uppercase tracking-wide">Date</span>
-                      <span className="text-xs font-semibold text-primary uppercase tracking-wide">Name</span>
-                      <span className="text-xs font-semibold text-primary uppercase tracking-wide text-right">Download</span>
+                    <div className="grid grid-cols-[100px_1fr_70px] bg-gradient-to-r from-primary to-accent border-b border-border px-4 py-2.5">
+                      <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide">Date</span>
+                      <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide">Name</span>
+                      <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide text-right">Download</span>
                     </div>
                     <div className="px-4 py-6 text-center text-sm text-muted-foreground">
                       No items available.
