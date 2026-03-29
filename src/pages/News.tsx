@@ -1,88 +1,16 @@
 import { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import HeroSection from '@/components/ui/HeroSection';
-import { FileText, ChevronDown, Play, AlertCircle } from 'lucide-react';
-
-interface NewsItem {
-  date: string;
-  name: string;
-  pdfUrl: string;
-}
-
-interface NewsSection {
-  id: string;
-  title: string;
-  items: NewsItem[];
-}
+import { FileText, Play, AlertCircle } from 'lucide-react';
+import { newsArchive, availableYears } from '@/data/newsData';
 
 const News = () => {
   const { t } = useLanguage();
   const [selectedYear, setSelectedYear] = useState('2025');
   const [downloadError, setDownloadError] = useState<string | null>(null);
 
-  const sections: NewsSection[] = [
-    {
-      id: 'investors',
-      title: 'I.  Investors Information',
-      items: [
-        {
-          date: '21-08-2025',
-          name: 'CHANGE OF HONG KONG TRANSFER AGENT',
-          pdfUrl: '/pdf/2025/transfer-agent-20250821.pdf',
-        },
-        {
-          date: '21-08-2025',
-          name: 'RESULTS OF THE ANNUAL GENERAL MEETING HELD ON 21 AUGUST 2025',
-          pdfUrl: '/pdf/2025/agm-results-20250821.pdf',
-        },
-        {
-          date: '18-07-2025',
-          name: 'NOTIFICATION LETTER',
-          pdfUrl: '/pdf/2025/notification-letter-20250718.pdf',
-        },
-        {
-          date: '18-07-2025',
-          name: 'FORM OF PROXY FOR USE AT THE ANNUAL GENERAL MEETING (OR AT ANY ADJOURNMENT THEREOF) TO BE HELD AT 10:00 A.M. ON THURSDAY, 21 AUGUST 2025',
-          pdfUrl: '/pdf/2025/proxy-form-20250718.pdf',
-        },
-        {
-          date: '18-07-2025',
-          name: 'NOTICE OF ANNUAL GENERAL MEETING',
-          pdfUrl: '/pdf/2025/agm-notice-20250718.pdf',
-        },
-        {
-          date: '18-07-2025',
-          name: 'CLOSURE OF REGISTER OF MEMBERS FOR THE ANNUAL GENERAL MEETING',
-          pdfUrl: '/pdf/2025/register-closure-20250718.pdf',
-        },
-        {
-          date: '18-07-2025',
-          name: 'ANNUAL REPORT 2024',
-          pdfUrl: '/pdf/2025/annual-report-2024.pdf',
-        },
-      ],
-    },
-    {
-      id: 'other',
-      title: 'II.  Other',
-      items: [],
-    },
-    {
-      id: 'request',
-      title: 'III.  Request Form',
-      items: [
-        {
-          date: '17-07-2024',
-          name: 'Request Form',
-          pdfUrl: '/pdf/2025/request-form.pdf',
-        },
-      ],
-    },
-  ];
-
-  const handlePdfClick = (e: React.MouseEvent<HTMLAnchorElement>, url: string, name: string) => {
-    setDownloadError(null);
-  };
+  const currentYearData = newsArchive.find((d) => d.year === selectedYear);
+  const sections = currentYearData?.sections ?? [];
 
   return (
     <div>
@@ -95,24 +23,27 @@ const News = () => {
 
       <section className="py-16 bg-gradient-to-b from-secondary/30 via-background to-secondary/20">
         <div className="container-corporate max-w-4xl">
-          {/* Page heading — matches Financial Information style */}
+          {/* Page heading */}
           <h2 className="text-3xl font-bold text-foreground mb-8 flex items-center gap-3">
             <FileText className="h-6 w-6 text-primary" />
             News &amp; Announcements
           </h2>
 
-          {/* Year selector */}
-          <div className="mb-8">
-            <div className="relative inline-block">
-              <select
-                value={selectedYear}
-                onChange={(e) => setSelectedYear(e.target.value)}
-                className="appearance-none border border-border bg-card text-foreground px-4 py-2 pr-8 rounded-sm text-sm font-medium cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary"
+          {/* Year tabs */}
+          <div className="mb-8 flex flex-wrap gap-1.5">
+            {availableYears.map((year) => (
+              <button
+                key={year}
+                onClick={() => { setSelectedYear(year); setDownloadError(null); }}
+                className={`px-4 py-2 text-sm font-medium rounded-sm transition-all ${
+                  selectedYear === year
+                    ? 'bg-primary text-primary-foreground shadow-md'
+                    : 'bg-card text-foreground border border-border hover:bg-primary/10'
+                }`}
               >
-                <option value="2025">2025</option>
-              </select>
-              <ChevronDown className="absolute right-2 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground pointer-events-none" />
-            </div>
+                {year}
+              </button>
+            ))}
           </div>
 
           {/* Error banner */}
@@ -127,7 +58,6 @@ const News = () => {
           <div className="space-y-10">
             {sections.map((section) => (
               <div key={section.id}>
-                {/* Section Title — matches Financial Information year header style */}
                 <div className="bg-gradient-to-r from-primary to-accent text-primary-foreground font-bold text-lg px-4 py-2 mb-4">
                   {section.title}
                 </div>
@@ -156,7 +86,6 @@ const News = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                           download={item.name.replace(/\s+/g, '_') + '.pdf'}
-                          onClick={(e) => handlePdfClick(e, item.pdfUrl, item.name)}
                           className="text-sm text-primary hover:text-primary/80 hover:underline transition-colors leading-relaxed"
                         >
                           {item.name}
