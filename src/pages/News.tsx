@@ -29,21 +29,22 @@ const News = () => {
             News &amp; Announcements
           </h2>
 
-          {/* Year tabs */}
-          <div className="mb-8 flex flex-wrap gap-1.5">
-            {availableYears.map((year) => (
-              <button
-                key={year}
-                onClick={() => { setSelectedYear(year); setDownloadError(null); }}
-                className={`px-4 py-2 text-sm font-medium rounded-sm transition-all ${
-                  selectedYear === year
-                    ? 'bg-primary text-primary-foreground shadow-md'
-                    : 'bg-card text-foreground border border-border hover:bg-primary/10'
-                }`}
-              >
-                {year}
-              </button>
-            ))}
+          {/* Year dropdown */}
+          <div className="mb-8 flex items-center gap-3">
+            <label htmlFor="year-select" className="text-sm font-medium text-muted-foreground whitespace-nowrap">
+              Select Year:
+            </label>
+            <select
+              id="year-select"
+              value={selectedYear}
+              onChange={(e) => { setSelectedYear(e.target.value); setDownloadError(null); }}
+              className="h-10 px-4 pr-8 rounded-md border border-border bg-card text-foreground text-sm font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-colors cursor-pointer appearance-none"
+              style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 0.75rem center' }}
+            >
+              {availableYears.map((year) => (
+                <option key={year} value={year}>{year}</option>
+              ))}
+            </select>
           </div>
 
           {/* Error banner */}
