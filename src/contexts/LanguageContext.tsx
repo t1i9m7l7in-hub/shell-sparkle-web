@@ -111,13 +111,13 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.investments': '投資業務',
     
     // Hero
-    'hero.title': '蜆殼電器控股有限公司',
+    'hero.title': '蜆壳電器控股有限公司',
     'hero.subtitle': '自1950年代以來領先的消費電器製造商',
     'hero.cta': '了解更多',
     
     // Home sections
-    'home.welcome': '歡迎來到蜆殼電器',
-    'home.intro': '憑藉深厚的工業基礎和管理專長，蜆殼電器今天已將業務整合為三大領域。',
+    'home.welcome': '歡迎來到蜆壳電器',
+    'home.intro': '憑藉深厚的工業基礎和管理專長，蜆壳電器今天已將業務整合為三大領域。',
     'home.manufacturing': '製造業務',
     'home.manufacturing.desc': '全球最大的吊扇公司，年產能超過六百萬台。',
     'home.technology': '科技業務',
@@ -125,12 +125,12 @@ const translations: Record<Language, Record<string, string>> = {
     'home.investments': '投資業務',
     'home.investments.desc': '在房地產和運輸業務的戰略投資，實現長期增長。',
     'home.history': '六十年卓越歷史',
-    'home.history.desc': '自1950年代，蜆殼電器開創了香港的吊扇製造業，是首家將吊扇出口到國際市場的製造商。',
+    'home.history.desc': '自1950年代，蜆壳電器開創了香港的吊扇製造業，是首家將吊扇出口到國際市場的製造商。',
     
     // Corporate
     'corporate.title': '公司資訊',
     'corporate.overview': '概覽',
-    'corporate.overview.content': '蜆殼電器控股有限公司（「蜆殼電器」或「集團」）自1950年代以來一直是消費電器的領先製造商。憑藉深厚的工業基礎和管理專長，蜆殼電器今天已將業務整合為三大領域，即製造、科技和投資，為集團未來發展帶來更多協同優勢。',
+    'corporate.overview.content': '蜆壳電器控股有限公司（「蜆壳電器」或「集團」）自1950年代以來一直是消費電器的領先製造商。憑藉深厚的工業基礎和管理專長，蜆壳電器今天已將業務整合為三大領域，即製造、科技和投資，為集團未來發展帶來更多協同優勢。',
     'corporate.vision': '願景與使命',
     'corporate.vision.title': '願景',
     'corporate.vision.content': '成為全球公認的技術創新領導者',
@@ -140,7 +140,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Manufacturing
     'manufacturing.title': '製造業務',
-    'manufacturing.intro': '自1950年代，蜆殼電器開創了香港的吊扇製造業，是首家將吊扇出口到國際市場的製造商。',
+    'manufacturing.intro': '自1950年代，蜆壳電器開創了香港的吊扇製造業，是首家將吊扇出口到國際市場的製造商。',
     'manufacturing.capacity': '年產能超過六百萬台',
     'manufacturing.consumer': '消費電器',
     'manufacturing.consumer.desc': '1997年，集團把握機會收購了一家光通信產品公司，為集團創造了可觀的投資回報。',
@@ -159,7 +159,7 @@ const translations: Record<Language, Record<string, string>> = {
     'investments.property': '房地產',
     'investments.property.desc': '集團的房地產投資組合包括位於中國、香港和越南主要城市的商業和工業物業。',
     'investments.transport': '運輸業務',
-    'investments.transport.desc': '自1992年以來，蜆殼電器在運輸業務方面保持著持續增長的興趣，為集團提供穩定的收入貢獻。',
+    'investments.transport.desc': '自1992年以來，蜆壳電器在運輸業務方面保持著持續增長的興趣，為集團提供穩定的收入貢獻。',
     
     // Financial
     'financial.title': '財務資訊',
