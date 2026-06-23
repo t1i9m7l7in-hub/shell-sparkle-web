@@ -1,6 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import HeroSection from '@/components/ui/HeroSection';
 import SectionTitle from '@/components/ui/SectionTitle';
+import { renderShell } from '@/components/ShellChar';
 import { Target, Eye, Lightbulb, Award } from 'lucide-react';
 import heroManufacturing from '@/assets/hero-manufacturing.jpg';
 
@@ -23,7 +24,7 @@ const CorporateOverview = () => {
             
             <div className="prose prose-lg max-w-none text-muted-foreground">
               <p className="text-lg leading-relaxed mb-8">
-                {t('corporate.overview.content')}
+                {renderShell(t('corporate.overview.content'))}
               </p>
               
               <p className="text-lg leading-relaxed mb-8">
