@@ -35,8 +35,7 @@ export const ShellChar = ({ className }: { className?: string }) => (
         fontFeatureSettings: '"locl"',
       }}
       // Force SC locale glyph variant
-      // @ts-expect-error - SVG accepts xml:lang
-      xmlLang="zh-Hans"
+      {...({ 'xml:lang': 'zh-Hans' } as Record<string, string>)}
     >
       壳
     </text>
