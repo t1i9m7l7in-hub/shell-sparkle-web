@@ -3,6 +3,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import HeroSection from '@/components/ui/HeroSection';
 import SectionTitle from '@/components/ui/SectionTitle';
 import GroupCompanies from '@/components/ui/GroupCompanies';
+import { renderShell } from '@/components/ShellChar';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Factory, Cpu, Building2, TrendingUp } from 'lucide-react';
 import heroManufacturing from '@/assets/hero-manufacturing.jpg';
@@ -130,7 +131,7 @@ const Index = () => {
               </h2>
               <div className="w-16 h-1 bg-primary mb-8" />
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                {t('home.history.desc')}
+                {renderShell(t('home.history.desc'))}
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
                 The Group established the microwave ovens business in mid 1980's and quickly became the best seller in the China market. Such outstanding success attracted the leading home appliance company, Whirlpool Corporation to joint venture with SMC.
