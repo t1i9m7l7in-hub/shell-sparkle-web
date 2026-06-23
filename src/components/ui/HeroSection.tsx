@@ -1,9 +1,10 @@
 import { ReactNode } from 'react';
 import { cn } from '@/lib/utils';
+import { renderShell } from '@/components/ShellChar';
 
 interface HeroSectionProps {
-  title: string;
-  subtitle?: string;
+  title: ReactNode;
+  subtitle?: ReactNode;
   backgroundImage?: string;
   size?: 'sm' | 'md' | 'lg';
   children?: ReactNode;
@@ -48,11 +49,11 @@ const HeroSection = ({
       {/* Content */}
       <div className="relative z-10 container-corporate text-center text-primary-foreground px-4">
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in-up">
-          {title}
+          {renderShell(title)}
         </h1>
         {subtitle && (
           <p className="text-xl md:text-2xl lg:text-3xl text-primary-foreground/80 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-            {subtitle}
+            {renderShell(subtitle)}
           </p>
         )}
         {children && (
