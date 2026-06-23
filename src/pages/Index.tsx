@@ -3,6 +3,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import HeroSection from '@/components/ui/HeroSection';
 import SectionTitle from '@/components/ui/SectionTitle';
 import GroupCompanies from '@/components/ui/GroupCompanies';
+import { renderShell } from '@/components/ShellChar';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Factory, Cpu, Building2, TrendingUp } from 'lucide-react';
 import heroManufacturing from '@/assets/hero-manufacturing.jpg';
