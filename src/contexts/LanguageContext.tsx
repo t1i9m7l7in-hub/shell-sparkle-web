@@ -63,7 +63,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Technology
     'technology.title': 'Technology',
     'technology.semiconductor': 'Semiconductor Business',
-    'technology.semiconductor.desc': 'PFC is listed on Hong Kong GEM board on 7 Oct 2016 with stock code 8231.HK. PFC manufactures and sells power discrete semiconductors under its own \'PFC\' brand.',
+    'technology.semiconductor.desc': 'PFC manufactures and sells power discrete semiconductors under its own \'PFC\' brand.',
     'technology.patents': '46 Patents',
     'technology.patents.desc': 'Registered in the USA, Taiwan and the PRC with respect to the device structure and/or manufacturing method',
     
