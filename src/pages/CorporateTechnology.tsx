@@ -1,7 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import HeroSection from '@/components/ui/HeroSection';
 import SectionTitle from '@/components/ui/SectionTitle';
-import { Cpu, Award, Zap, Globe, TrendingUp } from 'lucide-react';
+import { Cpu, Award, Zap } from 'lucide-react';
 import heroTechnology from '@/assets/hero-technology.jpg';
 
 const CorporateTechnology = () => {
@@ -9,10 +9,9 @@ const CorporateTechnology = () => {
 
   const features = [
     { icon: Award, value: '46', label: 'Patents', description: 'USA, Taiwan, PRC' },
-    { icon: Globe, value: '2016', label: 'IPO Year', description: 'HK GEM Board' },
-    { icon: TrendingUp, value: '8231.HK', label: 'Stock Code', description: 'PFC Device' },
     { icon: Zap, value: 'R&D', label: 'Innovation', description: 'In-house Team' },
   ];
+
 
   return (
     <div>
@@ -27,11 +26,11 @@ const CorporateTechnology = () => {
         <div className="container-corporate">
           <SectionTitle 
             title={t('technology.semiconductor')}
-            subtitle="PFC is listed on Hong Kong GEM board with stock code 8231.HK"
           />
 
           {/* Stats Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
+          <div className="grid grid-cols-2 md:grid-cols-2 gap-6 mb-20 max-w-2xl mx-auto">
+
             {features.map((feature, index) => (
               <div key={index} className="card-corporate p-6 text-center">
                 <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">

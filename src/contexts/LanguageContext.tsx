@@ -63,7 +63,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Technology
     'technology.title': 'Technology',
     'technology.semiconductor': 'Semiconductor Business',
-    'technology.semiconductor.desc': 'PFC is listed on Hong Kong GEM board on 7 Oct 2016 with stock code 8231.HK. PFC manufactures and sells power discrete semiconductors under its own \'PFC\' brand.',
+    'technology.semiconductor.desc': 'PFC manufactures and sells power discrete semiconductors under its own \'PFC\' brand.',
     'technology.patents': '46 Patents',
     'technology.patents.desc': 'Registered in the USA, Taiwan and the PRC with respect to the device structure and/or manufacturing method',
     
@@ -150,7 +150,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Technology
     'technology.title': '科技業務',
     'technology.semiconductor': '半導體業務',
-    'technology.semiconductor.desc': 'PFC於2016年10月7日在香港創業板上市，股票代碼為8231.HK。PFC以自有品牌「PFC」製造和銷售功率分立半導體。',
+    'technology.semiconductor.desc': 'PFC以自有品牌「PFC」製造和銷售功率分立半導體。',
     'technology.patents': '46項專利',
     'technology.patents.desc': '在美國、台灣和中國註冊的器件結構和/或製造方法專利',
     
@@ -237,7 +237,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Technology
     'technology.title': '科技业务',
     'technology.semiconductor': '半导体业务',
-    'technology.semiconductor.desc': 'PFC于2016年10月7日在香港创业板上市，股票代码为8231.HK。PFC以自有品牌「PFC」制造和销售功率分立半导体。',
+    'technology.semiconductor.desc': 'PFC以自有品牌「PFC」制造和销售功率分立半导体。',
     'technology.patents': '46项专利',
     'technology.patents.desc': '在美国、台湾和中国注册的器件结构和/或制造方法专利',
     
