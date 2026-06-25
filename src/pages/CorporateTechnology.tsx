@@ -26,11 +26,11 @@ const CorporateTechnology = () => {
         <div className="container-corporate">
           <SectionTitle 
             title={t('technology.semiconductor')}
-            subtitle="PFC is listed on Hong Kong GEM board with stock code 8231.HK"
           />
 
           {/* Stats Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
+          <div className="grid grid-cols-2 md:grid-cols-2 gap-6 mb-20 max-w-2xl mx-auto">
+
             {features.map((feature, index) => (
               <div key={index} className="card-corporate p-6 text-center">
                 <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
