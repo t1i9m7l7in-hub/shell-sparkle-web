@@ -9,10 +9,9 @@ const CorporateTechnology = () => {
 
   const features = [
     { icon: Award, value: '46', label: 'Patents', description: 'USA, Taiwan, PRC' },
-    { icon: Globe, value: '2016', label: 'IPO Year', description: 'HK GEM Board' },
-    { icon: TrendingUp, value: '8231.HK', label: 'Stock Code', description: 'PFC Device' },
     { icon: Zap, value: 'R&D', label: 'Innovation', description: 'In-house Team' },
   ];
+
 
   return (
     <div>
