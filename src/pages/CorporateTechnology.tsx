@@ -1,7 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import HeroSection from '@/components/ui/HeroSection';
 import SectionTitle from '@/components/ui/SectionTitle';
-import { Cpu, Award, Zap, Globe, TrendingUp } from 'lucide-react';
+import { Cpu, Award, Zap } from 'lucide-react';
 import heroTechnology from '@/assets/hero-technology.jpg';
 
 const CorporateTechnology = () => {
