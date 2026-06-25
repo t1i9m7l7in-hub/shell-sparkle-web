@@ -150,7 +150,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Technology
     'technology.title': '科技業務',
     'technology.semiconductor': '半導體業務',
-    'technology.semiconductor.desc': 'PFC於2016年10月7日在香港創業板上市，股票代碼為8231.HK。PFC以自有品牌「PFC」製造和銷售功率分立半導體。',
+    'technology.semiconductor.desc': 'PFC以自有品牌「PFC」製造和銷售功率分立半導體。',
     'technology.patents': '46項專利',
     'technology.patents.desc': '在美國、台灣和中國註冊的器件結構和/或製造方法專利',
     
