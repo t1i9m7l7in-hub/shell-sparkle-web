@@ -237,7 +237,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Technology
     'technology.title': '科技业务',
     'technology.semiconductor': '半导体业务',
-    'technology.semiconductor.desc': 'PFC于2016年10月7日在香港创业板上市，股票代码为8231.HK。PFC以自有品牌「PFC」制造和销售功率分立半导体。',
+    'technology.semiconductor.desc': 'PFC以自有品牌「PFC」制造和销售功率分立半导体。',
     'technology.patents': '46项专利',
     'technology.patents.desc': '在美国、台湾和中国注册的器件结构和/或制造方法专利',
     
