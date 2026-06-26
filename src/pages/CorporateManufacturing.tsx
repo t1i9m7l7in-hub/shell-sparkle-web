@@ -18,7 +18,7 @@ const CorporateManufacturing = () => {
     <div>
       <HeroSection
         title={t('manufacturing.title')}
-        subtitle="World's Largest Ceiling Fan Manufacturer"
+        subtitle="Our Heritage & Global Legacy"
         backgroundImage={heroManufacturing}
         size="sm"
       />
@@ -26,13 +26,13 @@ const CorporateManufacturing = () => {
       <section className="py-24 bg-background">
         <div className="container-corporate">
           <div className="max-w-4xl mx-auto mb-16">
-            <SectionTitle 
-              title="Manufacturing Excellence" 
-              subtitle={t('manufacturing.intro')}
+            <SectionTitle
+              title="Manufacturing Excellence"
+              subtitle="Our Heritage & Global Legacy"
             />
-            
+
             <p className="text-lg text-muted-foreground leading-relaxed text-center">
-              Up till today, SMC has remained the world's largest ceiling fan company with annual capacity of over six million units. The Group established the microwave ovens business in mid 1980's and quickly became the best seller in the China market.
+              Founded in the 1950s, SMC began with a bold vision: to redefine home comfort. Starting as a pioneer in Hong Kong's electric fan industry, we proudly became the region's very first manufacturer to export premium ceiling fans to the global market under our signature "SMC" brand. For over seven decades, we have evolved from a visionary regional pioneer into a powerhouse of advanced OEM and Electronic Manufacturing Services (EMS). Today, SMC stands as a trusted global benchmark for manufacturing excellence, combining deep heritage with cutting-edge innovation.
             </p>
           </div>
 
@@ -56,13 +56,29 @@ const CorporateManufacturing = () => {
                 <div className="w-12 h-12 rounded-sm bg-primary/10 flex items-center justify-center">
                   <Factory className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold text-foreground">{t('manufacturing.consumer')}</h3>
+                <h3 className="text-xl font-bold text-foreground">Electric Tools & Fans</h3>
               </div>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                {t('manufacturing.consumer.desc')}
+                Reflecting our robust corporate growth, this core business division was officially regularized under SMC Electric Limited, which successfully listed on the Main Board of the Stock Exchange of Hong Kong in 2020 (Stock Code: 2381.HK). Backed by public-company governance and substantial financial transparency, our manufacturing ecosystem delivers versatile products split into two core business streams:
               </p>
+              <ul className="text-muted-foreground leading-relaxed mb-4 space-y-2 list-disc pl-5">
+                <li>
+                  <span className="font-semibold text-foreground">OEM/Contract Manufacturing:</span> We co-design and manufacture high-performance, rechargeable electric tools for premier international brands—including industrial cordless fans, heavy-duty work lights, and high-efficiency vacuum cleaners.
+                </li>
+                <li>
+                  <span className="font-semibold text-foreground">The "SMC" Brand Portfolio:</span> We continue to lead the domestic and international ventilation markets with our line of high-durability ceiling fans, wall-mounted fans, pedestal stand fans, and orbital fans.
+                </li>
+              </ul>
               <p className="text-muted-foreground leading-relaxed">
-                At the same time it allowed SMC to accumulate substantive know-how and experience in the manufacturing of optics and imaging products which represents an important value addition to the electro-optics specialization among the Group's EMS service offering today.
+                To know more:{' '}
+                <a
+                  href="https://www.smcelectric.com.hk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline font-medium"
+                >
+                  www.smcelectric.com.hk
+                </a>
               </p>
             </div>
 
@@ -71,13 +87,18 @@ const CorporateManufacturing = () => {
                 <div className="w-12 h-12 rounded-sm bg-accent/10 flex items-center justify-center">
                   <Cpu className="h-6 w-6 text-accent" />
                 </div>
-                <h3 className="text-xl font-bold text-foreground">{t('manufacturing.ems')}</h3>
+                <h3 className="text-xl font-bold text-foreground">Optics & Imaging Components</h3>
               </div>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                {t('manufacturing.ems.desc')}
+                Leveraging decades of specialized technical expertise and high-precision manufacturing, SMC is the partner of choice for the world's leading technology brands. We engineer and manufacture complex optics and imaging components that power global industries. Our core capabilities include:
               </p>
+              <ul className="text-muted-foreground leading-relaxed mb-4 space-y-2 list-disc pl-5">
+                <li>High-Performance Fusers</li>
+                <li>Precision Laser Scanning Units (LSU)</li>
+                <li>Advanced Paper Handling Options</li>
+              </ul>
               <p className="text-muted-foreground leading-relaxed">
-                Operated under SMC Multi-Media (H.K.) Limited, the EMS division currently produces laser scanner head modules, fuser modules for laser printers, optical lens, laser levelers, high performance diodes and rectifiers, and household security systems.
+                With SMC, global brands gain a competitive edge through flawless execution, rigorous quality control, and scalable production.
               </p>
             </div>
           </div>

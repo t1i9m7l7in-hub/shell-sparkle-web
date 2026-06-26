@@ -30,7 +30,7 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Home sections
     'home.welcome': 'Welcome to SMC',
-    'home.intro': 'Expanded upon its strong industrial foundation and management expertise, SMC has today consolidated its business operations into three major areas.',
+    'home.intro': 'Expanded upon its strong industrial foundation and management expertise, SMC has today consolidated its business operations into four major areas.',
     'home.manufacturing': 'Manufacturing',
     'home.manufacturing.desc': 'World\'s largest ceiling fan company with annual capacity of over six million units.',
     'home.technology': 'Technology',
