@@ -39,7 +39,7 @@ const Index = () => {
     { value: '1950s', label: 'Since', description: 'Decades of Excellence' },
     { value: '6M+', label: 'Units', description: 'Annual Capacity' },
     { value: '46', label: 'Patents', description: 'Registered Worldwide' },
-    { value: '800+', label: 'Taxis', description: 'Fleet Operation' },
+    { value: '500+', label: 'Taxis', description: 'Fleet Operation' },
   ];
 
   return (
