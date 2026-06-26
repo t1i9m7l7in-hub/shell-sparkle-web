@@ -14,7 +14,7 @@ const CorporateInvestments = () => {
     },
     {
       name: 'Citic Plaza, Guangzhou, China',
-      description: 'This 80-storey Grade A office building, with two 38-storey apartment blocks and a 40,000 square meters shopping arcades, is located conveniently next to the Kowloon-Canton Through Train Terminal in Tianhe. Citic Plaza is one of the most prominent landmarks in Southern China.',
+      description: 'This 80-storey Grade A office building, with two 38-storey apartment blocks and a 40,000 square meters shopping arcades, is located conveniently next to the Guangzhou East Railway Station Through Train Terminal in Tianhe. Citic Plaza is one of the most prominent landmarks in Southern China.',
     },
   ];
 
@@ -98,7 +98,7 @@ const CorporateInvestments = () => {
                 </div>
                 
                 <p className="text-muted-foreground leading-relaxed mt-6">
-                  Currently, the Group owns 100% of Guangzhou SMC Car Rental Company Ltd. and operates a fleet of about 800 taxis, all equipped with environmental friendly engines. The Group's vision is to become one of the largest taxi rental companies in Guangzhou.
+                  Currently, the Group owns 100% of Guangzhou SMC Car Rental Company Ltd. and operates a fleet of about 500 taxis, all equipped with environmental friendly engines. The Group's vision is to become one of the largest taxi rental companies in Guangzhou.
                 </p>
               </div>
             </div>
