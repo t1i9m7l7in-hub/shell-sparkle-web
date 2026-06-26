@@ -11,7 +11,7 @@ const CorporateManufacturing = () => {
     { icon: Wind, name: 'Ceiling Fans', capacity: '6M+ units annually' },
     { icon: Microwave, name: 'Microwave Ovens', capacity: 'Best seller in China' },
     { icon: Camera, name: 'Optical Products', capacity: 'CD, DVD, Camera lenses' },
-    { icon: Wrench, name: 'Industrial Products', capacity: 'Precision manufacturing' },
+    { icon: Wrench, name: 'Electronic Manufacturing Services', capacity: 'Laser scanner head modules' },
   ];
 
   return (

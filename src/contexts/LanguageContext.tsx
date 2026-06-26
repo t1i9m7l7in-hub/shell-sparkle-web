@@ -55,7 +55,7 @@ const translations: Record<Language, Record<string, string>> = {
     'manufacturing.title': 'Manufacturing',
     'manufacturing.intro': 'Since 1950s, SMC pioneered Hong Kong\'s ceiling fan manufacturing industry and was the first manufacturer to export ceiling fans to the international market.',
     'manufacturing.capacity': 'Annual capacity of over six million units',
-    'manufacturing.consumer': 'Consumer Electrical Appliance',
+    'manufacturing.consumer': 'Electrical Appliances',
     'manufacturing.consumer.desc': 'In 1997, the Group capitalized on an opportunity to acquire an optical communication products company that had created substantial investment return for the Group.',
     'manufacturing.ems': 'Electronic Manufacturing Services',
     'manufacturing.ems.desc': 'With its specialized technical competence and precision manufacturing experience, the EMS division is fully proficient to compete effectively for contracts from major brands in the world.',
