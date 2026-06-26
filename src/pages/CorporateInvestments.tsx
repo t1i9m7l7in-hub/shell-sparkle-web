@@ -9,7 +9,7 @@ const CorporateInvestments = () => {
 
   const properties = [
     {
-      name: 'SMC Industrial Building, Hong Kong',
+      name: 'Shell Industrial Building, Hong Kong',
       description: 'Home of the Group\'s headquarters, Shell Industrial Building was built in 1966 with approximately 12,000 square meters of gross floor area.',
     },
     {
