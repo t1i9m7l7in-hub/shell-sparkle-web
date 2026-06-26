@@ -1,18 +1,12 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import HeroSection from '@/components/ui/HeroSection';
 import SectionTitle from '@/components/ui/SectionTitle';
-import { Factory, Cpu, Wind, Microwave, Camera, Wrench } from 'lucide-react';
+import { Factory, Cpu } from 'lucide-react';
 import heroManufacturing from '@/assets/hero-manufacturing.jpg';
 
 const CorporateManufacturing = () => {
   const { t } = useLanguage();
 
-  const products = [
-    { icon: Wind, name: 'Ceiling Fans', capacity: '6M+ units annually' },
-    { icon: Microwave, name: 'Microwave Ovens', capacity: 'Best seller in China' },
-    { icon: Camera, name: 'Optical Products', capacity: 'CD, DVD, Camera lenses' },
-    { icon: Wrench, name: 'Electronic Manufacturing Services', capacity: 'Laser scanner head modules' },
-  ];
 
   return (
     <div>
@@ -36,18 +30,6 @@ const CorporateManufacturing = () => {
             </p>
           </div>
 
-          {/* Product Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
-            {products.map((product, index) => (
-              <div key={index} className="card-corporate p-6 text-center">
-                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                  <product.icon className="h-7 w-7 text-primary" />
-                </div>
-                <h3 className="font-bold text-foreground mb-2">{product.name}</h3>
-                <p className="text-sm text-muted-foreground">{product.capacity}</p>
-              </div>
-            ))}
-          </div>
 
           {/* Business Groups */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">

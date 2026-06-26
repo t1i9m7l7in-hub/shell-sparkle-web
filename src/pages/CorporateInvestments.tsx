@@ -84,7 +84,7 @@ const CorporateInvestments = () => {
                 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 p-6 bg-secondary rounded-sm">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-primary">800+</div>
+                    <div className="text-3xl font-bold text-primary">500+</div>
                     <div className="text-sm text-muted-foreground">Taxis in Fleet</div>
                   </div>
                   <div className="text-center">
