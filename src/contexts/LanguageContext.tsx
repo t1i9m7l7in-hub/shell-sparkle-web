@@ -127,6 +127,7 @@ const translations: Record<Language, Record<string, string>> = {
     'home.investments.desc': '在房地產和運輸業務的戰略投資，實現長期增長。',
     'home.history': '六十年卓越歷史',
     'home.history.desc': '自1950年代，蜆壳電器開創了香港的吊扇製造業，是首家將吊扇出口到國際市場的製造商。',
+    'home.history.desc2': '集團於1980年代中期建立微波爐業務，並迅速成為中國市場的暢銷產品。如此卓越的成功吸引了領先的家電公司惠而浦公司與SMC成立合資企業。',
     
     // Corporate
     'corporate.title': '公司資訊',
