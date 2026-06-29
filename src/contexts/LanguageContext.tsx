@@ -215,6 +215,7 @@ const translations: Record<Language, Record<string, string>> = {
     'home.investments.desc': '在房地产和运输业务的战略投资，实现长期增长。',
     'home.history': '六十年卓越历史',
     'home.history.desc': '自1950年代，蚬壳电器开创了香港的吊扇制造业，是首家将吊扇出口到国际市场的制造商。',
+    'home.history.desc2': '集团于1980年代中期建立微波炉业务，并迅速成为中国市场的畅销产品。如此卓越的成功吸引了领先的家电公司惠而浦公司与SMC成立合资企业。',
     
     // Corporate
     'corporate.title': '公司资讯',
