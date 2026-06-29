@@ -39,6 +39,7 @@ const translations: Record<Language, Record<string, string>> = {
     'home.investments.desc': 'Strategic investments in property and transportation for long-term growth.',
     'home.history': 'Six Decades of Excellence',
     'home.history.desc': 'Since 1950s, SMC pioneered Hong Kong\'s ceiling fan manufacturing industry and was the first manufacturer to export ceiling fans to the international market.',
+    'home.history.desc2': 'The Group established the microwave ovens business in mid 1980\'s and quickly became the best seller in the China market. Such outstanding success attracted the leading home appliance company, Whirlpool Corporation to joint venture with SMC.',
     
     // Corporate
     'corporate.title': 'Corporate Information',
