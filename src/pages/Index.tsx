@@ -104,7 +104,7 @@ const Index = () => {
                 {renderShell(t('home.history.desc'))}
               </p>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                The Group established the microwave ovens business in mid 1980's and quickly became the best seller in the China market. Such outstanding success attracted the leading home appliance company, Whirlpool Corporation to joint venture with SMC.
+                {renderShell(t('home.history.desc2'))}
               </p>
               <Link to="/corporate/overview">
                 <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
