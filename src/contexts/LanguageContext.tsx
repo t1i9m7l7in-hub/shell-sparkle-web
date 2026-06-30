@@ -300,7 +300,21 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.contact': '联系我们',
     'footer.privacy': '隐私政策',
     'footer.terms': '使用条款',
+    'footer.tagline': '自1950年代以来的领先消费电器制造商。',
+    'footer.address': '香港柴湾工业区利众街12号蚬壳工业大厦1楼',
+    'corporate.overview.p2': 'SMC在其核心传统产品制造业务中保持健康增长。同时，电子制造服务（EMS）及其他科技业务举措在集团未来的战略发展重点中日益重要。集团亦继续投资于具高潜力的商业项目，以实现长期盈利和业务扩张。',
+    'corporate.overview.p3': '集团的全球业务扩张得益于与国际知名企业的长期合作伙伴关系。',
+    'corporate.overview.p4': '尽管对迄今为止的卓越成就感到欣慰，管理层并未满足于现状。集团致力于不断追求创新，提升竞争优势，以期与合作伙伴共同实现长期盈利和业务增长。六十年的成功经验和稳健的财务状况，为SMC实现未来的崭新里程碑奠定了坚实基础。',
+    'corporate.areas.title': '三大业务领域',
+    'corporate.areas.subtitle': 'SMC已将其业务营运整合为三个具协同效应的领域',
+    'corporate.areas.manufacturing': '制造业务',
+    'corporate.areas.manufacturing.desc': '核心传统产品制造，包括吊扇、微波炉及消费电子产品。',
+    'corporate.areas.technology': '科技业务',
+    'corporate.areas.technology.desc': '具备先进研发能力的电子制造服务（EMS）与半导体业务。',
+    'corporate.areas.investment': '投资业务',
+    'corporate.areas.investment.desc': '在房地产和运输领域进行战略性投资，以实现长期盈利及扩张。',
   },
+
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
