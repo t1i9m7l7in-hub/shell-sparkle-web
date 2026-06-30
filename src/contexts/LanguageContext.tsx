@@ -96,7 +96,21 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.contact': 'Contact Us',
     'footer.privacy': 'Privacy Policy',
     'footer.terms': 'Terms of Use',
+    'footer.tagline': 'A leading manufacturer in consumer electrical appliances since 1950s.',
+    'footer.address': '1/F, Shell Industrial Building, 12 Lee Chung Street, Chai Wan Industrial District, Hong Kong.',
+    'corporate.overview.p2': 'SMC maintains healthy growth in its core traditional product manufacturing business. At the same time, the Electronic Manufacturing Services (EMS) and other technology business initiatives are increasing significance in the Group\'s strategic focus of development for the future. The Group also continues investing in high potential business ventures for long-term profitability and expansion.',
+    'corporate.overview.p3': 'The Group\'s global business expansions are supported by the long-term partnership with reputable global companies.',
+    'corporate.overview.p4': 'While gladly embraces the outstanding accomplishments to date, the management is not content to rest on the laurels. The Group is committed to continual pursuit for innovation, sharpens the competitive edge in order to achieve long-term profitability and business growth with its partners. Six decades of success and solid financial position provides SMC a strong foundation to accomplish new milestones ahead.',
+    'corporate.areas.title': 'Three Major Business Areas',
+    'corporate.areas.subtitle': 'SMC has consolidated its business operations into three synergetic areas',
+    'corporate.areas.manufacturing': 'Manufacturing',
+    'corporate.areas.manufacturing.desc': 'Core traditional product manufacturing including ceiling fans, microwave ovens, and consumer electronics.',
+    'corporate.areas.technology': 'Technology',
+    'corporate.areas.technology.desc': 'Electronic Manufacturing Services (EMS) and semiconductor business with advanced R&D capabilities.',
+    'corporate.areas.investment': 'Investment',
+    'corporate.areas.investment.desc': 'Strategic investments in property and transportation for long-term profitability and expansion.',
   },
+
   'zh-TW': {
     // Navigation
     'nav.home': '首頁',
