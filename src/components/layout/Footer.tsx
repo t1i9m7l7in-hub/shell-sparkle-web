@@ -21,8 +21,9 @@ const Footer = () => {
               />
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              A leading manufacturer in consumer electrical appliances since 1950s.
+              {t('footer.tagline')}
             </p>
+
           </div>
 
           {/* Quick Links */}
