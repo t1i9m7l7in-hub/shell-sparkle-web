@@ -28,16 +28,17 @@ const CorporateOverview = () => {
               </p>
               
               <p className="text-lg leading-relaxed mb-8">
-                SMC maintains healthy growth in its core traditional product manufacturing business. At the same time, the Electronic Manufacturing Services (EMS) and other technology business initiatives are increasing significance in the Group's strategic focus of development for the future. The Group also continues investing in high potential business ventures for long-term profitability and expansion.
+                {t('corporate.overview.p2')}
               </p>
               
               <p className="text-lg leading-relaxed mb-8">
-                The Group's global business expansions are supported by the long-term partnership with reputable global companies.
+                {t('corporate.overview.p3')}
               </p>
               
               <p className="text-lg leading-relaxed">
-                While gladly embraces the outstanding accomplishments to date, the management is not content to rest on the laurels. The Group is committed to continual pursuit for innovation, sharpens the competitive edge in order to achieve long-term profitability and business growth with its partners. Six decades of success and solid financial position provides SMC a strong foundation to accomplish new milestones ahead.
+                {t('corporate.overview.p4')}
               </p>
+
             </div>
           </div>
         </div>
@@ -47,28 +48,29 @@ const CorporateOverview = () => {
       <section className="py-20 bg-secondary">
         <div className="container-corporate">
           <SectionTitle 
-            title="Three Major Business Areas" 
-            subtitle="SMC has consolidated its business operations into three synergetic areas"
+            title={t('corporate.areas.title')} 
+            subtitle={t('corporate.areas.subtitle')}
           />
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             {[
               {
                 icon: Target,
-                title: 'Manufacturing',
-                description: 'Core traditional product manufacturing including ceiling fans, microwave ovens, and consumer electronics.',
+                title: t('corporate.areas.manufacturing'),
+                description: t('corporate.areas.manufacturing.desc'),
               },
               {
                 icon: Lightbulb,
-                title: 'Technology',
-                description: 'Electronic Manufacturing Services (EMS) and semiconductor business with advanced R&D capabilities.',
+                title: t('corporate.areas.technology'),
+                description: t('corporate.areas.technology.desc'),
               },
               {
                 icon: Award,
-                title: 'Investment',
-                description: 'Strategic investments in property and transportation for long-term profitability and expansion.',
+                title: t('corporate.areas.investment'),
+                description: t('corporate.areas.investment.desc'),
               },
             ].map((area, index) => (
+
               <div key={index} className="card-corporate p-8 text-center">
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
                   <area.icon className="h-8 w-8 text-primary" />

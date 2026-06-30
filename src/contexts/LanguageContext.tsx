@@ -96,7 +96,21 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.contact': 'Contact Us',
     'footer.privacy': 'Privacy Policy',
     'footer.terms': 'Terms of Use',
+    'footer.tagline': 'A leading manufacturer in consumer electrical appliances since 1950s.',
+    'footer.address': '1/F, Shell Industrial Building, 12 Lee Chung Street, Chai Wan Industrial District, Hong Kong.',
+    'corporate.overview.p2': 'SMC maintains healthy growth in its core traditional product manufacturing business. At the same time, the Electronic Manufacturing Services (EMS) and other technology business initiatives are increasing significance in the Group\'s strategic focus of development for the future. The Group also continues investing in high potential business ventures for long-term profitability and expansion.',
+    'corporate.overview.p3': 'The Group\'s global business expansions are supported by the long-term partnership with reputable global companies.',
+    'corporate.overview.p4': 'While gladly embraces the outstanding accomplishments to date, the management is not content to rest on the laurels. The Group is committed to continual pursuit for innovation, sharpens the competitive edge in order to achieve long-term profitability and business growth with its partners. Six decades of success and solid financial position provides SMC a strong foundation to accomplish new milestones ahead.',
+    'corporate.areas.title': 'Three Major Business Areas',
+    'corporate.areas.subtitle': 'SMC has consolidated its business operations into three synergetic areas',
+    'corporate.areas.manufacturing': 'Manufacturing',
+    'corporate.areas.manufacturing.desc': 'Core traditional product manufacturing including ceiling fans, microwave ovens, and consumer electronics.',
+    'corporate.areas.technology': 'Technology',
+    'corporate.areas.technology.desc': 'Electronic Manufacturing Services (EMS) and semiconductor business with advanced R&D capabilities.',
+    'corporate.areas.investment': 'Investment',
+    'corporate.areas.investment.desc': 'Strategic investments in property and transportation for long-term profitability and expansion.',
   },
+
   'zh-TW': {
     // Navigation
     'nav.home': '首頁',
@@ -184,7 +198,21 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.contact': '聯繫我們',
     'footer.privacy': '隱私政策',
     'footer.terms': '使用條款',
+    'footer.tagline': '自1950年代以來的領先消費電器製造商。',
+    'footer.address': '香港柴灣工業區利眾街12號蜆壳工業大廈1樓',
+    'corporate.overview.p2': 'SMC在其核心傳統產品製造業務中保持健康增長。同時，電子製造服務（EMS）及其他科技業務舉措在集團未來的戰略發展重點中日益重要。集團亦繼續投資於具高潛力的商業項目，以實現長期盈利和業務擴張。',
+    'corporate.overview.p3': '集團的全球業務擴張得益於與國際知名企業的長期合作夥伴關係。',
+    'corporate.overview.p4': '儘管對迄今為止的卓越成就感到欣慰，管理層並未滿足於現狀。集團致力於不斷追求創新，提升競爭優勢，以期與合作夥伴共同實現長期盈利和業務增長。六十年的成功經驗和穩健的財務狀況，為SMC實現未來的嶄新里程碑奠定了堅實基礎。',
+    'corporate.areas.title': '三大業務領域',
+    'corporate.areas.subtitle': 'SMC已將其業務營運整合為三個具協同效應的領域',
+    'corporate.areas.manufacturing': '製造業務',
+    'corporate.areas.manufacturing.desc': '核心傳統產品製造，包括吊扇、微波爐及消費電子產品。',
+    'corporate.areas.technology': '科技業務',
+    'corporate.areas.technology.desc': '具備先進研發能力的電子製造服務（EMS）與半導體業務。',
+    'corporate.areas.investment': '投資業務',
+    'corporate.areas.investment.desc': '在房地產和運輸領域進行戰略性投資，以實現長期盈利及擴張。',
   },
+
   'zh-CN': {
     // Navigation
     'nav.home': '首页',
@@ -272,7 +300,21 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.contact': '联系我们',
     'footer.privacy': '隐私政策',
     'footer.terms': '使用条款',
+    'footer.tagline': '自1950年代以来的领先消费电器制造商。',
+    'footer.address': '香港柴湾工业区利众街12号蚬壳工业大厦1楼',
+    'corporate.overview.p2': 'SMC在其核心传统产品制造业务中保持健康增长。同时，电子制造服务（EMS）及其他科技业务举措在集团未来的战略发展重点中日益重要。集团亦继续投资于具高潜力的商业项目，以实现长期盈利和业务扩张。',
+    'corporate.overview.p3': '集团的全球业务扩张得益于与国际知名企业的长期合作伙伴关系。',
+    'corporate.overview.p4': '尽管对迄今为止的卓越成就感到欣慰，管理层并未满足于现状。集团致力于不断追求创新，提升竞争优势，以期与合作伙伴共同实现长期盈利和业务增长。六十年的成功经验和稳健的财务状况，为SMC实现未来的崭新里程碑奠定了坚实基础。',
+    'corporate.areas.title': '三大业务领域',
+    'corporate.areas.subtitle': 'SMC已将其业务营运整合为三个具协同效应的领域',
+    'corporate.areas.manufacturing': '制造业务',
+    'corporate.areas.manufacturing.desc': '核心传统产品制造，包括吊扇、微波炉及消费电子产品。',
+    'corporate.areas.technology': '科技业务',
+    'corporate.areas.technology.desc': '具备先进研发能力的电子制造服务（EMS）与半导体业务。',
+    'corporate.areas.investment': '投资业务',
+    'corporate.areas.investment.desc': '在房地产和运输领域进行战略性投资，以实现长期盈利及扩张。',
   },
+
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
