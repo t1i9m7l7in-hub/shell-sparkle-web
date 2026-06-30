@@ -198,7 +198,21 @@ const translations: Record<Language, Record<string, string>> = {
     'footer.contact': '聯繫我們',
     'footer.privacy': '隱私政策',
     'footer.terms': '使用條款',
+    'footer.tagline': '自1950年代以來的領先消費電器製造商。',
+    'footer.address': '香港柴灣工業區利眾街12號蜆壳工業大廈1樓',
+    'corporate.overview.p2': 'SMC在其核心傳統產品製造業務中保持健康增長。同時，電子製造服務（EMS）及其他科技業務舉措在集團未來的戰略發展重點中日益重要。集團亦繼續投資於具高潛力的商業項目，以實現長期盈利和業務擴張。',
+    'corporate.overview.p3': '集團的全球業務擴張得益於與國際知名企業的長期合作夥伴關係。',
+    'corporate.overview.p4': '儘管對迄今為止的卓越成就感到欣慰，管理層並未滿足於現狀。集團致力於不斷追求創新，提升競爭優勢，以期與合作夥伴共同實現長期盈利和業務增長。六十年的成功經驗和穩健的財務狀況，為SMC實現未來的嶄新里程碑奠定了堅實基礎。',
+    'corporate.areas.title': '三大業務領域',
+    'corporate.areas.subtitle': 'SMC已將其業務營運整合為三個具協同效應的領域',
+    'corporate.areas.manufacturing': '製造業務',
+    'corporate.areas.manufacturing.desc': '核心傳統產品製造，包括吊扇、微波爐及消費電子產品。',
+    'corporate.areas.technology': '科技業務',
+    'corporate.areas.technology.desc': '具備先進研發能力的電子製造服務（EMS）與半導體業務。',
+    'corporate.areas.investment': '投資業務',
+    'corporate.areas.investment.desc': '在房地產和運輸領域進行戰略性投資，以實現長期盈利及擴張。',
   },
+
   'zh-CN': {
     // Navigation
     'nav.home': '首页',
