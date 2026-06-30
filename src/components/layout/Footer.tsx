@@ -87,9 +87,9 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-muted-foreground">
-                  1/F, Shell Industrial Building, 12 Lee Chung Street,<br />
-                  Chai Wan Industrial District, Hong Kong.
+                  {t('footer.address')}
                 </span>
+
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary flex-shrink-0" />
