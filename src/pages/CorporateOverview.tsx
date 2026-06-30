@@ -28,16 +28,17 @@ const CorporateOverview = () => {
               </p>
               
               <p className="text-lg leading-relaxed mb-8">
-                SMC maintains healthy growth in its core traditional product manufacturing business. At the same time, the Electronic Manufacturing Services (EMS) and other technology business initiatives are increasing significance in the Group's strategic focus of development for the future. The Group also continues investing in high potential business ventures for long-term profitability and expansion.
+                {t('corporate.overview.p2')}
               </p>
               
               <p className="text-lg leading-relaxed mb-8">
-                The Group's global business expansions are supported by the long-term partnership with reputable global companies.
+                {t('corporate.overview.p3')}
               </p>
               
               <p className="text-lg leading-relaxed">
-                While gladly embraces the outstanding accomplishments to date, the management is not content to rest on the laurels. The Group is committed to continual pursuit for innovation, sharpens the competitive edge in order to achieve long-term profitability and business growth with its partners. Six decades of success and solid financial position provides SMC a strong foundation to accomplish new milestones ahead.
+                {t('corporate.overview.p4')}
               </p>
+
             </div>
           </div>
         </div>
