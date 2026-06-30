@@ -48,28 +48,29 @@ const CorporateOverview = () => {
       <section className="py-20 bg-secondary">
         <div className="container-corporate">
           <SectionTitle 
-            title="Three Major Business Areas" 
-            subtitle="SMC has consolidated its business operations into three synergetic areas"
+            title={t('corporate.areas.title')} 
+            subtitle={t('corporate.areas.subtitle')}
           />
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             {[
               {
                 icon: Target,
-                title: 'Manufacturing',
-                description: 'Core traditional product manufacturing including ceiling fans, microwave ovens, and consumer electronics.',
+                title: t('corporate.areas.manufacturing'),
+                description: t('corporate.areas.manufacturing.desc'),
               },
               {
                 icon: Lightbulb,
-                title: 'Technology',
-                description: 'Electronic Manufacturing Services (EMS) and semiconductor business with advanced R&D capabilities.',
+                title: t('corporate.areas.technology'),
+                description: t('corporate.areas.technology.desc'),
               },
               {
                 icon: Award,
-                title: 'Investment',
-                description: 'Strategic investments in property and transportation for long-term profitability and expansion.',
+                title: t('corporate.areas.investment'),
+                description: t('corporate.areas.investment.desc'),
               },
             ].map((area, index) => (
+
               <div key={index} className="card-corporate p-8 text-center">
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
                   <area.icon className="h-8 w-8 text-primary" />
