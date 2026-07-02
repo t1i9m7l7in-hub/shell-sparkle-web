@@ -125,6 +125,38 @@ const translations: Record<Language, Record<string, string>> = {
     'corporate.areas.technology.desc': 'Electronic Manufacturing Services (EMS) and semiconductor business with advanced R&D capabilities.',
     'corporate.areas.investment': 'Investment',
     'corporate.areas.investment.desc': 'Strategic investments in property and transportation for long-term profitability and expansion.',
+
+    // Technology Page - Semiconductor Section
+    'technology.semi.title': 'Semiconductor Business',
+    'technology.semi.subtitle': 'Power Discrete Semiconductors',
+    'technology.semi.p1': 'PFC manufactures and sells power discrete semiconductors under its own \'PFC\' brand into the PRC, Taiwan and other Asian regions markets. PFC\'s power discrete semiconductors mainly comprise Schottky diodes, a type of rectifier, which are packaged in a variety of package types.',
+    'technology.semi.p2': 'In 2015, the Group completed the development of its first MOSFET product model, a type of transistor. PFC\'s MOSFET is currently at the stage of product portfolio establishment, and the Group will continue its research and development effort to develop more product models with different specifications.',
+    'technology.semi.applications.title': 'Applications',
+    'technology.semi.applications.desc': 'The Group\'s power discrete semiconductors are used as rectifiers in the power supply units of a variety of electronic applications ranging from consumer electronic devices, such as mobile phones, notebook computers and LED televisions, to automotive and solar cells. They achieve reduction in energy loss over power supply, thereby enhancing the energy efficiency of the electronic applications.',
+    'technology.semi.rnd.title': 'Research & Development',
+    'technology.semi.rnd.desc': 'PFC maintains its own research and development team in Taiwan, with a primary focus on improvement of product performance, new product and technology development. PFC\'s power discrete semiconductors utilised its own patented device structure and manufacturing method, developed by PFC\'s in-house research and development team.',
+
+    // Investments Page
+    'investments.intro': 'In addition to the core industrial and technology businesses, SMC maintains active interests in selective projects that provide long term and strategic value to the Group, including Property and Transportation Business.',
+    'investments.property.title': 'Property',
+    'investments.property.subtitle': 'Commercial and industrial properties in prime locations',
+    'investments.property.desc': 'The Group\'s property investment portfolio consists of commercial and industrial properties located in prime cities in the PRC, Hong Kong, and Vietnam. The portfolio provides stable rental income and long-term capital growth prospects.',
+    'investments.property.card1.title': 'Shell Industrial Building, Hong Kong',
+    'investments.property.card1.desc': 'Home of the Group\'s headquarters, Shell Industrial Building was built in 1966 with approximately 12,000 square meters of gross floor area.',
+    'investments.property.card2.title': 'Citic Plaza, Guangzhou, China',
+    'investments.property.card2.desc': 'This 80-storey Grade A office building, with two 38-storey apartment blocks and a 40,000 square meters shopping arcades, is located conveniently next to the Guangzhou East Railway Station Through Train Terminal in Tianhe. Citic Plaza is one of the most prominent landmarks in Southern China.',
+    'investments.transport.title': 'Transportation Business',
+    'investments.transport.subtitle': 'Taxi Fleet Operations in Guangzhou',
+    'investments.transport.company': 'Guangzhou SMC Car Rental Company Ltd.',
+    'investments.transport.subsidiary': '100% Owned Subsidiary',
+    'investments.transport.p1': 'Since 1992 when the Group first invested in a joint venture to own and operate 200 taxis in Guangzhou, China, SMC has maintained a growing interest in the transportation business that provides stable income contribution.',
+    'investments.transport.p2': 'Currently, the Group owns 100% of Guangzhou SMC Car Rental Company Ltd. and operates a fleet of about 500 taxis, all equipped with environmental friendly engines. The Group\'s vision is to become one of the largest taxi rental companies in Guangzhou.',
+    'investments.transport.stat1.title': '500+',
+    'investments.transport.stat1.desc': 'Taxis in Fleet',
+    'investments.transport.stat2.title': '1992',
+    'investments.transport.stat2.desc': 'Since',
+    'investments.transport.stat3.title': '100%',
+    'investments.transport.stat3.desc': 'Eco-friendly Engines',
   },
 
   'zh-TW': {
