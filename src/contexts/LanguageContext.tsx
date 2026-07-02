@@ -87,7 +87,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Investments
     'investments.title': 'Investments',
     'investments.property': 'Property',
-    'investments.property.desc': 'The Group\'s property investment portfolio consists of commercial and industrial properties located in prime cities in the PRC, Hong Kong, and Vietnam.',
+    
     'investments.transport': 'Transportation Business',
     'investments.transport.desc': 'Since 1992, SMC has maintained a growing interest in the transportation business that provides stable income contribution.',
     
@@ -125,6 +125,38 @@ const translations: Record<Language, Record<string, string>> = {
     'corporate.areas.technology.desc': 'Electronic Manufacturing Services (EMS) and semiconductor business with advanced R&D capabilities.',
     'corporate.areas.investment': 'Investment',
     'corporate.areas.investment.desc': 'Strategic investments in property and transportation for long-term profitability and expansion.',
+
+    // Technology Page - Semiconductor Section
+    'technology.semi.title': 'Semiconductor Business',
+    'technology.semi.subtitle': 'Power Discrete Semiconductors',
+    'technology.semi.p1': 'PFC manufactures and sells power discrete semiconductors under its own \'PFC\' brand into the PRC, Taiwan and other Asian regions markets. PFC\'s power discrete semiconductors mainly comprise Schottky diodes, a type of rectifier, which are packaged in a variety of package types.',
+    'technology.semi.p2': 'In 2015, the Group completed the development of its first MOSFET product model, a type of transistor. PFC\'s MOSFET is currently at the stage of product portfolio establishment, and the Group will continue its research and development effort to develop more product models with different specifications.',
+    'technology.semi.applications.title': 'Applications',
+    'technology.semi.applications.desc': 'The Group\'s power discrete semiconductors are used as rectifiers in the power supply units of a variety of electronic applications ranging from consumer electronic devices, such as mobile phones, notebook computers and LED televisions, to automotive and solar cells. They achieve reduction in energy loss over power supply, thereby enhancing the energy efficiency of the electronic applications.',
+    'technology.semi.rnd.title': 'Research & Development',
+    'technology.semi.rnd.desc': 'PFC maintains its own research and development team in Taiwan, with a primary focus on improvement of product performance, new product and technology development. PFC\'s power discrete semiconductors utilised its own patented device structure and manufacturing method, developed by PFC\'s in-house research and development team.',
+
+    // Investments Page
+    'investments.intro': 'In addition to the core industrial and technology businesses, SMC maintains active interests in selective projects that provide long term and strategic value to the Group, including Property and Transportation Business.',
+    'investments.property.title': 'Property',
+    'investments.property.subtitle': 'Commercial and industrial properties in prime locations',
+    'investments.property.desc': 'The Group\'s property investment portfolio consists of commercial and industrial properties located in prime cities in the PRC, Hong Kong, and Vietnam. The portfolio provides stable rental income and long-term capital growth prospects.',
+    'investments.property.card1.title': 'Shell Industrial Building, Hong Kong',
+    'investments.property.card1.desc': 'Home of the Group\'s headquarters, Shell Industrial Building was built in 1966 with approximately 12,000 square meters of gross floor area.',
+    'investments.property.card2.title': 'Citic Plaza, Guangzhou, China',
+    'investments.property.card2.desc': 'This 80-storey Grade A office building, with two 38-storey apartment blocks and a 40,000 square meters shopping arcades, is located conveniently next to the Guangzhou East Railway Station Through Train Terminal in Tianhe. Citic Plaza is one of the most prominent landmarks in Southern China.',
+    'investments.transport.title': 'Transportation Business',
+    'investments.transport.subtitle': 'Taxi Fleet Operations in Guangzhou',
+    'investments.transport.company': 'Guangzhou SMC Car Rental Company Ltd.',
+    'investments.transport.subsidiary': '100% Owned Subsidiary',
+    'investments.transport.p1': 'Since 1992 when the Group first invested in a joint venture to own and operate 200 taxis in Guangzhou, China, SMC has maintained a growing interest in the transportation business that provides stable income contribution.',
+    'investments.transport.p2': 'Currently, the Group owns 100% of Guangzhou SMC Car Rental Company Ltd. and operates a fleet of about 500 taxis, all equipped with environmental friendly engines. The Group\'s vision is to become one of the largest taxi rental companies in Guangzhou.',
+    'investments.transport.stat1.title': '500+',
+    'investments.transport.stat1.desc': 'Taxis in Fleet',
+    'investments.transport.stat2.title': '1992',
+    'investments.transport.stat2.desc': 'Since',
+    'investments.transport.stat3.title': '100%',
+    'investments.transport.stat3.desc': 'Eco-friendly Engines',
   },
 
   'zh-TW': {
@@ -205,7 +237,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Investments
     'investments.title': '投資業務',
     'investments.property': '房地產',
-    'investments.property.desc': '集團的房地產投資組合包括位於中國、香港和越南主要城市的商業和工業物業。',
+    
     'investments.transport': '運輸業務',
     'investments.transport.desc': '自1992年以來，蜆壳電器在運輸業務方面保持著持續增長的興趣，為集團提供穩定的收入貢獻。',
     
@@ -243,6 +275,38 @@ const translations: Record<Language, Record<string, string>> = {
     'corporate.areas.technology.desc': '具備先進研發能力的電子製造服務（EMS）與半導體業務。',
     'corporate.areas.investment': '投資業務',
     'corporate.areas.investment.desc': '在房地產和運輸領域進行戰略性投資，以實現長期盈利及擴張。',
+
+    // Technology Page - Semiconductor Section
+    'technology.semi.title': '半導體業務',
+    'technology.semi.subtitle': '功率分立半導體',
+    'technology.semi.p1': 'PFC以自有品牌「PFC」製造並向中國大陸、台灣及其他亞洲地區市場銷售功率分立半導體。PFC的功率分立半導體主要包括肖特基二極管（一種整流器），並採用多種封裝類型。',
+    'technology.semi.p2': '2015年，集團完成了首個MOSFET（一種晶體管）產品型號的開發。PFC的MOSFET目前正處於產品組合建立階段，集團將繼續投入研發，開發具備不同規格的更多產品型號。',
+    'technology.semi.applications.title': '應用領域',
+    'technology.semi.applications.desc': '集團的功率分立半導體被用作多種電子應用電源單元中的整流器，涵蓋從消費電子設備（如手機、筆記本電腦和LED電視）到汽車和太陽能電池等領域。它們能有效減少電源能量損耗，從而提高電子應用的能源效率。',
+    'technology.semi.rnd.title': '研發',
+    'technology.semi.rnd.desc': 'PFC在台灣擁有專屬的研發團隊，主要專注於提升產品性能、開發新產品及新技術。PFC的功率分立半導體採用了由其內部研發團隊開發的專利器件結構和製造方法。',
+
+    // Investments Page
+    'investments.intro': '除了核心的工業和科技業務外，SMC還對能為集團提供長期戰略價值的精選項目保持積極興趣，包括房地產和運輸業務。',
+    'investments.property.title': '房地產',
+    'investments.property.subtitle': '位於黃金地段的商業和工業物業',
+    'investments.property.desc': '集團的房地產投資組合包括位於中國大陸、香港和越南主要城市的商業和工業物業。該投資組合提供了穩定的租金收入和長期的資本增長前景。',
+    'investments.property.card1.title': '香港蜆殼工業大廈',
+    'investments.property.card1.desc': '蜆殼工業大廈建於1966年，是集團總部的所在地，總建築面積約為12,000平方米。',
+    'investments.property.card2.title': '中國廣州中信廣場',
+    'investments.property.card2.desc': '這座80層高的甲級辦公大樓，連同兩棟38層的公寓樓和一個40,000平方米的購物商場，交通便利，毗鄰天河區的廣州東站直通車總站。中信廣場是華南地區最著名的地標之一。',
+    'investments.transport.title': '運輸業務',
+    'investments.transport.subtitle': '廣州出租車車隊營運',
+    'investments.transport.company': '廣州蜆殼汽車租賃有限公司',
+    'investments.transport.subsidiary': '全資附屬公司',
+    'investments.transport.p1': '自1992年集團首次投資合資企業在中國廣州擁有並營運200輛出租車以來，SMC在運輸業務方面保持著持續增長的興趣，為集團提供穩定的收入貢獻。',
+    'investments.transport.p2': '目前，集團擁有廣州蜆殼汽車租賃有限公司100%的股權，並營運一支約500輛出租車的車隊，所有車輛均配備環保引擎。集團的願景是成為廣州最大的出租車租賃公司之一。',
+    'investments.transport.stat1.title': '500+',
+    'investments.transport.stat1.desc': '車隊規模',
+    'investments.transport.stat2.title': '1992',
+    'investments.transport.stat2.desc': '起始年份',
+    'investments.transport.stat3.title': '100%',
+    'investments.transport.stat3.desc': '環保引擎',
   },
 
   'zh-CN': {
@@ -323,7 +387,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Investments
     'investments.title': '投资业务',
     'investments.property': '房地产',
-    'investments.property.desc': '集团的房地产投资组合包括位于中国、香港和越南主要城市的商业和工业物业。',
+    
     'investments.transport': '运输业务',
     'investments.transport.desc': '自1992年以来，蚬壳电器在运输业务方面保持着持续增长的兴趣，为集团提供稳定的收入贡献。',
     
@@ -361,6 +425,38 @@ const translations: Record<Language, Record<string, string>> = {
     'corporate.areas.technology.desc': '具备先进研发能力的电子制造服务（EMS）与半导体业务。',
     'corporate.areas.investment': '投资业务',
     'corporate.areas.investment.desc': '在房地产和运输领域进行战略性投资，以实现长期盈利及扩张。',
+
+    // Technology Page - Semiconductor Section
+    'technology.semi.title': '半导体业务',
+    'technology.semi.subtitle': '功率分立半导体',
+    'technology.semi.p1': 'PFC以自有品牌"PFC"制造并向中国大陆、台湾及其他亚洲地区市场销售功率分立半导体。PFC的功率分立半导体主要包括肖特基二极管（一种整流器），并采用多种封装类型。',
+    'technology.semi.p2': '2015年，集团完成了首个MOSFET（一种晶体管）产品型号的开发。PFC的MOSFET目前正处于产品组合建立阶段，集团将继续投入研发，开发具备不同规格的更多产品型号。',
+    'technology.semi.applications.title': '应用领域',
+    'technology.semi.applications.desc': '集团的功率分立半导体被用作多种电子应用电源单元中的整流器，涵盖从消费电子设备（如手机、笔记本电脑和LED电视）到汽车和太阳能电池等领域。它们能有效减少电源能量损耗，从而提高电子应用的能源效率。',
+    'technology.semi.rnd.title': '研发',
+    'technology.semi.rnd.desc': 'PFC在台湾拥有专属的研发团队，主要专注于提升产品性能、开发新产品及新技术。PFC的功率分立半导体采用了由其内部研发团队开发的专利器件结构和制造方法。',
+
+    // Investments Page
+    'investments.intro': '除了核心的工业和科技业务外，SMC还对能为集团提供长期战略价值的精选项目保持积极兴趣，包括房地产和运输业务。',
+    'investments.property.title': '房地产',
+    'investments.property.subtitle': '位于黄金地段的商业和工业物业',
+    'investments.property.desc': '集团的房地产投资组合包括位于中国大陆、香港和越南主要城市的商业和工业物业。该投资组合提供了稳定的租金收入和长期的资本增长前景。',
+    'investments.property.card1.title': '香港蚬壳工业大厦',
+    'investments.property.card1.desc': '蚬壳工业大厦建于1966年，是集团总部的所在地，总建筑面积约为12,000平方米。',
+    'investments.property.card2.title': '中国广州中信广场',
+    'investments.property.card2.desc': '这座80层高的甲级办公大楼，连同两栋38层的公寓楼和一个40,000平方米的购物商场，交通便利，毗邻天河区的广州东站直通车总站。中信广场是华南地区最著名的地标之一。',
+    'investments.transport.title': '运输业务',
+    'investments.transport.subtitle': '广州出租车车队营运',
+    'investments.transport.company': '广州蚬壳汽车租赁有限公司',
+    'investments.transport.subsidiary': '全资附属公司',
+    'investments.transport.p1': '自1992年集团首次投资合资企业在中国广州拥有并营运200辆出租车以来，SMC在运输业务方面保持着持续增长的兴趣，为集团提供稳定的收入贡献。',
+    'investments.transport.p2': '目前，集团拥有广州蚬壳汽车租赁有限公司100%的股权，并营运一支约500辆出租车的车队，所有车辆均配备环保引擎。集团的愿景是成为广州最大的出租车租赁公司之一。',
+    'investments.transport.stat1.title': '500+',
+    'investments.transport.stat1.desc': '车队规模',
+    'investments.transport.stat2.title': '1992',
+    'investments.transport.stat2.desc': '起始年份',
+    'investments.transport.stat3.title': '100%',
+    'investments.transport.stat3.desc': '环保引擎',
   },
 
 };
