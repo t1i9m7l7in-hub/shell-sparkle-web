@@ -387,7 +387,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Investments
     'investments.title': '投资业务',
     'investments.property': '房地产',
-    'investments.property.desc': '集团的房地产投资组合包括位于中国、香港和越南主要城市的商业和工业物业。',
+    
     'investments.transport': '运输业务',
     'investments.transport.desc': '自1992年以来，蚬壳电器在运输业务方面保持着持续增长的兴趣，为集团提供稳定的收入贡献。',
     
@@ -425,6 +425,38 @@ const translations: Record<Language, Record<string, string>> = {
     'corporate.areas.technology.desc': '具备先进研发能力的电子制造服务（EMS）与半导体业务。',
     'corporate.areas.investment': '投资业务',
     'corporate.areas.investment.desc': '在房地产和运输领域进行战略性投资，以实现长期盈利及扩张。',
+
+    // Technology Page - Semiconductor Section
+    'technology.semi.title': '半导体业务',
+    'technology.semi.subtitle': '功率分立半导体',
+    'technology.semi.p1': 'PFC以自有品牌"PFC"制造并向中国大陆、台湾及其他亚洲地区市场销售功率分立半导体。PFC的功率分立半导体主要包括肖特基二极管（一种整流器），并采用多种封装类型。',
+    'technology.semi.p2': '2015年，集团完成了首个MOSFET（一种晶体管）产品型号的开发。PFC的MOSFET目前正处于产品组合建立阶段，集团将继续投入研发，开发具备不同规格的更多产品型号。',
+    'technology.semi.applications.title': '应用领域',
+    'technology.semi.applications.desc': '集团的功率分立半导体被用作多种电子应用电源单元中的整流器，涵盖从消费电子设备（如手机、笔记本电脑和LED电视）到汽车和太阳能电池等领域。它们能有效减少电源能量损耗，从而提高电子应用的能源效率。',
+    'technology.semi.rnd.title': '研发',
+    'technology.semi.rnd.desc': 'PFC在台湾拥有专属的研发团队，主要专注于提升产品性能、开发新产品及新技术。PFC的功率分立半导体采用了由其内部研发团队开发的专利器件结构和制造方法。',
+
+    // Investments Page
+    'investments.intro': '除了核心的工业和科技业务外，SMC还对能为集团提供长期战略价值的精选项目保持积极兴趣，包括房地产和运输业务。',
+    'investments.property.title': '房地产',
+    'investments.property.subtitle': '位于黄金地段的商业和工业物业',
+    'investments.property.desc': '集团的房地产投资组合包括位于中国大陆、香港和越南主要城市的商业和工业物业。该投资组合提供了稳定的租金收入和长期的资本增长前景。',
+    'investments.property.card1.title': '香港蚬壳工业大厦',
+    'investments.property.card1.desc': '蚬壳工业大厦建于1966年，是集团总部的所在地，总建筑面积约为12,000平方米。',
+    'investments.property.card2.title': '中国广州中信广场',
+    'investments.property.card2.desc': '这座80层高的甲级办公大楼，连同两栋38层的公寓楼和一个40,000平方米的购物商场，交通便利，毗邻天河区的广州东站直通车总站。中信广场是华南地区最著名的地标之一。',
+    'investments.transport.title': '运输业务',
+    'investments.transport.subtitle': '广州出租车车队营运',
+    'investments.transport.company': '广州蚬壳汽车租赁有限公司',
+    'investments.transport.subsidiary': '全资附属公司',
+    'investments.transport.p1': '自1992年集团首次投资合资企业在中国广州拥有并营运200辆出租车以来，SMC在运输业务方面保持着持续增长的兴趣，为集团提供稳定的收入贡献。',
+    'investments.transport.p2': '目前，集团拥有广州蚬壳汽车租赁有限公司100%的股权，并营运一支约500辆出租车的车队，所有车辆均配备环保引擎。集团的愿景是成为广州最大的出租车租赁公司之一。',
+    'investments.transport.stat1.title': '500+',
+    'investments.transport.stat1.desc': '车队规模',
+    'investments.transport.stat2.title': '1992',
+    'investments.transport.stat2.desc': '起始年份',
+    'investments.transport.stat3.title': '100%',
+    'investments.transport.stat3.desc': '环保引擎',
   },
 
 };
