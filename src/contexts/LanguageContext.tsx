@@ -87,7 +87,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Investments
     'investments.title': 'Investments',
     'investments.property': 'Property',
-    'investments.property.desc': 'The Group\'s property investment portfolio consists of commercial and industrial properties located in prime cities in the PRC, Hong Kong, and Vietnam.',
+    
     'investments.transport': 'Transportation Business',
     'investments.transport.desc': 'Since 1992, SMC has maintained a growing interest in the transportation business that provides stable income contribution.',
     
