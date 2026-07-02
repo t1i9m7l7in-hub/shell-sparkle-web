@@ -237,7 +237,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Investments
     'investments.title': '投資業務',
     'investments.property': '房地產',
-    'investments.property.desc': '集團的房地產投資組合包括位於中國、香港和越南主要城市的商業和工業物業。',
+    
     'investments.transport': '運輸業務',
     'investments.transport.desc': '自1992年以來，蜆壳電器在運輸業務方面保持著持續增長的興趣，為集團提供穩定的收入貢獻。',
     
@@ -275,6 +275,38 @@ const translations: Record<Language, Record<string, string>> = {
     'corporate.areas.technology.desc': '具備先進研發能力的電子製造服務（EMS）與半導體業務。',
     'corporate.areas.investment': '投資業務',
     'corporate.areas.investment.desc': '在房地產和運輸領域進行戰略性投資，以實現長期盈利及擴張。',
+
+    // Technology Page - Semiconductor Section
+    'technology.semi.title': '半導體業務',
+    'technology.semi.subtitle': '功率分立半導體',
+    'technology.semi.p1': 'PFC以自有品牌「PFC」製造並向中國大陸、台灣及其他亞洲地區市場銷售功率分立半導體。PFC的功率分立半導體主要包括肖特基二極管（一種整流器），並採用多種封裝類型。',
+    'technology.semi.p2': '2015年，集團完成了首個MOSFET（一種晶體管）產品型號的開發。PFC的MOSFET目前正處於產品組合建立階段，集團將繼續投入研發，開發具備不同規格的更多產品型號。',
+    'technology.semi.applications.title': '應用領域',
+    'technology.semi.applications.desc': '集團的功率分立半導體被用作多種電子應用電源單元中的整流器，涵蓋從消費電子設備（如手機、筆記本電腦和LED電視）到汽車和太陽能電池等領域。它們能有效減少電源能量損耗，從而提高電子應用的能源效率。',
+    'technology.semi.rnd.title': '研發',
+    'technology.semi.rnd.desc': 'PFC在台灣擁有專屬的研發團隊，主要專注於提升產品性能、開發新產品及新技術。PFC的功率分立半導體採用了由其內部研發團隊開發的專利器件結構和製造方法。',
+
+    // Investments Page
+    'investments.intro': '除了核心的工業和科技業務外，SMC還對能為集團提供長期戰略價值的精選項目保持積極興趣，包括房地產和運輸業務。',
+    'investments.property.title': '房地產',
+    'investments.property.subtitle': '位於黃金地段的商業和工業物業',
+    'investments.property.desc': '集團的房地產投資組合包括位於中國大陸、香港和越南主要城市的商業和工業物業。該投資組合提供了穩定的租金收入和長期的資本增長前景。',
+    'investments.property.card1.title': '香港蜆殼工業大廈',
+    'investments.property.card1.desc': '蜆殼工業大廈建於1966年，是集團總部的所在地，總建築面積約為12,000平方米。',
+    'investments.property.card2.title': '中國廣州中信廣場',
+    'investments.property.card2.desc': '這座80層高的甲級辦公大樓，連同兩棟38層的公寓樓和一個40,000平方米的購物商場，交通便利，毗鄰天河區的廣州東站直通車總站。中信廣場是華南地區最著名的地標之一。',
+    'investments.transport.title': '運輸業務',
+    'investments.transport.subtitle': '廣州出租車車隊營運',
+    'investments.transport.company': '廣州蜆殼汽車租賃有限公司',
+    'investments.transport.subsidiary': '全資附屬公司',
+    'investments.transport.p1': '自1992年集團首次投資合資企業在中國廣州擁有並營運200輛出租車以來，SMC在運輸業務方面保持著持續增長的興趣，為集團提供穩定的收入貢獻。',
+    'investments.transport.p2': '目前，集團擁有廣州蜆殼汽車租賃有限公司100%的股權，並營運一支約500輛出租車的車隊，所有車輛均配備環保引擎。集團的願景是成為廣州最大的出租車租賃公司之一。',
+    'investments.transport.stat1.title': '500+',
+    'investments.transport.stat1.desc': '車隊規模',
+    'investments.transport.stat2.title': '1992',
+    'investments.transport.stat2.desc': '起始年份',
+    'investments.transport.stat3.title': '100%',
+    'investments.transport.stat3.desc': '環保引擎',
   },
 
   'zh-CN': {
