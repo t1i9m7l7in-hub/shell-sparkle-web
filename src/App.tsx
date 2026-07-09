@@ -13,7 +13,7 @@ import CorporateTechnology from "./pages/CorporateTechnology";
 import CorporateInvestments from "./pages/CorporateInvestments";
 import FinancialInformation from "./pages/FinancialInformation";
 import News from "./pages/News";
-import CompanyDirectory from "./pages/CompanyDirectory";
+import ContactUs from "./pages/ContactUs";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -36,7 +36,8 @@ const App = () => (
               <Route path="/corporate/investments" element={<CorporateInvestments />} />
               <Route path="/financial" element={<FinancialInformation />} />
               <Route path="/news" element={<News />} />
-              <Route path="/directory" element={<CompanyDirectory />} />
+              <Route path="/contact_us" element={<ContactUs />} />
+              <Route path="/directory" element={<ContactUs />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Layout>

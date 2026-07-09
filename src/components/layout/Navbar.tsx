@@ -38,7 +38,7 @@ const Navbar = () => {
     },
     { path: '/financial', label: t('nav.financial') },
     { path: '/news', label: t('nav.news') },
-    { path: '/directory', label: t('nav.directory') },
+    { path: '/contact_us', label: t('nav.directory') },
   ];
 
   const isActive = (path: string) => location.pathname === path;

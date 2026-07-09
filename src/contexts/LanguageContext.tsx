@@ -15,7 +15,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.corporate': 'Corporate Information',
     'nav.financial': 'Financial Information',
     'nav.news': 'News',
-    'nav.directory': 'Company Directory',
+    'nav.directory': 'Contact Us',
     'nav.about': 'About',
     'nav.overview': 'Overview',
     'nav.vision': 'Vision & Mission',
@@ -103,7 +103,7 @@ const translations: Record<Language, Record<string, string>> = {
     'news.archive': 'News Archive',
     
     // Directory
-    'directory.title': 'Company Directory',
+    'directory.title': 'Contact Us',
     'directory.hq': 'Headquarters',
     'directory.subsidiaries': 'Subsidiaries',
     
@@ -165,7 +165,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.corporate': '公司資訊',
     'nav.financial': '財務資訊',
     'nav.news': '新聞',
-    'nav.directory': '公司目錄',
+    'nav.directory': '聯絡我們',
     'nav.about': '關於我們',
     'nav.overview': '概覽',
     'nav.vision': '願景與使命',
@@ -253,7 +253,7 @@ const translations: Record<Language, Record<string, string>> = {
     'news.archive': '新聞存檔',
     
     // Directory
-    'directory.title': '公司目錄',
+    'directory.title': '聯絡我們',
     'directory.hq': '總部',
     'directory.subsidiaries': '附屬公司',
     
@@ -315,7 +315,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.corporate': '公司资讯',
     'nav.financial': '财务资讯',
     'nav.news': '新闻',
-    'nav.directory': '公司目录',
+    'nav.directory': '联系我们',
     'nav.about': '关于我们',
     'nav.overview': '概览',
     'nav.vision': '愿景与使命',
@@ -403,7 +403,7 @@ const translations: Record<Language, Record<string, string>> = {
     'news.archive': '新闻存档',
     
     // Directory
-    'directory.title': '公司目录',
+    'directory.title': '联系我们',
     'directory.hq': '总部',
     'directory.subsidiaries': '附属公司',
     
