@@ -44,7 +44,7 @@ const CorporateTechnology = () => {
               </p>
             </div>
 
-            <div className="card-corporate p-8">
+            <div className="card-corporate p-8 mb-8">
               <h3 className="text-xl font-bold text-foreground mb-4">
                 {t('technology.semi.rnd.title')}
               </h3>
@@ -52,6 +52,18 @@ const CorporateTechnology = () => {
                 {t('technology.semi.rnd.desc')}
               </p>
             </div>
+
+            <p className="text-muted-foreground leading-relaxed text-center">
+              {t('technology.semi.link').replace('www.pfc-device.com', '')}
+              <a
+                href="https://www.pfc-device.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline font-medium"
+              >
+                www.pfc-device.com
+              </a>
+            </p>
           </div>
         </div>
       </section>

@@ -82,8 +82,19 @@ const CorporateManufacturing = () => {
                 <li>{t('manufacturing.optics.bullet2')}</li>
                 <li>{t('manufacturing.optics.bullet3')}</li>
               </ul>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed mb-4">
                 {t('manufacturing.optics.footer')}
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                {t('manufacturing.optics.link').replace('www.smc-multimedia.com', '')}
+                <a
+                  href="https://www.smc-multimedia.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline font-medium"
+                >
+                  www.smc-multimedia.com
+                </a>
               </p>
             </div>
           </div>
