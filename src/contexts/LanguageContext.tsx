@@ -15,7 +15,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.corporate': 'Corporate Information',
     'nav.financial': 'Financial Information',
     'nav.news': 'News',
-    'nav.directory': 'Company Directory',
+    'nav.directory': 'Contact Us',
     'nav.about': 'About',
     'nav.overview': 'Overview',
     'nav.vision': 'Vision & Mission',
@@ -76,6 +76,7 @@ const translations: Record<Language, Record<string, string>> = {
     'manufacturing.optics.bullet2': 'Precision Laser Scanning Units (LSU)',
     'manufacturing.optics.bullet3': 'Advanced Paper Handling Options',
     'manufacturing.optics.footer': 'With SMC, global brands gain a competitive edge through flawless execution, rigorous quality control, and scalable production.',
+    'manufacturing.optics.link': 'To know more: www.smc-multimedia.com',
     
     // Technology
     'technology.title': 'Technology',
@@ -103,7 +104,7 @@ const translations: Record<Language, Record<string, string>> = {
     'news.archive': 'News Archive',
     
     // Directory
-    'directory.title': 'Company Directory',
+    'directory.title': 'Contact Us',
     'directory.hq': 'Headquarters',
     'directory.subsidiaries': 'Subsidiaries',
     
@@ -135,6 +136,7 @@ const translations: Record<Language, Record<string, string>> = {
     'technology.semi.applications.desc': 'The Group\'s power discrete semiconductors are used as rectifiers in the power supply units of a variety of electronic applications ranging from consumer electronic devices, such as mobile phones, notebook computers and LED televisions, to automotive and solar cells. They achieve reduction in energy loss over power supply, thereby enhancing the energy efficiency of the electronic applications.',
     'technology.semi.rnd.title': 'Research & Development',
     'technology.semi.rnd.desc': 'PFC maintains its own research and development team in Taiwan, with a primary focus on improvement of product performance, new product and technology development. PFC\'s power discrete semiconductors utilised its own patented device structure and manufacturing method, developed by PFC\'s in-house research and development team.',
+    'technology.semi.link': 'To know more: www.pfc-device.com',
 
     // Investments Page
     'investments.intro': 'In addition to the core industrial and technology businesses, SMC maintains active interests in selective projects that provide long term and strategic value to the Group, including Property and Transportation Business.',
@@ -165,7 +167,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.corporate': '公司資訊',
     'nav.financial': '財務資訊',
     'nav.news': '新聞',
-    'nav.directory': '公司目錄',
+    'nav.directory': '聯絡我們',
     'nav.about': '關於我們',
     'nav.overview': '概覽',
     'nav.vision': '願景與使命',
@@ -226,6 +228,7 @@ const translations: Record<Language, Record<string, string>> = {
     'manufacturing.optics.bullet2': '精密激光掃描單元 (LSU)',
     'manufacturing.optics.bullet3': '高級紙張處理選件 (Advanced Paper Handling Options)',
     'manufacturing.optics.footer': '通過與 SMC 合作，全球品牌憑藉完美的執行力、嚴格的質量控制和可擴展的生產能力，從而獲得競爭優勢。',
+    'manufacturing.optics.link': '了解更多：www.smc-multimedia.com',
     
     // Technology
     'technology.title': '科技業務',
@@ -253,7 +256,7 @@ const translations: Record<Language, Record<string, string>> = {
     'news.archive': '新聞存檔',
     
     // Directory
-    'directory.title': '公司目錄',
+    'directory.title': '聯絡我們',
     'directory.hq': '總部',
     'directory.subsidiaries': '附屬公司',
     
@@ -285,6 +288,7 @@ const translations: Record<Language, Record<string, string>> = {
     'technology.semi.applications.desc': '集團的功率分立半導體被用作多種電子應用電源單元中的整流器，涵蓋從消費電子設備（如手機、筆記本電腦和LED電視）到汽車和太陽能電池等領域。它們能有效減少電源能量損耗，從而提高電子應用的能源效率。',
     'technology.semi.rnd.title': '研發',
     'technology.semi.rnd.desc': 'PFC在台灣擁有專屬的研發團隊，主要專注於提升產品性能、開發新產品及新技術。PFC的功率分立半導體採用了由其內部研發團隊開發的專利器件結構和製造方法。',
+    'technology.semi.link': '了解更多：www.pfc-device.com',
 
     // Investments Page
     'investments.intro': '除了核心的工業和科技業務外，SMC還對能為集團提供長期戰略價值的精選項目保持積極興趣，包括房地產和運輸業務。',
@@ -315,7 +319,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.corporate': '公司资讯',
     'nav.financial': '财务资讯',
     'nav.news': '新闻',
-    'nav.directory': '公司目录',
+    'nav.directory': '联系我们',
     'nav.about': '关于我们',
     'nav.overview': '概览',
     'nav.vision': '愿景与使命',
@@ -376,6 +380,7 @@ const translations: Record<Language, Record<string, string>> = {
     'manufacturing.optics.bullet2': '精密激光扫描单元 (LSU)',
     'manufacturing.optics.bullet3': '高级纸张处理选件 (Advanced Paper Handling Options)',
     'manufacturing.optics.footer': '通过与 SMC 合作，全球品牌凭借完美的执行力、严格的质量控制和可扩展的生产能力，从而获得竞争优势。',
+    'manufacturing.optics.link': '了解更多：www.smc-multimedia.com',
     
     // Technology
     'technology.title': '科技业务',
@@ -403,7 +408,7 @@ const translations: Record<Language, Record<string, string>> = {
     'news.archive': '新闻存档',
     
     // Directory
-    'directory.title': '公司目录',
+    'directory.title': '联系我们',
     'directory.hq': '总部',
     'directory.subsidiaries': '附属公司',
     
@@ -435,6 +440,7 @@ const translations: Record<Language, Record<string, string>> = {
     'technology.semi.applications.desc': '集团的功率分立半导体被用作多种电子应用电源单元中的整流器，涵盖从消费电子设备（如手机、笔记本电脑和LED电视）到汽车和太阳能电池等领域。它们能有效减少电源能量损耗，从而提高电子应用的能源效率。',
     'technology.semi.rnd.title': '研发',
     'technology.semi.rnd.desc': 'PFC在台湾拥有专属的研发团队，主要专注于提升产品性能、开发新产品及新技术。PFC的功率分立半导体采用了由其内部研发团队开发的专利器件结构和制造方法。',
+    'technology.semi.link': '了解更多：www.pfc-device.com',
 
     // Investments Page
     'investments.intro': '除了核心的工业和科技业务外，SMC还对能为集团提供长期战略价值的精选项目保持积极兴趣，包括房地产和运输业务。',

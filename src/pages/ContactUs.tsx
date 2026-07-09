@@ -4,7 +4,7 @@ import SectionTitle from '@/components/ui/SectionTitle';
 import { Building2, MapPin, Phone, Mail, Globe, Printer } from 'lucide-react';
 import heroInvestments from '@/assets/hero-investments.jpg';
 
-const CompanyDirectory = () => {
+const ContactUs = () => {
   const { t } = useLanguage();
 
   const headquarters = {
@@ -212,4 +212,4 @@ const CompanyDirectory = () => {
   );
 };
 
-export default CompanyDirectory;
+export default ContactUs;
