@@ -1,6 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import HeroSection from '@/components/ui/HeroSection';
 import SectionTitle from '@/components/ui/SectionTitle';
+import { renderShell } from '@/components/ShellChar';
 import { Eye, Target, Rocket, Zap } from 'lucide-react';
 import heroTechnology from '@/assets/hero-technology.jpg';
 
@@ -31,7 +32,7 @@ const CorporateVision = () => {
                   </div>
                   <div className="w-16 h-1 bg-primary mb-6" />
                   <p className="text-2xl text-foreground font-medium leading-relaxed">
-                    {t('corporate.vision.content')}
+                    {renderShell(t('corporate.vision.content'))}
                   </p>
                 </div>
                 <div className="bg-gradient-to-br from-primary/20 to-accent/10 rounded-sm p-12 flex items-center justify-center">
@@ -57,7 +58,7 @@ const CorporateVision = () => {
                   </div>
                   <h3 className="text-lg font-bold text-foreground mb-4">Strategic Excellence</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    {t('corporate.mission.content1')}
+                    {renderShell(t('corporate.mission.content1'))}
                   </p>
                 </div>
                 
@@ -67,7 +68,7 @@ const CorporateVision = () => {
                   </div>
                   <h3 className="text-lg font-bold text-foreground mb-4">Innovation Focus</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    {t('corporate.mission.content2')}
+                    {renderShell(t('corporate.mission.content2'))}
                   </p>
                 </div>
               </div>

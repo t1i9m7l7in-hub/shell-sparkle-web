@@ -1,6 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import HeroSection from '@/components/ui/HeroSection';
 import SectionTitle from '@/components/ui/SectionTitle';
+import { renderShell } from '@/components/ShellChar';
 import { Cpu } from 'lucide-react';
 import heroTechnology from '@/assets/hero-technology.jpg';
 
@@ -28,10 +29,10 @@ const CorporateTechnology = () => {
                 {t('technology.semi.subtitle')}
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                {t('technology.semi.p1')}
+                {renderShell(t('technology.semi.p1'))}
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                {t('technology.semi.p2')}
+                {renderShell(t('technology.semi.p2'))}
               </p>
             </div>
 
@@ -40,7 +41,7 @@ const CorporateTechnology = () => {
                 {t('technology.semi.applications.title')}
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                {t('technology.semi.applications.desc')}
+                {renderShell(t('technology.semi.applications.desc'))}
               </p>
             </div>
 
@@ -49,7 +50,7 @@ const CorporateTechnology = () => {
                 {t('technology.semi.rnd.title')}
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                {t('technology.semi.rnd.desc')}
+                {renderShell(t('technology.semi.rnd.desc'))}
               </p>
             </div>
 
