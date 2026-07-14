@@ -1,6 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import HeroSection from '@/components/ui/HeroSection';
 import SectionTitle from '@/components/ui/SectionTitle';
+import { renderShell } from '@/components/ShellChar';
 import { Factory, Cpu } from 'lucide-react';
 import heroManufacturing from '@/assets/hero-manufacturing.jpg';
 
@@ -25,10 +26,10 @@ const CorporateManufacturing = () => {
             />
 
             <p className="text-lg text-muted-foreground leading-relaxed text-center mb-6">
-              {t('manufacturing.heritage.p1')}
+              {renderShell(t('manufacturing.heritage.p1'))}
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed text-center">
-              {t('manufacturing.heritage.p2')}
+              {renderShell(t('manufacturing.heritage.p2'))}
             </p>
           </div>
 

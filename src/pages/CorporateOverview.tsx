@@ -28,15 +28,15 @@ const CorporateOverview = () => {
               </p>
               
               <p className="text-lg leading-relaxed mb-8">
-                {t('corporate.overview.p2')}
+                {renderShell(t('corporate.overview.p2'))}
               </p>
               
               <p className="text-lg leading-relaxed mb-8">
-                {t('corporate.overview.p3')}
+                {renderShell(t('corporate.overview.p3'))}
               </p>
               
               <p className="text-lg leading-relaxed">
-                {t('corporate.overview.p4')}
+                {renderShell(t('corporate.overview.p4'))}
               </p>
 
             </div>

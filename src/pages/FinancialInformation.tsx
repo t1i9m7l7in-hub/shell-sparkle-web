@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import HeroSection from '@/components/ui/HeroSection';
+import { renderShell } from '@/components/ShellChar';
 import { FileText, Download, Shield, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const annualReports = [
@@ -187,7 +188,7 @@ const FinancialInformation = () => {
               {t('financial.governance')}
             </h2>
             <p className="text-muted-foreground leading-relaxed text-lg">
-              Shell Electric Holdings Limited, with over 60 years of history since its founding, remains committed to maintaining high standards of corporate governance. The Company believes that good corporate governance practices are essential for creating long-term shareholder value and maintaining the confidence of shareholders and other stakeholders.
+              {renderShell('Shell Electric Holdings Limited, with over 60 years of history since its founding, remains committed to maintaining high standards of corporate governance. The Company believes that good corporate governance practices are essential for creating long-term shareholder value and maintaining the confidence of shareholders and other stakeholders.')}
             </p>
           </div>
         </div>
