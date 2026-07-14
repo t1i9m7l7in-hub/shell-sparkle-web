@@ -49,9 +49,9 @@ export const ShellChar = ({ className }: { className?: string }) => (
  */
 export const renderShell = (input: ReactNode): ReactNode => {
   if (typeof input !== 'string') return input;
-  if (!input.includes('壳')) return input;
+  if (!/[殼壳]/.test(input)) return input;
 
-  const parts = input.split('壳');
+  const parts = input.split(/[殼壳]/);
   return parts.map((part, i) => (
     <Fragment key={i}>
       {part}
