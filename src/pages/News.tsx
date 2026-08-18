@@ -3,9 +3,16 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import HeroSection from '@/components/ui/HeroSection';
 import { FileText, Play, AlertCircle } from 'lucide-react';
 import { newsArchive, availableYears } from '@/data/newsData';
+import { formatNewsDate, getLocalizedNewsName } from '@/data/newsI18n';
+
+const SECTION_KEYS: Record<string, string> = {
+  investors: 'news.section.investors',
+  other: 'news.section.other',
+  request: 'news.section.request',
+};
 
 const News = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [selectedYear, setSelectedYear] = useState('2025');
   const [downloadError, setDownloadError] = useState<string | null>(null);
 
@@ -16,7 +23,7 @@ const News = () => {
     <div>
       <HeroSection
         title={t('news.title')}
-        subtitle="Latest Updates & Announcements"
+        subtitle={t('news.subtitle')}
         backgroundImage="/images/hero-corporate-bg.jpg"
         size="sm"
       />
@@ -26,13 +33,13 @@ const News = () => {
           {/* Page heading */}
           <h2 className="text-3xl font-bold text-foreground mb-8 flex items-center gap-3">
             <FileText className="h-6 w-6 text-primary" />
-            News &amp; Announcements
+            {t('news.header')}
           </h2>
 
           {/* Year dropdown */}
           <div className="mb-8 flex items-center gap-3">
             <label htmlFor="year-select" className="text-sm font-medium text-muted-foreground whitespace-nowrap">
-              Select Year:
+              {t('news.select.year')}
             </label>
             <select
               id="year-select"
@@ -60,16 +67,16 @@ const News = () => {
             {sections.map((section) => (
               <div key={section.id}>
                 <div className="bg-gradient-to-r from-primary to-accent text-primary-foreground font-bold text-lg px-4 py-2 mb-4">
-                  {section.title}
+                  {SECTION_KEYS[section.id] ? t(SECTION_KEYS[section.id]) : section.title}
                 </div>
 
                 {section.items.length > 0 ? (
                   <div className="border border-border rounded-sm overflow-hidden bg-card">
                     {/* Table Header */}
                     <div className="grid grid-cols-[100px_1fr_70px] bg-gradient-to-r from-primary to-accent border-b border-border px-4 py-2.5">
-                      <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide">Date</span>
-                      <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide">Name</span>
-                      <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide text-right">Download</span>
+                      <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide">{t('news.table.date')}</span>
+                      <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide">{t('news.table.name')}</span>
+                      <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide text-right">{t('news.table.download')}</span>
                     </div>
 
                     {/* Table Rows */}
@@ -80,7 +87,7 @@ const News = () => {
                       >
                         <div className="flex items-center gap-1.5 text-sm text-foreground font-medium">
                           <Play className="h-3 w-3 fill-primary text-primary flex-shrink-0" />
-                          <span className="whitespace-nowrap">{item.date}</span>
+                          <span className="whitespace-nowrap">{formatNewsDate(item.date, language)}</span>
                         </div>
                         <a
                           href={item.pdfUrl}
@@ -89,7 +96,7 @@ const News = () => {
                           download={item.name.replace(/\s+/g, '_') + '.pdf'}
                           className="text-sm text-primary hover:text-primary/80 hover:underline transition-colors leading-relaxed"
                         >
-                          {item.name}
+                          {getLocalizedNewsName(item.name, language)}
                         </a>
                         <a
                           href={item.pdfUrl}
@@ -98,7 +105,7 @@ const News = () => {
                           title={`Download ${item.name} PDF`}
                         >
                           <FileText className="h-4 w-4" />
-                          <span className="text-xs font-semibold">PDF</span>
+                          <span className="text-xs font-semibold">{t('news.pdf')}</span>
                         </a>
                       </div>
                     ))}
@@ -106,12 +113,12 @@ const News = () => {
                 ) : (
                   <div className="border border-border rounded-sm overflow-hidden bg-card">
                     <div className="grid grid-cols-[100px_1fr_70px] bg-gradient-to-r from-primary to-accent border-b border-border px-4 py-2.5">
-                      <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide">Date</span>
-                      <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide">Name</span>
-                      <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide text-right">Download</span>
+                      <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide">{t('news.table.date')}</span>
+                      <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide">{t('news.table.name')}</span>
+                      <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide text-right">{t('news.table.download')}</span>
                     </div>
                     <div className="px-4 py-6 text-center text-sm text-muted-foreground">
-                      No items available.
+                      {t('news.empty')}
                     </div>
                   </div>
                 )}

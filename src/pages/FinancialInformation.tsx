@@ -40,7 +40,7 @@ const FinancialInformation = () => {
     <div>
       <HeroSection
         title={t('financial.title')}
-        subtitle="Investor Relations & Financial Reports"
+        subtitle={t('financial.subtitle')}
         backgroundImage="/images/hero-corporate-bg.jpg"
         size="sm"
       />
@@ -50,7 +50,7 @@ const FinancialInformation = () => {
           {/* Annual Reports Header */}
           <h2 className="text-3xl font-bold text-foreground mb-8 flex items-center gap-3">
             <FileText className="h-6 w-6 text-primary" />
-            {t('financial.reports')}
+            {t('financial.annualReports')}
           </h2>
 
           {/* Pagination Top */}
@@ -111,8 +111,8 @@ const FinancialInformation = () => {
 
                   {report.status ? (
                     <div className="flex-1">
-                      <p className="font-semibold text-foreground text-lg">ANNUAL REPORT {report.year}</p>
-                      <p className="text-sm text-muted-foreground italic mt-1">{report.status}</p>
+                      <p className="font-semibold text-foreground text-lg">{t('financial.annualReport.title', { year: report.year })}</p>
+                      <p className="text-sm text-muted-foreground italic mt-1">{t('financial.comingSoon')}</p>
                     </div>
                   ) : (
                     <div className="flex-1 flex flex-col sm:flex-row sm:items-center sm:justify-between w-full gap-4">
@@ -124,11 +124,11 @@ const FinancialInformation = () => {
                           download={`Annual_Report_${report.year}.pdf`}
                           className="font-semibold text-primary hover:underline flex items-center gap-2 text-lg"
                         >
-                          <span className="text-primary">▶</span> ANNUAL REPORT {report.year}
+                          <span className="text-primary">▶</span> {t('financial.annualReport.title', { year: report.year })}
                         </a>
                         <div className="flex items-center gap-2 mt-2 text-sm text-muted-foreground">
                           <FileText className="h-4 w-4 text-destructive" />
-                          <span>PDF format</span>
+                          <span>{t('financial.pdf.format')}</span>
                         </div>
                         <p className="text-sm text-muted-foreground">{report.size}</p>
                       </div>
@@ -139,7 +139,7 @@ const FinancialInformation = () => {
                         aria-label={`Download Annual Report ${report.year} PDF`}
                       >
                         <Download className="h-4 w-4" />
-                        PDF
+                        {t('financial.pdf.download')}
                       </a>
                     </div>
                   )}
@@ -185,10 +185,10 @@ const FinancialInformation = () => {
           <div className="mt-20">
             <h2 className="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
               <Shield className="h-6 w-6 text-primary" />
-              {t('financial.governance')}
+              {t('financial.governance.title')}
             </h2>
             <p className="text-muted-foreground leading-relaxed text-lg">
-              {renderShell('Shell Electric Holdings Limited, with over 60 years of history since its founding, remains committed to maintaining high standards of corporate governance. The Company believes that good corporate governance practices are essential for creating long-term shareholder value and maintaining the confidence of shareholders and other stakeholders.')}
+              {renderShell(t('financial.governance.p1'))}
             </p>
           </div>
         </div>
