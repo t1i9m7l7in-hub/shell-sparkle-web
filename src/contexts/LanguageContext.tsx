@@ -5,7 +5,7 @@ export type Language = 'en' | 'zh-TW' | 'zh-CN';
 interface LanguageContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
-  t: (key: string) => string;
+  t: (key: string, params?: Record<string, string | number>) => string;
 }
 
 const translations: Record<Language, Record<string, string>> = {
@@ -94,6 +94,26 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Financial
     'financial.title': 'Financial Information',
+    'financial.subtitle': 'Investor Relations & Financial Reports',
+    'financial.annualReports': 'Annual Reports',
+    'financial.annualReport.title': 'ANNUAL REPORT {{year}}',
+    'financial.comingSoon': 'Coming soon',
+    'financial.pdf.format': 'PDF format',
+    'financial.pdf.download': 'PDF',
+    'financial.governance.title': 'Corporate Governance',
+    'financial.governance.p1': 'Shell Electric Holdings Limited, with over 60 years of history since its founding, remains committed to maintaining high standards of corporate governance. The Company believes that good corporate governance practices are essential for creating long-term shareholder value and maintaining the confidence of shareholders and other stakeholders.',
+    'news.subtitle': 'Latest Updates & Announcements',
+    'news.header': 'News & Announcements',
+    'news.select.year': 'Select Year:',
+    'news.section.investors': 'I. Investors Information',
+    'news.section.other': 'II. Other',
+    'news.section.request': 'III. Request Form',
+    'news.table.date': 'Date',
+    'news.table.name': 'Name',
+    'news.table.download': 'Download',
+    'news.empty': 'No items available.',
+    'news.requestForm': 'Request Form',
+    'news.pdf': 'PDF',
     'financial.reports': 'Annual Reports',
     'financial.announcements': 'Announcements',
     'financial.governance': 'Corporate Governance',
@@ -246,6 +266,26 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Financial
     'financial.title': '財務資訊',
+    'financial.subtitle': '投資者關係及財務報告',
+    'financial.annualReports': '年度年報',
+    'financial.annualReport.title': '{{year}}年度年報',
+    'financial.comingSoon': '即將推出',
+    'financial.pdf.format': 'PDF 格式',
+    'financial.pdf.download': 'PDF',
+    'financial.governance.title': '企業管治',
+    'financial.governance.p1': '蜆殼電器控股有限公司自成立以來已有逾六十年的歷史，並一直致力維持高水平的企業管治。本公司相信，良好的企業管治常規對於創造長遠的股東價值，以及維持股東及其他持份者的信心至關重要。',
+    'news.subtitle': '最新消息及公告',
+    'news.header': '新聞與公告',
+    'news.select.year': '選擇年份：',
+    'news.section.investors': '一、投資者資訊',
+    'news.section.other': '二、其他',
+    'news.section.request': '三、申請表',
+    'news.table.date': '日期',
+    'news.table.name': '名稱',
+    'news.table.download': '下載',
+    'news.empty': '暫無項目。',
+    'news.requestForm': '申請表',
+    'news.pdf': 'PDF',
     'financial.reports': '年度報告',
     'financial.announcements': '公告',
     'financial.governance': '企業管治',
@@ -398,6 +438,26 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Financial
     'financial.title': '财务资讯',
+    'financial.subtitle': '投资者关系及财务报告',
+    'financial.annualReports': '年度年报',
+    'financial.annualReport.title': '{{year}}年度年报',
+    'financial.comingSoon': '即将推出',
+    'financial.pdf.format': 'PDF 格式',
+    'financial.pdf.download': 'PDF',
+    'financial.governance.title': '企业管治',
+    'financial.governance.p1': '蚬壳电器控股有限公司自成立以来已有逾六十年的历史，并一直致力维持高水平的企业管治。本公司相信，良好的企业管治常规对于创造长远的股东价值，以及维持股东及其他持份者的信心至关重要。',
+    'news.subtitle': '最新消息及公告',
+    'news.header': '新闻与公告',
+    'news.select.year': '选择年份：',
+    'news.section.investors': '一、投资者信息',
+    'news.section.other': '二、其他',
+    'news.section.request': '三、申请表',
+    'news.table.date': '日期',
+    'news.table.name': '名称',
+    'news.table.download': '下载',
+    'news.empty': '暂无项目。',
+    'news.requestForm': '申请表',
+    'news.pdf': 'PDF',
     'financial.reports': '年度报告',
     'financial.announcements': '公告',
     'financial.governance': '企业管治',
@@ -472,8 +532,14 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [language, setLanguage] = useState<Language>('en');
 
-  const t = (key: string): string => {
-    return translations[language][key] || key;
+  const t = (key: string, params?: Record<string, string | number>): string => {
+    let value = translations[language][key] || key;
+    if (params) {
+      Object.entries(params).forEach(([k, v]) => {
+        value = value.replace(new RegExp(`{{\\s*${k}\\s*}}`, 'g'), String(v));
+      });
+    }
+    return value;
   };
 
   return (
