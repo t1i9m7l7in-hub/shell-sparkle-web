@@ -3,7 +3,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import HeroSection from '@/components/ui/HeroSection';
 import { FileText, Play, AlertCircle } from 'lucide-react';
 import { newsArchive, availableYears } from '@/data/newsData';
-import { formatNewsDate, getLocalizedNewsName } from '@/data/newsI18n';
+import { formatNewsDate, getLocalizedNewsName, getLocalizedPdfUrl } from '@/data/newsI18n';
 
 const SECTION_KEYS: Record<string, string> = {
   investors: 'news.section.investors',
@@ -73,46 +73,53 @@ const News = () => {
                 {section.items.length > 0 ? (
                   <div className="border border-border rounded-sm overflow-hidden bg-card">
                     {/* Table Header */}
-                    <div className="grid grid-cols-[100px_1fr_70px] bg-gradient-to-r from-primary to-accent border-b border-border px-4 py-2.5">
+                    <div className="hidden md:grid md:grid-cols-[minmax(120px,150px)_minmax(0,1fr)_minmax(80px,100px)] gap-x-4 bg-gradient-to-r from-primary to-accent border-b border-border px-4 py-2.5">
                       <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide">{t('news.table.date')}</span>
                       <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide">{t('news.table.name')}</span>
                       <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide text-right">{t('news.table.download')}</span>
                     </div>
 
                     {/* Table Rows */}
-                    {section.items.map((item, idx) => (
-                      <div
-                        key={idx}
-                        className={`grid grid-cols-[100px_1fr_70px] items-start px-4 py-3 border-b border-border last:border-b-0 hover:bg-primary/5 transition-colors ${idx % 2 === 1 ? 'bg-secondary/20' : ''}`}
-                      >
-                        <div className="flex items-center gap-1.5 text-sm text-foreground font-medium">
-                          <Play className="h-3 w-3 fill-primary text-primary flex-shrink-0" />
-                          <span className="whitespace-nowrap">{formatNewsDate(item.date, language)}</span>
+                    {section.items.map((item, idx) => {
+                      const localizedName = getLocalizedNewsName(item.name, language);
+                      const href = getLocalizedPdfUrl(item.pdfUrl, language);
+                      const fileName = localizedName.replace(/\s+/g, '_') + '.pdf';
+                      return (
+                        <div
+                          key={idx}
+                          className={`grid grid-cols-[minmax(0,1fr)_auto] md:grid-cols-[minmax(120px,150px)_minmax(0,1fr)_minmax(80px,100px)] gap-x-4 gap-y-1.5 items-start md:items-center px-4 py-3 border-b border-border last:border-b-0 hover:bg-primary/5 transition-colors ${idx % 2 === 1 ? 'bg-secondary/20' : ''}`}
+                        >
+                          <div className="col-start-1 row-start-1 flex items-center gap-1.5 text-sm text-foreground font-medium">
+                            <Play className="h-3 w-3 fill-primary text-primary flex-shrink-0" />
+                            <span className="whitespace-nowrap">{formatNewsDate(item.date, language)}</span>
+                          </div>
+                          <a
+                            href={href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            download={fileName}
+                            className="col-span-2 md:col-span-1 md:col-start-2 md:row-start-1 min-w-0 [overflow-wrap:anywhere] break-words text-sm text-primary hover:text-primary/80 hover:underline transition-colors leading-relaxed"
+                          >
+                            {localizedName}
+                          </a>
+                          <a
+                            href={href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            download={fileName}
+                            className="col-start-2 row-start-1 md:col-start-3 flex items-center justify-end gap-1.5 whitespace-nowrap px-2 py-1 text-primary hover:bg-primary/10 rounded-sm transition-all hover:scale-105"
+                            title={`${t('news.pdf')} — ${localizedName}`}
+                          >
+                            <FileText className="h-4 w-4" />
+                            <span className="text-xs font-semibold">{t('news.pdf')}</span>
+                          </a>
                         </div>
-                        <a
-                          href={item.pdfUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          download={item.name.replace(/\s+/g, '_') + '.pdf'}
-                          className="text-sm text-primary hover:text-primary/80 hover:underline transition-colors leading-relaxed"
-                        >
-                          {getLocalizedNewsName(item.name, language)}
-                        </a>
-                        <a
-                          href={item.pdfUrl}
-                          download={item.name.replace(/\s+/g, '_') + '.pdf'}
-                          className="flex items-center justify-end gap-1.5 px-2 py-1 text-primary hover:bg-primary/10 rounded-sm transition-all hover:scale-105"
-                          title={`Download ${item.name} PDF`}
-                        >
-                          <FileText className="h-4 w-4" />
-                          <span className="text-xs font-semibold">{t('news.pdf')}</span>
-                        </a>
-                      </div>
-                    ))}
+                      );
+                    })}
                   </div>
                 ) : (
                   <div className="border border-border rounded-sm overflow-hidden bg-card">
-                    <div className="grid grid-cols-[100px_1fr_70px] bg-gradient-to-r from-primary to-accent border-b border-border px-4 py-2.5">
+                    <div className="hidden md:grid md:grid-cols-[minmax(120px,150px)_minmax(0,1fr)_minmax(80px,100px)] gap-x-4 bg-gradient-to-r from-primary to-accent border-b border-border px-4 py-2.5">
                       <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide">{t('news.table.date')}</span>
                       <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide">{t('news.table.name')}</span>
                       <span className="text-xs font-semibold text-primary-foreground uppercase tracking-wide text-right">{t('news.table.download')}</span>
