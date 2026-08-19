@@ -267,3 +267,9 @@ export const getLocalizedNewsName = (name: string, language: Language): string =
 };
 
 export { timeTextCn };
+
+/** Chinese versions of the announcements use the Shell_C filename prefix. */
+export const getLocalizedPdfUrl = (pdfUrl: string, language: Language): string => {
+  if (language === 'en') return pdfUrl;
+  return pdfUrl.replace(/\/Shell_E_/, '/Shell_C_');
+};
