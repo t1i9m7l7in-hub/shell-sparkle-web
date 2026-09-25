@@ -13,7 +13,7 @@ const SECTION_KEYS: Record<string, string> = {
 
 const News = () => {
   const { t, language } = useLanguage();
-  const [selectedYear, setSelectedYear] = useState('2025');
+  const [selectedYear, setSelectedYear] = useState('2026');
   const [downloadError, setDownloadError] = useState<string | null>(null);
 
   const currentYearData = newsArchive.find((d) => d.year === selectedYear);
@@ -81,8 +81,11 @@ const News = () => {
 
                     {/* Table Rows */}
                     {section.items.map((item, idx) => {
-                      const localizedName = getLocalizedNewsName(item.name, language);
-                      const href = getLocalizedPdfUrl(item.pdfUrl, language);
+                      const localizedName =
+                        (language === 'zh-TW' && item.nameTc) ||
+                        (language === 'zh-CN' && item.nameSc) ||
+                        getLocalizedNewsName(item.name, language);
+                      const href = language !== 'en' && item.pdfUrlZh ? item.pdfUrlZh : getLocalizedPdfUrl(item.pdfUrl, language);
                       const fileName = localizedName.replace(/\s+/g, '_') + '.pdf';
                       return (
                         <div
