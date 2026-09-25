@@ -36,7 +36,7 @@ const PAGES = [
 ];
 
 const FinancialInformation = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [currentPage, setCurrentPage] = useState(0);
 
   const currentYears = PAGES[currentPage].years;

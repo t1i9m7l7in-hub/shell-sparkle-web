@@ -43,7 +43,7 @@ export const newsArchive: YearData[] = [
         id: 'request',
         title: 'III.  Request Form',
         items: [
-          { date: '17-07-2024', name: 'Request Form', pdfUrl: 'http://smc.com.hk/esubmission/downloads/request_form.pdf', pdfUrlZh: 'http://smc.com.hk/esubmission/downloads/request_form.pdf' },
+          { date: '17-07-2024', name: 'Request Form', nameTc: '登記股東表格', nameSc: '申请表', pdfUrl: 'http://smc.com.hk/esubmission/downloads/request_form.pdf', pdfUrlZh: 'http://smc.com.hk/esubmission/downloads/request_form.pdf' },
         ],
       },
     ],
