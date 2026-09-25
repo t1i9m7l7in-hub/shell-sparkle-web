@@ -2,6 +2,10 @@ export interface NewsItem {
   date: string;
   name: string;
   pdfUrl: string;
+  /** Explicit Chinese titles/URL (override automatic translation). */
+  nameTc?: string;
+  nameSc?: string;
+  pdfUrlZh?: string;
 }
 
 export interface NewsSection {
@@ -18,6 +22,32 @@ export interface YearData {
 const BASE = 'http://www.smc.com.hk/esubmission/downloads';
 
 export const newsArchive: YearData[] = [
+  {
+    year: '2026',
+    sections: [
+      {
+        id: 'investors',
+        title: 'I.  Investors Information',
+        items: [
+          { date: '20-08-2026', name: 'RESULTS OF THE ANNUAL GENERAL MEETING HELD ON 20 AUGUST 2026', nameTc: '於二零二六年八月二十日舉行之股東週年大會投票表決結果', nameSc: '于二零二六年八月二十日举行之股东周年大会投票表决结果', pdfUrl: 'http://smc.com.hk/esubmission/downloads/Shell_E_Ann20260820-160330.pdf', pdfUrlZh: 'http://smc.com.hk/esubmission/downloads/Shell_C_Ann20260820-160330.pdf' },
+          { date: '22-07-2026', name: 'CHANGE OF ADDRESS OF REGISTERED OFFICE AND PRINCIPAL SHARE REGISTRAR IN BERMUDA', nameTc: '百慕達註冊辦事處及股份過戶登記總處地址變更', nameSc: '百慕大注册办事处及股份过户登记总处地址变更', pdfUrl: 'http://smc.com.hk/esubmission/downloads/Shell_E_Ann20260820-160330.pdf', pdfUrlZh: 'http://smc.com.hk/esubmission/downloads/Shell_C_Ann20260820-160330.pdf' },
+          { date: '17-07-2026', name: 'ANNUAL REPORT 2025', nameTc: '2025年度年報', nameSc: '2025年度年报', pdfUrl: 'http://smc.com.hk/financial_inf/download/2025/Shell_E_AR2025.pdf', pdfUrlZh: 'http://smc.com.hk/chi/financial_inf/download/2025/Shell_E_AR2025.pdf' },
+          { date: '17-07-2026', name: 'NOTIFICATION LETTER', nameTc: '通知信函', nameSc: '通知信函', pdfUrl: 'http://smc.com.hk/esubmission/downloads/Shell_E_Ann20260820-160330.pdf', pdfUrlZh: 'http://smc.com.hk/esubmission/downloads/Shell_C_Ann20260820-160330.pdf' },
+          { date: '17-07-2026', name: 'CLOSURE OF REGISTER OF MEMBERS FOR THE ANNUAL GENERAL MEETING', nameTc: '股東週年大會 暫停辦理股份過戶登記手續', nameSc: '股东周年大会 暂停办理股份过户登记手续', pdfUrl: 'http://smc.com.hk/esubmission/downloads/Shell_E_Ann20260820-160330.pdf', pdfUrlZh: 'http://smc.com.hk/esubmission/downloads/Shell_C_Ann20260820-160330.pdf' },
+          { date: '17-07-2026', name: 'FORM OF PROXY FOR USE AT THE ANNUAL GENERAL MEETING (OR AT ANY ADJOURNMENT THEREOF) TO BE HELD AT 10:00 A.M. ON THURSDAY, 20 AUGUST 2026', nameTc: '適用於二零二六年八月二十日(星期四)上午十時正召開之 股東週年大會（或其任何續會）之代表委任表格', nameSc: '适用于二零二六年八月二十日(星期四)上午十时正召开之 股东周年大会（或其任何续会）之代表委任表格', pdfUrl: 'http://smc.com.hk/esubmission/downloads/Shell_E_Ann20260820-160330.pdf', pdfUrlZh: 'http://smc.com.hk/esubmission/downloads/Shell_C_Ann20260820-160330.pdf' },
+          { date: '17-07-2026', name: 'NOTICE OF ANNUAL GENERAL MEETING', nameTc: '股東週年大會通告', nameSc: '股东周年大会通告', pdfUrl: 'http://smc.com.hk/esubmission/downloads/Shell_E_Ann20260820-160330.pdf', pdfUrlZh: 'http://smc.com.hk/esubmission/downloads/Shell_C_Ann20260820-160330.pdf' },
+        ],
+      },
+      { id: 'other', title: 'II.  Other', items: [] },
+      {
+        id: 'request',
+        title: 'III.  Request Form',
+        items: [
+          { date: '17-07-2024', name: 'Request Form', nameTc: '登記股東表格', nameSc: '申请表', pdfUrl: 'http://smc.com.hk/esubmission/downloads/request_form.pdf', pdfUrlZh: 'http://smc.com.hk/esubmission/downloads/request_form.pdf' },
+        ],
+      },
+    ],
+  },
   {
     year: '2025',
     sections: [

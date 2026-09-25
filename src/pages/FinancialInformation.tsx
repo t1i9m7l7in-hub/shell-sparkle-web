@@ -5,7 +5,7 @@ import { renderShell } from '@/components/ShellChar';
 import { FileText, Download, Shield, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const annualReports = [
-  { year: 2025, size: null, status: 'Coming soon' },
+  { year: 2025, size: null as string | null, status: undefined as string | undefined, url: { en: 'http://smc.com.hk/financial_inf/download/2025/Shell_E_AR2025.pdf', zh: 'http://smc.com.hk/chi/financial_inf/download/2025/Shell_E_AR2025.pdf' } },
   { year: 2024, size: '935 KB' },
   { year: 2023, size: '3,372 KB' },
   { year: 2022, size: '1,222 KB' },
@@ -23,6 +23,12 @@ const annualReports = [
   { year: 2010, size: '1,725 KB' },
 ];
 
+const reportHref = (r: (typeof annualReports)[number], lang: string) => {
+  const u = (r as { url?: { en: string; zh: string } }).url;
+  if (u) return lang === 'en' ? u.en : u.zh;
+  return `/annual-reports/annual-report-${r.year}.pdf`;
+};
+
 const PAGES = [
   { label: '1', years: [2025, 2024, 2023, 2022, 2021] },
   { label: '2', years: [2020, 2019, 2018, 2017, 2016] },
@@ -30,7 +36,7 @@ const PAGES = [
 ];
 
 const FinancialInformation = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [currentPage, setCurrentPage] = useState(0);
 
   const currentYears = PAGES[currentPage].years;
@@ -118,7 +124,7 @@ const FinancialInformation = () => {
                     <div className="flex-1 flex flex-col sm:flex-row sm:items-center sm:justify-between w-full gap-4">
                       <div>
                         <a
-                          href={`/annual-reports/annual-report-${report.year}.pdf`}
+                          href={reportHref(report, language)}
                           target="_blank"
                           rel="noopener noreferrer"
                           download={`Annual_Report_${report.year}.pdf`}
@@ -130,10 +136,10 @@ const FinancialInformation = () => {
                           <FileText className="h-4 w-4 text-destructive" />
                           <span>{t('financial.pdf.format')}</span>
                         </div>
-                        <p className="text-sm text-muted-foreground">{report.size}</p>
+                        {report.size && <p className="text-sm text-muted-foreground">{report.size}</p>}
                       </div>
                       <a
-                        href={`/annual-reports/annual-report-${report.year}.pdf`}
+                        href={reportHref(report, language)}
                         download={`Annual_Report_${report.year}.pdf`}
                         className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-sm hover:bg-primary/90 hover:scale-105 transition-all text-sm font-medium self-start"
                         aria-label={`Download Annual Report ${report.year} PDF`}
