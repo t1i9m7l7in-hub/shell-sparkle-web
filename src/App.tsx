@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import Layout from "@/components/layout/Layout";
 import Index from "./pages/Index";
@@ -10,7 +10,8 @@ import CorporateOverview from "./pages/CorporateOverview";
 import CorporateVision from "./pages/CorporateVision";
 import CorporateManufacturing from "./pages/CorporateManufacturing";
 import CorporateTechnology from "./pages/CorporateTechnology";
-import CorporateInvestments from "./pages/CorporateInvestments";
+import CorporateProperty from "./pages/CorporateProperty";
+import CorporateTransportation from "./pages/CorporateTransportation";
 import FinancialInformation from "./pages/FinancialInformation";
 import News from "./pages/News";
 import ContactUs from "./pages/ContactUs";
@@ -33,7 +34,9 @@ const App = () => (
               <Route path="/corporate/vision" element={<CorporateVision />} />
               <Route path="/corporate/manufacturing" element={<CorporateManufacturing />} />
               <Route path="/corporate/technology" element={<CorporateTechnology />} />
-              <Route path="/corporate/investments" element={<CorporateInvestments />} />
+              <Route path="/corporate/property" element={<CorporateProperty />} />
+              <Route path="/corporate/transportation-business" element={<CorporateTransportation />} />
+              <Route path="/corporate/investments" element={<Navigate to="/corporate/property" replace />} />
               <Route path="/financial" element={<FinancialInformation />} />
               <Route path="/news" element={<News />} />
               <Route path="/contact_us" element={<ContactUs />} />

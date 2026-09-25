@@ -30,7 +30,7 @@ const Index = () => {
       icon: Building2,
       title: t('home.investments'),
       description: t('home.investments.desc'),
-      link: '/corporate/investments',
+      link: '/corporate/property',
       color: 'from-corporate-gold/20 to-corporate-gold/5',
     },
   ];
