@@ -11,8 +11,8 @@ const CorporateVision = () => {
   return (
     <div>
       <HeroSection
-        title={t('corporate.vision')}
-        subtitle="Our guiding principles for the future"
+        title={t('corporate.vision.heroTitle')}
+        subtitle={t('corporate.vision.heroSubtitle')}
         backgroundImage={heroTechnology}
         size="sm"
       />
@@ -56,7 +56,7 @@ const CorporateVision = () => {
                   <div className="w-12 h-12 rounded-sm bg-primary/10 flex items-center justify-center mb-6">
                     <Rocket className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-lg font-bold text-foreground mb-4">Strategic Excellence</h3>
+                  <h3 className="text-lg font-bold text-foreground mb-4">{t('corporate.vision.strategicExcellence')}</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     {renderShell(t('corporate.mission.content1'))}
                   </p>
@@ -66,7 +66,7 @@ const CorporateVision = () => {
                   <div className="w-12 h-12 rounded-sm bg-accent/10 flex items-center justify-center mb-6">
                     <Zap className="h-6 w-6 text-accent" />
                   </div>
-                  <h3 className="text-lg font-bold text-foreground mb-4">Innovation Focus</h3>
+                  <h3 className="text-lg font-bold text-foreground mb-4">{t('corporate.vision.innovationFocus')}</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     {renderShell(t('corporate.mission.content2'))}
                   </p>
