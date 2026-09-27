@@ -11,8 +11,8 @@ const CorporateOverview = () => {
   return (
     <div>
       <HeroSection
-        title={t('corporate.overview')}
-        subtitle="Shell Electric Holdings Limited"
+        title={t('corporate.overview.heroTitle')}
+        subtitle={t('corporate.overview.heroSubtitle')}
         backgroundImage={heroManufacturing}
         size="sm"
       />
