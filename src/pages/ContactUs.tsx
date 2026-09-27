@@ -144,7 +144,7 @@ const ContactUs = () => {
                       rel="noopener noreferrer"
                       className="text-base text-primary hover:underline"
                     >
-                      {headquarters.website}
+                      http://www.smc.com.hk
                     </a>
                   </div>
                 </div>
