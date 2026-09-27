@@ -146,6 +146,8 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Directory
     'directory.title': 'Contact Us',
+    'contact.title': 'Contact Us',
+    'contact.subtitle': 'Our Global Presence',
     'directory.hq': 'Headquarters',
     'directory.subsidiaries': 'Subsidiaries',
     
@@ -339,6 +341,8 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Directory
     'directory.title': '聯絡我們',
+    'contact.title': '聯絡我們',
+    'contact.subtitle': '我們的全球據點',
     'directory.hq': '總部',
     'directory.subsidiaries': '附屬公司',
     
@@ -532,6 +536,8 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Directory
     'directory.title': '联系我们',
+    'contact.title': '联系我们',
+    'contact.subtitle': '我们的全球据点',
     'directory.hq': '总部',
     'directory.subsidiaries': '附属公司',
     
