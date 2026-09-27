@@ -42,10 +42,7 @@ const CorporateManufacturing = () => {
                 </div>
                 <h3 className="text-xl font-bold text-foreground">{t('manufacturing.electric.title')}</h3>
               </div>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                {t('manufacturing.electric.desc')}
-              </p>
-              <ul className="text-muted-foreground leading-relaxed mb-4 space-y-2 list-disc pl-5">
+              <ul className="text-muted-foreground leading-relaxed space-y-2 list-disc pl-5">
                 <li>
                   <span className="font-semibold text-foreground">{t('manufacturing.electric.bullet1.label')}</span>{' '}
                   {t('manufacturing.electric.bullet1.text')}
@@ -55,17 +52,6 @@ const CorporateManufacturing = () => {
                   {t('manufacturing.electric.bullet2.text')}
                 </li>
               </ul>
-              <p className="text-muted-foreground leading-relaxed">
-                {t('manufacturing.electric.linkLabel')}{' '}
-                <a
-                  href="https://www.smcelectric.com.hk"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline font-medium"
-                >
-                  www.smcelectric.com.hk
-                </a>
-              </p>
             </div>
 
             <div className="card-corporate p-8">
