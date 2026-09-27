@@ -1,4 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
+import { renderShell } from '@/components/ShellChar';
 import HeroSection from '@/components/ui/HeroSection';
 import SectionTitle from '@/components/ui/SectionTitle';
 import { Building2, MapPin, Phone, Mail, Globe, Printer } from 'lucide-react';
@@ -105,8 +106,8 @@ const ContactUs = () => {
                     <Building2 className="h-8 w-8 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-foreground">{headquarters.name}</h3>
-                    <p className="text-base text-muted-foreground">Corporate Headquarters</p>
+                    <h3 className="text-xl font-semibold text-foreground">{renderShell(t('contact.hq.company'))}</h3>
+                    <p className="text-base text-muted-foreground">{t('contact.hq.subtitle')}</p>
                   </div>
                 </div>
                 
@@ -116,15 +117,15 @@ const ContactUs = () => {
                     onClick={() => openGoogleMaps(headquarters.mapQuery)}
                   >
                     <MapPin className="h-4 w-4 text-primary flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
-                    <span className="text-base text-muted-foreground group-hover:text-primary">{headquarters.address}</span>
+                    <span className="text-base text-muted-foreground group-hover:text-primary">{renderShell(t('contact.hq.address'))}</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-base text-muted-foreground">Tel: {headquarters.tel}</span>
+                    <span className="text-base text-muted-foreground">{t('contact.hq.tel')}: {headquarters.tel}</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Printer className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-base text-muted-foreground">Fax: {headquarters.fax}</span>
+                    <span className="text-base text-muted-foreground">{t('contact.hq.fax')}: {headquarters.fax}</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Mail className="h-4 w-4 text-primary flex-shrink-0" />
@@ -138,7 +139,7 @@ const ContactUs = () => {
                   <div className="flex items-center gap-3">
                     <Globe className="h-5 w-5 text-primary flex-shrink-0" />
                     <a 
-                      href={`https://${headquarters.website}`}
+                      href="http://www.smc.com.hk"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-base text-primary hover:underline"
