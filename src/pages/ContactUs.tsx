@@ -86,8 +86,8 @@ const ContactUs = () => {
   return (
     <div>
       <HeroSection
-        title={t('directory.title')}
-        subtitle="Our Global Presence"
+        title={t('contact.title')}
+        subtitle={t('contact.subtitle')}
         backgroundImage={heroInvestments}
         size="sm"
       />
