@@ -629,7 +629,19 @@ const translations: Record<Language, Record<string, string>> = {
 
 };
 
-const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+type LanguageContextRegistry = typeof globalThis & {
+  __smcLanguageContext?: React.Context<LanguageContextType | undefined>;
+};
+
+// Keep one context identity when Vite replaces this module during development.
+// Without this, providers from the previous module instance cannot satisfy
+// consumers from the refreshed instance, causing a temporary blank screen.
+const languageContextRegistry = globalThis as LanguageContextRegistry;
+const LanguageContext =
+  languageContextRegistry.__smcLanguageContext ??
+  createContext<LanguageContextType | undefined>(undefined);
+
+languageContextRegistry.__smcLanguageContext = LanguageContext;
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [language, setLanguage] = useState<Language>('en');
