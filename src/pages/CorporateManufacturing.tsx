@@ -52,6 +52,17 @@ const CorporateManufacturing = () => {
                   {t('manufacturing.electric.bullet2.text')}
                 </li>
               </ul>
+              <p className="text-muted-foreground leading-relaxed mt-4">
+                {t('manufacturing.electric.linkLabel')}{' '}
+                <a
+                  href="https://www.smcfans.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline font-medium"
+                >
+                  https://www.smcfans.com
+                </a>
+              </p>
             </div>
 
             <div className="card-corporate p-8">
