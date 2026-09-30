@@ -1,0 +1,2 @@
+- [x] Update Traditional and Simplified Chinese transportation company names and descriptions.
+- [x] Remove the Contact Us subsidiaries section and all seven subsidiary cards; retain headquarters.
