@@ -5,7 +5,7 @@ import SectionTitle from '@/components/ui/SectionTitle';
 import GroupCompanies from '@/components/ui/GroupCompanies';
 import { renderShell } from '@/components/ShellChar';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Factory, Cpu, Building2, TrendingUp } from 'lucide-react';
+import { ArrowRight, Factory, Cpu, Building2, TrendingUp, Building, Bus } from 'lucide-react';
 import heroManufacturing from '@/assets/hero-manufacturing.jpg';
 
 const Index = () => {
@@ -27,11 +27,18 @@ const Index = () => {
       color: 'from-accent/20 to-accent/5',
     },
     {
-      icon: Building2,
+      icon: Building,
       title: t('home.investments'),
       description: t('home.investments.desc'),
       link: '/corporate/property',
       color: 'from-corporate-gold/20 to-corporate-gold/5',
+    },
+    {
+      icon: Bus,
+      title: t('home.transportation'),
+      description: t('home.transportation.desc'),
+      link: '/corporate/transportation-business',
+      color: 'from-primary/20 to-accent/5',
     },
   ];
 
@@ -61,7 +68,7 @@ const Index = () => {
             subtitle={t('home.intro')}
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
             {businessAreas.map((area, index) => (
               <Link
                 key={area.title}
