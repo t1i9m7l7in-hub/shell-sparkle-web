@@ -7,7 +7,7 @@ import { renderShell } from '@/components/ShellChar';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Factory, Cpu, Building2, Building, Bus } from 'lucide-react';
 import heroManufacturing from '@/assets/hero-manufacturing.jpg';
-import shellIndustrialBuilding from '@/assets/shell-industrial-building.jpg.asset.json';
+import shellIndustrialBuilding from '@/assets/shell-industrial-building.jpg';
 
 const Index = () => {
   const { t } = useLanguage();
