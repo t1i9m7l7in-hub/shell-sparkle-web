@@ -2,7 +2,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import HeroSection from '@/components/ui/HeroSection';
 import { MapPin } from 'lucide-react';
 import { renderShell } from '@/components/ShellChar';
-import heroInvestments from '@/assets/hero-investments.jpg';
+import heroProperty from '@/assets/hero-property.jpg';
 
 const CorporateProperty = () => {
   const { t } = useLanguage();
@@ -13,7 +13,7 @@ const CorporateProperty = () => {
 
   return (
     <div>
-      <HeroSection title={t('property.title')} subtitle={t('property.subtitle')} backgroundImage={heroInvestments} size="sm" />
+      <HeroSection title={t('property.title')} subtitle={t('property.subtitle')} backgroundImage={heroProperty} size="sm" />
       <section className="py-24 bg-background">
         <div className="container-corporate">
           <p className="max-w-4xl mx-auto mb-16 text-lg text-muted-foreground leading-relaxed text-center">

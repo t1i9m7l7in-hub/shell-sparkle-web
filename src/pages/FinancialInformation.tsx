@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import HeroSection from '@/components/ui/HeroSection';
+import heroFinancial from '@/assets/hero-financial.jpg';
 import { renderShell } from '@/components/ShellChar';
 import { FileText, Download, Shield, ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -47,7 +48,7 @@ const FinancialInformation = () => {
       <HeroSection
         title={t('financial.title')}
         subtitle={t('financial.subtitle')}
-        backgroundImage="/images/hero-corporate-bg.jpg"
+        backgroundImage={heroFinancial}
         size="sm"
       />
 

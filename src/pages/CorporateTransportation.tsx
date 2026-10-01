@@ -2,7 +2,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import HeroSection from '@/components/ui/HeroSection';
 import { Car } from 'lucide-react';
 import { renderShell } from '@/components/ShellChar';
-import heroInvestments from '@/assets/hero-investments.jpg';
+import heroTransportation from '@/assets/hero-transportation.jpg';
 
 const CorporateTransportation = () => {
   const { t } = useLanguage();
@@ -13,7 +13,7 @@ const CorporateTransportation = () => {
 
   return (
     <div>
-      <HeroSection title={t('transportation.title')} subtitle={t('transportation.subtitle')} backgroundImage={heroInvestments} size="sm" />
+      <HeroSection title={t('transportation.title')} subtitle={t('transportation.subtitle')} backgroundImage={heroTransportation} size="sm" />
       <section className="py-24 bg-background">
         <div className="container-corporate">
           <div className="max-w-4xl mx-auto card-corporate p-8">
