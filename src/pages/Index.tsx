@@ -125,7 +125,7 @@ const Index = () => {
               <div className="relative">
                 <div className="aspect-[4/3] rounded-sm overflow-hidden">
                   <img
-                    src={shellIndustrialBuilding.url}
+                    src={shellIndustrialBuilding}
                     alt="Shell Industrial Building"
                     className="object-cover w-full h-full rounded-lg"
                   />
