@@ -3,7 +3,7 @@ import HeroSection from '@/components/ui/HeroSection';
 import SectionTitle from '@/components/ui/SectionTitle';
 import { renderShell } from '@/components/ShellChar';
 import { Eye, Target, Rocket, Zap } from 'lucide-react';
-import heroTechnology from '@/assets/hero-technology.jpg';
+import heroVision from '@/assets/hero-vision.jpg';
 
 const CorporateVision = () => {
   const { t } = useLanguage();
@@ -13,7 +13,7 @@ const CorporateVision = () => {
       <HeroSection
         title={t('corporate.vision.heroTitle')}
         subtitle={t('corporate.vision.heroSubtitle')}
-        backgroundImage={heroTechnology}
+        backgroundImage={heroVision}
         size="sm"
       />
 

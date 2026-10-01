@@ -3,7 +3,7 @@ import { renderShell } from '@/components/ShellChar';
 import HeroSection from '@/components/ui/HeroSection';
 import SectionTitle from '@/components/ui/SectionTitle';
 import { Building2, MapPin, Phone, Mail, Globe, Printer } from 'lucide-react';
-import heroInvestments from '@/assets/hero-investments.jpg';
+import heroContact from '@/assets/hero-contact.jpg';
 
 const ContactUs = () => {
   const { t } = useLanguage();
@@ -27,7 +27,7 @@ const ContactUs = () => {
       <HeroSection
         title={t('contact.title')}
         subtitle={t('contact.subtitle')}
-        backgroundImage={heroInvestments}
+        backgroundImage={heroContact}
         size="sm"
       />
 

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import HeroSection from '@/components/ui/HeroSection';
+import heroNews from '@/assets/hero-news.jpg';
 import { FileText, Play, AlertCircle } from 'lucide-react';
 import { newsArchive, availableYears } from '@/data/newsData';
 import { formatNewsDate, getLocalizedNewsName, getLocalizedPdfUrl } from '@/data/newsI18n';
@@ -24,7 +25,7 @@ const News = () => {
       <HeroSection
         title={t('news.title')}
         subtitle={t('news.subtitle')}
-        backgroundImage="/images/hero-corporate-bg.jpg"
+        backgroundImage={heroNews}
         size="sm"
       />
 
