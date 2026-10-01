@@ -5,8 +5,9 @@ import SectionTitle from '@/components/ui/SectionTitle';
 import GroupCompanies from '@/components/ui/GroupCompanies';
 import { renderShell } from '@/components/ShellChar';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Factory, Cpu, Building2, TrendingUp, Building, Bus } from 'lucide-react';
+import { ArrowRight, Factory, Cpu, Building2, Building, Bus } from 'lucide-react';
 import heroManufacturing from '@/assets/hero-manufacturing.jpg';
+import shellIndustrialBuilding from '@/assets/shell-industrial-building.jpg';
 
 const Index = () => {
   const { t } = useLanguage();
@@ -122,10 +123,12 @@ const Index = () => {
             </div>
             <div className="animate-slide-in-right">
               <div className="relative">
-                <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-accent/10 rounded-sm overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <TrendingUp className="h-24 w-24 text-primary/30" />
-                  </div>
+                <div className="aspect-[4/3] rounded-sm overflow-hidden">
+                  <img
+                    src={shellIndustrialBuilding}
+                    alt="Shell Industrial Building"
+                    className="object-cover w-full h-full rounded-lg"
+                  />
                 </div>
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary rounded-sm flex items-center justify-center">
                   <div className="text-center text-primary-foreground">
