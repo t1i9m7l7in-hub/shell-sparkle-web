@@ -2,7 +2,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import HeroSection from '@/components/ui/HeroSection';
 import SectionTitle from '@/components/ui/SectionTitle';
 import { renderShell } from '@/components/ShellChar';
-import { Target, Eye, Lightbulb, Award } from 'lucide-react';
+import { Factory, Cpu, Building, Bus } from 'lucide-react';
 import heroOverview from '@/assets/hero-overview.jpg';
 
 const CorporateOverview = () => {
@@ -48,27 +48,16 @@ const CorporateOverview = () => {
       <section className="py-20 bg-secondary">
         <div className="container-corporate">
           <SectionTitle 
-            title={t('corporate.areas.title')} 
-            subtitle={t('corporate.areas.subtitle')}
+            title={t('corporate.areas4.title')} 
+            subtitle={t('corporate.areas4.subtitle')}
           />
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
             {[
-              {
-                icon: Target,
-                title: t('corporate.areas.manufacturing'),
-                description: t('corporate.areas.manufacturing.desc'),
-              },
-              {
-                icon: Lightbulb,
-                title: t('corporate.areas.technology'),
-                description: t('corporate.areas.technology.desc'),
-              },
-              {
-                icon: Award,
-                title: t('corporate.areas.investment'),
-                description: t('corporate.areas.investment.desc'),
-              },
+              { icon: Factory, title: t('corporate.areas4.mfg'), description: t('corporate.areas4.mfg.desc') },
+              { icon: Cpu, title: t('corporate.areas4.tech'), description: t('corporate.areas4.tech.desc') },
+              { icon: Building, title: t('corporate.areas4.property'), description: t('corporate.areas4.property.desc') },
+              { icon: Bus, title: t('corporate.areas4.transport'), description: t('corporate.areas4.transport.desc') },
             ].map((area, index) => (
 
               <div key={index} className="card-corporate p-8 text-center">
