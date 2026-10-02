@@ -23,7 +23,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.technology': 'Technology',
     'nav.investments': 'Investments',
     'nav.property': "Property",
-    'nav.transportationBusiness': "Transportation Business",
+    'nav.transportationBusiness': 'Transportation',
     'property.title': "Property",
     'property.subtitle': "Commercial and industrial properties in prime locations",
     'property.intro': "The Group's property investment portfolio consists of commercial and industrial properties located in prime cities in the PRC, Hong Kong, and Vietnam. The portfolio provides stable rental income and long-term capital growth prospects.",
