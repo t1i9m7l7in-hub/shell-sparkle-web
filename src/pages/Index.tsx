@@ -146,14 +146,14 @@ const Index = () => {
       <section className="py-20 bg-corporate-navy">
         <div className="container-corporate text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
-            Discover Our Global Presence
+            {t('home.globalPresence.title')}
           </h2>
           <p className="text-primary-foreground/70 max-w-2xl mx-auto mb-8">
-            The Group's global business expansions are supported by the long-term partnership with reputable global companies.
+            {t('home.globalPresence.description')}
           </p>
           <Link to="/directory">
             <Button variant="outline" size="lg" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground hover:text-corporate-navy">
-              View Company Directory
+              {t('home.globalPresence.button')}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </Link>
