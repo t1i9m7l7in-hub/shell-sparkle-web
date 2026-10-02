@@ -56,7 +56,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/corporate/transportation-business" className="text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/corporate/transportation" className="text-muted-foreground hover:text-primary transition-colors">
                   {t('nav.transportationBusiness')}
                 </Link>
               </li>

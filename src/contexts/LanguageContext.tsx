@@ -31,7 +31,7 @@ const translations: Record<Language, Record<string, string>> = {
     'property.item1Desc': "Home of the Group's headquarters, Shell Industrial Building was built in 1966 with approximately 12,000 square meters of gross floor area.",
     'property.item2Title': "Citic Plaza, Guangzhou, China",
     'property.item2Desc': "This 80-storey Grade A office building, with two 38-storey apartment blocks and a 40,000 square meters shopping arcades, is located conveniently next to the Guangzhou East Railway Station Through Train Terminal in Tianhe. Citic Plaza is one of the most prominent landmarks in Southern China.",
-    'transportation.title': "Transportation Business",
+    'transportation.title': "Transportation",
     'transportation.subtitle': "Taxi Fleet Operations in Guangzhou",
     'transportation.company': "Guangzhou SMC Car Rental Company Ltd.",
     'transportation.ownership': "100% Owned Subsidiary",
@@ -359,7 +359,7 @@ const translations: Record<Language, Record<string, string>> = {
     'financial.governance.title': '企業管治',
     'financial.governance.p1': '蜆殼電器控股有限公司自成立以來已有逾六十年的歷史，並一直致力維持高水平的企業管治。本公司相信，良好的企業管治常規對於創造長遠的股東價值，以及維持股東及其他持份者的信心至關重要。',
     'news.subtitle': '最新消息及公告',
-    'news.header': '新聞與公告',
+    'news.header': '最新消息與公告',
     'news.select.year': '選擇年份：',
     'news.section.investors': '一、投資者資訊',
     'news.section.other': '二、其他',
@@ -375,7 +375,7 @@ const translations: Record<Language, Record<string, string>> = {
     'financial.governance': '企業管治',
     
     // News
-    'news.title': '新聞',
+    'news.title': '最新消息',
     'news.latest': '最新新聞',
     'news.archive': '新聞存檔',
     
@@ -576,7 +576,7 @@ const translations: Record<Language, Record<string, string>> = {
     'financial.governance.title': '企业管治',
     'financial.governance.p1': '蚬壳电器控股有限公司自成立以来已有逾六十年的历史，并一直致力维持高水平的企业管治。本公司相信，良好的企业管治常规对于创造长远的股东价值，以及维持股东及其他持份者的信心至关重要。',
     'news.subtitle': '最新消息及公告',
-    'news.header': '新闻与公告',
+    'news.header': '最新消息与公告',
     'news.select.year': '选择年份：',
     'news.section.investors': '一、投资者信息',
     'news.section.other': '二、其他',
@@ -592,7 +592,7 @@ const translations: Record<Language, Record<string, string>> = {
     'financial.governance': '企业管治',
     
     // News
-    'news.title': '新闻',
+    'news.title': '最新消息',
     'news.latest': '最新新闻',
     'news.archive': '新闻存档',
     
