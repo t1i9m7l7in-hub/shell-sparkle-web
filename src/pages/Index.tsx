@@ -38,7 +38,7 @@ const Index = () => {
       icon: Bus,
       title: t('home.transportation'),
       description: t('home.transportation.desc'),
-      link: '/corporate/transportation-business',
+      link: '/corporate/transportation',
       color: 'from-primary/20 to-accent/5',
     },
   ];

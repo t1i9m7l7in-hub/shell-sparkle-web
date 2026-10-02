@@ -34,7 +34,7 @@ const Navbar = () => {
         { path: '/corporate/manufacturing', label: t('nav.manufacturing') },
         { path: '/corporate/technology', label: t('nav.technology') },
         { path: '/corporate/property', label: t('nav.property') },
-        { path: '/corporate/transportation-business', label: t('nav.transportationBusiness') },
+        { path: '/corporate/transportation', label: t('nav.transportationBusiness') },
       ],
     },
     { path: '/financial', label: t('nav.financial') },
