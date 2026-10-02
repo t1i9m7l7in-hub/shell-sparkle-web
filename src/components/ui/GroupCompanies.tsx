@@ -2,7 +2,10 @@ import smcFansLogo from '@/assets/smcfans-logo.jpg';
 import pfcLogo from '@/assets/pfc-logo.jpg';
 import smcMultimediaLogo from '@/assets/smc-multimedia-logo.jpg';
 
+import { useLanguage } from '@/contexts/LanguageContext';
+
 const GroupCompanies = () => {
+  const { t } = useLanguage();
   const companies = [
     {
       logo: smcFansLogo,
@@ -25,7 +28,7 @@ const GroupCompanies = () => {
     <section className="py-12 bg-background border-t border-border">
       <div className="container-corporate">
         <h3 className="text-center text-lg font-semibold text-muted-foreground mb-8 uppercase tracking-wider">
-          Group Companies
+          {t('home.groupCompanies.tag')}
         </h3>
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
           {companies.map((company) => (

@@ -63,6 +63,10 @@ const translations: Record<Language, Record<string, string>> = {
     'home.history': 'Six Decades of Excellence',
     'home.history.desc': 'Since 1950s, SMC pioneered Hong Kong\'s ceiling fan manufacturing industry and was the first manufacturer to export ceiling fans to the international market.',
     'home.history.desc2': 'The Group established the microwave ovens business in mid 1980\'s and quickly became the best seller in the China market. Such outstanding success attracted the leading home appliance company, Whirlpool Corporation to joint venture with SMC.',
+    'home.globalPresence.title': 'Discover Our Global Presence',
+    'home.globalPresence.description': 'The Group\'s global business expansions are supported by the long-term partnership with reputable global companies.',
+    'home.globalPresence.button': 'View Company Directory',
+    'home.groupCompanies.tag': 'GROUP COMPANIES',
     
     // Corporate
     'corporate.title': 'Corporate Information',
@@ -280,6 +284,10 @@ const translations: Record<Language, Record<string, string>> = {
     'home.history': '六十年卓越歷史',
     'home.history.desc': '自1950年代，蜆壳電器開創了香港的吊扇製造業，是首家將吊扇出口到國際市場的製造商。',
     'home.history.desc2': '集團於1980年代中期建立微波爐業務，並迅速成為中國市場的暢銷產品。如此卓越的成功吸引了領先的家電公司惠而浦公司與SMC成立合資企業。',
+    'home.globalPresence.title': '探索我們的全球業務網絡',
+    'home.globalPresence.description': '本集團的全球業務拓展得益於與知名國際企業的長期合作夥伴關係。',
+    'home.globalPresence.button': '聯絡我們',
+    'home.groupCompanies.tag': '集團成員公司',
     
     // Corporate
     'corporate.title': '公司資訊',
@@ -497,6 +505,10 @@ const translations: Record<Language, Record<string, string>> = {
     'home.history': '六十年卓越历史',
     'home.history.desc': '自1950年代，蚬壳电器开创了香港的吊扇制造业，是首家将吊扇出口到国际市场的制造商。',
     'home.history.desc2': '集团于1980年代中期建立微波炉业务，并迅速成为中国市场的畅销产品。如此卓越的成功吸引了领先的家电公司惠而浦公司与SMC成立合资企业。',
+    'home.globalPresence.title': '探索我们的全球业务网络',
+    'home.globalPresence.description': '本集团的全球业务拓展得益于与知名国际企业的长期合作伙伴关系。',
+    'home.globalPresence.button': '联系我们',
+    'home.groupCompanies.tag': '集团成员公司',
     
     // Corporate
     'corporate.title': '公司资讯',
