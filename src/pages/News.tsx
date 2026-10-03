@@ -101,7 +101,6 @@ const News = () => {
                             href={href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            download={fileName}
                             className="col-span-2 md:col-span-1 md:col-start-2 md:row-start-1 min-w-0 [overflow-wrap:anywhere] break-words text-sm text-primary hover:text-primary/80 hover:underline transition-colors leading-relaxed"
                           >
                             {localizedName}
@@ -110,7 +109,6 @@ const News = () => {
                             href={href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            download={fileName}
                             className="col-start-2 row-start-1 md:col-start-3 flex items-center justify-end gap-1.5 whitespace-nowrap px-2 py-1 text-primary hover:bg-primary/10 rounded-sm transition-all hover:scale-105"
                             title={`${t('news.pdf')} — ${localizedName}`}
                           >
