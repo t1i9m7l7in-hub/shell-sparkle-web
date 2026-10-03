@@ -6,6 +6,10 @@ export interface NewsItem {
   nameTc?: string;
   nameSc?: string;
   pdfUrlZh?: string;
+  /** Local PDF paths per locale (filled in automatically below). */
+  pdf_en?: string;
+  pdf_zh_hk?: string;
+  pdf_zh_cn?: string;
 }
 
 export interface NewsSection {
@@ -21,7 +25,7 @@ export interface YearData {
 
 const BASE = 'http://www.smc.com.hk/esubmission/downloads';
 
-export const newsArchive: YearData[] = [
+const rawArchive: YearData[] = [
   {
     year: '2026',
     sections: [
@@ -391,5 +395,23 @@ export const newsArchive: YearData[] = [
     ],
   },
 ];
+
+/** Map a remote PDF URL to its local /pdf/ copy, choosing the English or Chinese file. */
+const toLocal = (url: string, lang: 'E' | 'C'): string => {
+  const file = url.split('/').pop() ?? '';
+  if (file === 'request_form.pdf') return '/pdf/request_form.pdf';
+  return `/pdf/${file.replace(/^Shell_[EC]_/, `Shell_${lang}_`)}`;
+};
+
+export const newsArchive: YearData[] = rawArchive.map((y) => ({
+  ...y,
+  sections: y.sections.map((sec) => ({
+    ...sec,
+    items: sec.items.map((item) => {
+      const zh = toLocal(item.pdfUrlZh ?? item.pdfUrl, 'C');
+      return { ...item, pdf_en: toLocal(item.pdfUrl, 'E'), pdf_zh_hk: zh, pdf_zh_cn: zh };
+    }),
+  })),
+}));
 
 export const availableYears = newsArchive.map((d) => d.year);

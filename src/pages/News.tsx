@@ -86,7 +86,7 @@ const News = () => {
                         (language === 'zh-TW' && item.nameTc) ||
                         (language === 'zh-CN' && item.nameSc) ||
                         getLocalizedNewsName(item.name, language);
-                      const href = language !== 'en' && item.pdfUrlZh ? item.pdfUrlZh : getLocalizedPdfUrl(item.pdfUrl, language);
+                      const href = (language === 'en' ? item.pdf_en : language === 'zh-TW' ? item.pdf_zh_hk : item.pdf_zh_cn) ?? getLocalizedPdfUrl(item.pdfUrl, language);
                       const fileName = localizedName.replace(/\s+/g, '_') + '.pdf';
                       return (
                         <div
